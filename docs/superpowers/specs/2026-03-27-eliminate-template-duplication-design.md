@@ -55,14 +55,13 @@ const DASHBOARD_EXCLUDES = [
   'node_modules',
   'dist',
   'tsconfig.tsbuildinfo',
-  'public',
   'squads',
 ];
 ```
 
 - For `init`: skip files that already exist (same as current `copyCommonTemplates` behavior)
 - For `update`: backup existing files before overwriting, respect `PROTECTED_PATHS`
-- Dashboard copy excludes local-only artifacts: `node_modules/`, `dist/`, `tsconfig.tsbuildinfo`, `public/`, `squads/`
+- Dashboard copy excludes local-only artifacts: `node_modules/`, `dist/`, `tsconfig.tsbuildinfo`, `squads/`
 
 ### Changes to `init.js`
 
