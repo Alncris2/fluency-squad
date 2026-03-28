@@ -211,6 +211,63 @@ Write the evaluation results to `/tmp/sprite-review.md` in this exact format:
 
 If there are any UNCERTAIN sprites, present them to the user now with a concise question for each one. Wait for the user's answer, update the report, then proceed to 7.5.
 
+#### 7.5 FIX
+
+Group all FAIL sprites by fix type and dispatch subagents in parallel:
+
+| Group | File(s) | Problem types |
+|-------|---------|---------------|
+| A | `dashboard/src/office/RoomBuilder.ts` | Wrong position, wrong size, unwanted overlap — furniture/decorations |
+| B | `dashboard/src/office/AgentSprite.ts` | Avatar mispositioned, wrong scale |
+| C | `RoomBuilder.ts` + `AgentSprite.ts` | White background (Phaser rendering artifact) |
+
+**Groups A and B run in parallel.** Group C runs after A and B complete (white-background causes may span both files).
+
+Each subagent receives:
+1. The list of sprite keys it must fix, with specific FAIL reasons from `/tmp/sprite-review.md`
+2. The Quick Reference section from this skill (depth sorting, origin conventions, layout constants)
+3. Instruction: read `.claude/skills/opensquad-dashboard-design/reference.md` for the asset catalog and code examples
+4. The rule: **never hardcode pixel values** — always use relative expressions (`MARGIN / 2`, `roomW / N`, `deskAreaBottom - offset`)
+
+If a group has no failing sprites, skip it.
+
+#### 7.6 RE-REVIEW
+
+After subagents complete, take a new screenshot:
+
+```bash
+npx playwright screenshot --browser chromium "URL" "/tmp/sprite-review-iter-N.png" --full-page
+```
+
+(Increment N each iteration: `iter-1.png`, `iter-2.png`, etc.)
+
+Re-evaluate **only the sprites that previously had FAIL or UNCERTAIN status**. Do not re-evaluate sprites that already passed.
+
+Update `/tmp/sprite-review.md` with the new results.
+
+**Stuck detection:** If the same sprite fails the same criterion for the 2nd consecutive iteration, do NOT dispatch another subagent blindly. Instead, pause and report to the user:
+
+> "O sprite `<key>` continua falhando no critério `<criterion>` após 2 tentativas. [Descrição concisa do problema]. O que devo fazer?"
+
+Wait for the user's answer, then continue.
+
+**Loop:** If any sprites still FAIL after re-evaluation, return to **7.5 FIX** with only the remaining failures. Continue until all sprites are PASS.
+
+#### 7.7 APPROVE
+
+When all sprites reach PASS status:
+
+1. Present the final screenshot (`/tmp/sprite-review-iter-N.png` or `sprite-review-before.png` if no iterations were needed)
+2. Show a summary of what was fixed:
+   - List each sprite that was corrected, with before/after description
+   - List sprites that passed without changes
+3. Show the final checklist with all items as PASS
+
+Ask: "Todos os sprites passaram na revisão. O resultado ficou como esperado? Posso finalizar ou quer ajustes?"
+
+- User approves → **DONE**
+- User wants adjustments → collect feedback, return to **7.5 FIX** with a new targeted plan
+
 ## Quick Reference
 
 ### Key Files
