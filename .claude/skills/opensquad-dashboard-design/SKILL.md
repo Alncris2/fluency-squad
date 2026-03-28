@@ -139,6 +139,74 @@ If URL is unreachable, tell the user to run `cd dashboard && npm run dev` and wa
 
 Present the screenshot to the user and say: "Capturei o estado atual. Iniciando avaliação de cada sprite..."
 
+#### 7.3 EVALUATE
+
+For every sprite in the inventory, evaluate 4 criteria against the screenshot. Assign **PASS**, **FAIL**, or **UNCERTAIN** to each.
+
+**Criterion 1 — Size**
+Compare visual scale against neighboring elements in the screenshot:
+- Avatar must not appear larger than the desk it sits at
+- Plants/flowers must not visually dominate the scene (overshadow desks or avatars)
+- Wall decorations must fit within the visible wall strip (not spill onto the floor)
+- Accessories (mugs, backpacks, cushions) must be proportionally small relative to desks
+
+**Criterion 2 — Transparent Background**
+Look for a visible white or solid-colored box surrounding the sprite in the screenshot:
+- PASS: sprite renders cleanly with transparent surroundings
+- FAIL: visible bounding box or white halo around the sprite
+- Fix approach: inspect the Phaser code around that sprite for `setTint`, `setAlpha`, Graphics rectangles drawn immediately before the sprite, or incorrect `filterMode`. Fix is always in the code — PNG files are already transparent.
+
+**Criterion 3 — Semantic Position**
+Apply these lightweight rules per sprite category:
+
+| Category | Rule |
+|----------|------|
+| Plants / flowers | Corners, room edges, or between desk rows — **never** on top of a work desk |
+| Avatar (character sprite) | Visibly above the desk sprite — not floating mid-air or sitting on the floor |
+| Monitor / desktop set | On top of the work desk at the correct vertical offset |
+| Couch / armchair | Lounge zone (lower portion of the scene) — not in the work desk area |
+| Rug / carpet | Below all furniture — never rendered visually above a character |
+| Wall decorations (blinds, poster, bookshelf, clock) | Within the wall strip (`y ≤ WALL_H`) — not on the floor |
+| Accessories (mug, backpack, lantern) | On or immediately beside a desk — not in the middle of a walkway |
+
+**Criterion 4 — Unwanted Overlap**
+Check if a sprite visually covers another in a way that breaks scene logic:
+- Plant rendered over an avatar's face → FAIL
+- Rug floating visually above a couch → FAIL
+- Two identical sprites stacked at the same pixel position → FAIL
+- Desk partially clipped by a wall decoration → FAIL
+
+**UNCERTAIN rule:** If you cannot determine PASS or FAIL from the screenshot alone (e.g. the sprite is partially hidden, or the position rule doesn't clearly apply), mark it UNCERTAIN and note the specific question. You will ask the user about all UNCERTAIN sprites together before proceeding to 7.5.
+
+#### 7.4 DOCUMENT
+
+Write the evaluation results to `/tmp/sprite-review.md` in this exact format:
+
+```markdown
+# Sprite Review — YYYY-MM-DD HH:MM
+
+## Summary
+- Total sprites: N
+- PASS: N | FAIL: N | UNCERTAIN: N
+
+## Results
+
+### furniture_monstera (RoomBuilder.ts:112)
+- Tamanho: PASS
+- Fundo: PASS
+- Posição: FAIL — planta posicionada sobre mesa de trabalho (x=320, y=180). Mover para canto.
+- Sobreposição: FAIL — sobrepõe avatar do agente "Writer". Ajustar x/y.
+- **Fix needed:** reposition to corner (x=MARGIN/2, y=deskAreaBottom - 20)
+
+### avatar_Jesse_blink (AgentSprite.ts:87)
+- Tamanho: UNCERTAIN — parece grande, mas pode ser intencional
+- Fundo: PASS
+- Posição: PASS
+- Sobreposição: PASS
+```
+
+If there are any UNCERTAIN sprites, present them to the user now with a concise question for each one. Wait for the user's answer, update the report, then proceed to 7.5.
+
 ## Quick Reference
 
 ### Key Files
