@@ -1,0 +1,44 @@
+task_id: "05057889-1378-40ab-a210-e6838e6315ee"
+task_title: "[AGENT] EnglishTeacherAgent core"
+github_issue_id: 15
+github_issue_url: "https://github.com/Alncris2/fluency-ai-backend/issues/15"
+sprint: "sprint_2_ai_core"
+epic: "epic-03-agente-ia"
+priority: 1
+milestone: "Sprint 2 — Agente IA + Memória"
+due_on: "2026-04-30"
+size: "L (~5 dias)"
+
+scope:
+  backend: true
+  frontend: false
+  infra: false
+
+stack_alert: |
+  ⚠️  O issue menciona "Prism PHP" como stack. IGNORAR.
+  Regra absoluta do projeto: NUNCA Prism — sempre laravel/ai ^0.4.3.
+  Implementar usando os contratos de App\Ai\Agents\FluencyAgent como baseline.
+
+issue_title: "[AGENT] EnglishTeacherAgent core"
+issue_body: |
+  ## Contexto
+  Classe principal do agente professor. System prompt completo do professor.
+  Suporte a multi-turn, histórico e todas as tools.
+
+  ## Critérios de aceite (ADAPTADOS para laravel/ai)
+  - EnglishTeacherAgent com método chat(Student $student, string $sessionId, string $message)
+  - System prompt dinâmico com contexto do aluno injetado
+  - Suporte a histórico de conversa multi-turn (Conversational contract)
+  - Registro de tools do professor (HasTools contract)
+  - Método voiceChat() com system prompt adaptado para voz
+  - Método getVoiceGreeting() com saudação personalizada
+  - Streaming SSE via StreamedResponse
+
+baseline_file: "app/Ai/Agents/FluencyAgent.php"
+
+context:
+  sdk: "laravel/ai ^0.4.3 — NUNCA Prism"
+  model: "claude-sonnet-4-20250514"
+  existing_agent: "FluencyAgent (base genérica — será substituída/especializada)"
+  redis: "disponível via docker-compose para histórico de conversa"
+  apa_relevance: "EnglishTeacherAgent É o coração do método APA — instructions() deve refletir as 3 fases"
