@@ -101,22 +101,22 @@ Ao iniciar um run, sempre pegar a task com menor `priority` e `status=backlog`.
 
 ## Contexto da task atual
 
-> Injetado pelo runner — run `2026-04-04-153247`
+> Injetado pelo runner — run `2026-04-04-160011`
 
 ```yaml
-task_id: "e04e9b79-96e5-4fc1-ae82-356e36b55822"
-task_title: "[AGENT] Tool: send_quiz"
-github_issue_id: 20
-github_issue_url: "https://github.com/Alncris2/fluency-ai-backend/issues/20"
-sprint: "sprint_2_ai_core"
-epic: "epic-03-agente-ia"
-priority: 1
+task_id: "128da3ee-241d-4328-bfdb-ba3552ac0d73"
+task_title: "[INFRA] Limpeza do template Rizz para base Fluency"
+github_issue_id: 61
+github_issue_url: "https://github.com/Alncris2/fluency-ai-backend/issues/61"
+sprint: "sprint_1_infra"
+epic: "epic-01-infra"
+priority: 2
+scope: frontend (Angular + Rizz template cleanup)
 issue_body: |
-  Ferramenta que cria e envia quiz interativo durante a conversa.
-  Tipos: multiple_choice, fill_in_blank, translation, error_correction
-  Parâmetros: type, topic, question, options_json, correct_answer, explanation
-  Persiste quiz em tabela quizzes
-  Retorna quiz_id para o frontend renderizar card interativo
-  POST /api/quiz/{id}/answer processa resposta e retorna feedback
-  Depende de: #015 (EnglishTeacherAgent core — DONE)
+  Remover estruturas, dependências, componentes, rotas, estilos, páginas, configs
+  e arquivos do template Rizz que não fazem parte do escopo do Fluency AI.
+  Usar o template base apenas como referência de recuperação.
+  Sem regressão no build frontend ou backend.
+  Critérios: inventário mantido/removido, ajuste de rotas/imports/providers/layouts,
+  nenhuma regressão no build, pontos de dúvida documentados.
 ```

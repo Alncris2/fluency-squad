@@ -1,0 +1,65 @@
+task_id: "128da3ee-241d-4328-bfdb-ba3552ac0d73"
+task_title: "[INFRA] Limpeza do template Rizz para base Fluency"
+github_issue_id: 61
+github_repo: "Alncris2/fluency-ai-backend"
+sprint: "sprint_1_infra"
+priority: 2
+epic: "epic-01-infra"
+milestone: "Sprint 1 — Infraestrutura base"
+
+scope:
+  backend: false
+  frontend: true
+
+issue_body: |
+  ## Contexto
+  O monorepo ainda carrega partes do template base que não serão usadas no produto
+  Fluency AI. Esta task existe para fazer a limpeza controlada do template e manter
+  apenas o que o projeto realmente utiliza.
+
+  ## Objetivo
+  Remover estruturas, dependências, componentes, rotas, estilos, páginas, configs e
+  arquivos do template que não fazem parte do escopo do Fluency AI, usando o template
+  base apenas como referência para reconstituir o que for necessário.
+
+  ## Critérios de aceite
+  - Inventário do que será mantido e do que será removido no template
+  - Remoção de arquivos e módulos claramente não utilizados pelo Fluency AI
+  - Ajuste de rotas, imports, providers, layouts e estilos para refletir apenas o que o projeto usa
+  - Nenhuma regressão no build do frontend ou backend
+  - Validação final com testes/build/checagens básicas executados com sucesso
+  - Decisão documentada para pontos de dúvida
+
+  ## Observações
+  - Usar o template base somente como referência de recuperação
+  - Priorizar simplificação e redução de superfície do projeto
+
+  Epic: epic-01-infra | Tipo: refactor | Sprint: 1 | Prioridade: alta | Estimativa: M
+
+acceptance_criteria:
+  - "Inventário produzido: lista clara de views/módulos mantidos vs removidos"
+  - "Views do template não relacionadas ao Fluency removidas: email, maps, icons, advance_ui, applications, charts, forms, pages, tables, ui (avaliar cada uma)"
+  - "Rotas em app.routes.ts e views.route.ts limpas"
+  - "ng build --configuration production sem erros após limpeza"
+  - "ng test --watch=false sem regressão nos testes existentes"
+  - "ADR documentando decisões de remoção"
+
+context:
+  stack_frontend: "Angular 19 + Rizz template"
+  frontend_path: "/home/friday/projects/fluency-ai/frontend"
+  views_to_evaluate:
+    - "auth — MANTER (login/registro)"
+    - "dashboards — MANTER (overview do aluno)"
+    - "advance_ui — AVALIAR"
+    - "applications — AVALIAR"
+    - "charts — AVALIAR"
+    - "email — REMOVER (não é produto do Fluency)"
+    - "forms — AVALIAR"
+    - "icons — AVALIAR"
+    - "maps — REMOVER (não é produto do Fluency)"
+    - "pages — AVALIAR"
+    - "tables — AVALIAR"
+    - "ui — AVALIAR"
+  colors:
+    primary: "#6C63FF"
+    secondary: "#1EC8A0"
