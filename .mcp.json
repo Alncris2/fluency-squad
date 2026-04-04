@@ -3,6 +3,29 @@
     "playwright": {
       "command": "npx",
       "args": ["@playwright/mcp@latest", "--config", "_opensquad/config/playwright.config.json"]
+    },
+    "supabase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--supabase-url",
+        "${SUPABASE_URL}",
+        "--supabase-anon-key",
+        "${SUPABASE_ANON_KEY}"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "laravel-boost": {
+      "command": "${LARAVEL_BOOST_COMMAND}",
+      "args": ["${LARAVEL_BOOST_ARGS}"],
+      "cwd": "${BACKEND_PATH}"
     }
   }
 }
