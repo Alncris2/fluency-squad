@@ -1,44 +1,36 @@
-# Opensquad — Project Instructions
+# Fluency Squad - Project Instructions
 
-This project uses **Opensquad**, a multi-agent orchestration framework.
+Este repositorio e um fork do Opensquad adaptado para desenvolvimento de software
+do Fluency AI (Laravel 13 + Angular 19).
 
-## Quick Start
+## Comandos principais
 
-Type `/opensquad` to open the main menu, or use any of these commands:
-- `/opensquad create` — Create a new squad
-- `/opensquad run <name>` — Run a squad
-- `/opensquad help` — See all commands
+- `/opensquad run fluency-dev` - executa o pipeline principal de desenvolvimento
+- `/opensquad status fluency-dev` - consulta status da proxima task
+- `/opensquad runs fluency-dev` - lista historico de execucoes
+- `/opensquad dashboard` - ativa virtual office
 
-## Directory Structure
+## Regras absolutas do projeto
 
-- `_opensquad/` — Opensquad core files (do not modify manually)
-- `_opensquad/_memory/` — Persistent memory (company context, preferences)
-- `skills/` — Installed skills (integrations, scripts, prompts)
-- `squads/` — User-created squads
-- `squads/{name}/_investigations/` — Sherlock content investigations (profile analyses)
-- `squads/{name}/output/` — Generated content and files
-- `_opensquad/_browser_profile/` — Persistent browser sessions (login cookies, localStorage)
+1. Nunca usar Prism no backend; sempre `laravel/ai`.
+2. Nunca criar arquivos manualmente quando existir gerador oficial:
+   - backend: `php artisan make:*`
+   - frontend: `ng generate`
+3. Sempre rodar `vendor/bin/pint --dirty --format agent` apos alteracoes PHP.
+4. Sempre rodar testes antes de commitar.
+5. Sempre consultar `search-docs` (Laravel Boost MCP) antes de implementar backend.
+6. Commits no formato: `feat: descricao (closes #N)`.
 
-## How It Works
+## Stack e integracoes
 
-1. The `/opensquad` skill is the entry point for all interactions
-2. The **Architect** agent creates and modifies squads
-3. During squad creation, the **Sherlock** investigator can analyze reference profiles (Instagram, YouTube, Twitter/X, LinkedIn) to extract real content patterns
-4. The **Pipeline Runner** executes squads automatically
-5. Agents communicate via persona switching (inline) or subagents (background)
-6. Checkpoints pause execution for user input/approval
+- Supabase: backlog, decisoes, memoria de squad
+- GitHub: issues, PRs e fechamento automatico por commit
+- Laravel Boost MCP: docs e assistencia backend
+- Playwright MCP: testes de fluxo critico
 
-## Rules
+## Estrutura critica
 
-- Always use `/opensquad` commands to interact with the system
-- Do not manually edit files in `_opensquad/core/` unless you know what you're doing
-- Squad YAML files can be edited manually if needed, but prefer using `/opensquad edit`
-- Company context in `_opensquad/_memory/company.md` is loaded for every squad run
-
-## Browser Sessions
-
-Opensquad uses a persistent Playwright browser profile to keep you logged into social media platforms.
-- Sessions are stored in `_opensquad/_browser_profile/` (gitignored, private to you)
-- First time accessing a platform, you'll log in manually once
-- Subsequent runs will reuse your saved session
-- **Important:** The native Claude Code Playwright plugin must be disabled. Opensquad uses its own `@playwright/mcp` server configured in `.mcp.json`.
+- `skills/` - skills de dominio e integracao
+- `squads/fluency-dev/` - squad principal (agentes, pipeline, memoria)
+- `_opensquad/core/runner.pipeline.md` - runner com hooks de integracao dev
+- `_opensquad/core/best-practices/` - guias de codigo (Laravel, Angular, commits)

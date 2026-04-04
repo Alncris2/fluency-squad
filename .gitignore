@@ -2,10 +2,14 @@ node_modules/
 .env
 *.log
 squads/*/
+!squads/fluency-dev/
+!squads/fluency-dev/**
 _opensquad/_memory/company.md
 _opensquad/_memory/preferences.md
 _opensquad/_browser_profile/
 docs/
+!squads/fluency-dev/agents/docs/
+!squads/fluency-dev/agents/docs/**
 .superpowers/
 temp/
 tests/
