@@ -101,14 +101,22 @@ Ao iniciar um run, sempre pegar a task com menor `priority` e `status=backlog`.
 
 ## Contexto da task atual
 
-> Esta secao e injetada automaticamente pelo runner antes de cada run.
+> Injetado pelo runner — run `2026-04-04-153247`
 
 ```yaml
-task_id: ""
-task_title: ""
-github_issue_id: 0
-github_repo: ""
-sprint: 0
-priority: 0
-issue_body: ""
+task_id: "e04e9b79-96e5-4fc1-ae82-356e36b55822"
+task_title: "[AGENT] Tool: send_quiz"
+github_issue_id: 20
+github_issue_url: "https://github.com/Alncris2/fluency-ai-backend/issues/20"
+sprint: "sprint_2_ai_core"
+epic: "epic-03-agente-ia"
+priority: 1
+issue_body: |
+  Ferramenta que cria e envia quiz interativo durante a conversa.
+  Tipos: multiple_choice, fill_in_blank, translation, error_correction
+  Parâmetros: type, topic, question, options_json, correct_answer, explanation
+  Persiste quiz em tabela quizzes
+  Retorna quiz_id para o frontend renderizar card interativo
+  POST /api/quiz/{id}/answer processa resposta e retorna feedback
+  Depende de: #015 (EnglishTeacherAgent core — DONE)
 ```

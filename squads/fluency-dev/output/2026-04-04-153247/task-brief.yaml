@@ -1,0 +1,44 @@
+task_id: "e04e9b79-96e5-4fc1-ae82-356e36b55822"
+task_title: "[AGENT] Tool: send_quiz"
+github_issue_id: 20
+github_repo: "Alncris2/fluency-ai-backend"
+sprint: "sprint_2_ai_core"
+priority: 1
+milestone: "Sprint 2 — Agente IA + Memória"
+epic: "epic-03-agente-ia"
+
+scope:
+  backend: true
+  frontend: false
+
+issue_body: |
+  ## Contexto
+  Ferramenta que cria e envia quiz interativo durante a conversa.
+
+  ## Critérios de aceite
+  - Tipos: multiple_choice, fill_in_blank, translation, error_correction
+  - Parâmetros: type, topic, question, options_json, correct_answer, explanation
+  - Persiste quiz em tabela quizzes
+  - Retorna quiz_id para o frontend renderizar card interativo
+  - POST /api/quiz/{id}/answer processa resposta e retorna feedback
+
+  ## Dependências
+  Depende de: #015 (EnglishTeacherAgent core — DONE)
+
+  Epic: epic-03-agente-ia | Estimativa: M (3 dias) | Sprint: 2
+
+acceptance_criteria:
+  - "QuizTool implementa Tool contract (description, handle, schema)"
+  - "handle() cria registro na tabela quizzes e retorna quiz_id"
+  - "Suporta tipos: multiple_choice, fill_in_blank, translation, error_correction"
+  - "POST /api/v1/quiz/{id}/answer processa resposta e retorna feedback com score"
+  - "EnglishTeacherAgent inclui QuizTool no tools()"
+  - "Testes feature cobrindo criação e resposta de quiz"
+  - "Cobertura >= 80%"
+
+context:
+  stack_backend: "Laravel 13 + laravel/ai ^0.4.3"
+  agent_file: "app/Ai/Agents/EnglishTeacherAgent.php"
+  tool_dir: "app/Ai/Tools/"
+  apa_phase: "Praticar"
+  dependency_status: "Issue #15 concluída e commitada (971688f)"

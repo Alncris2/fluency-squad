@@ -1,0 +1,44 @@
+task_id: "fc7b25ff-a0a8-450c-bfc0-6d40879b8a15"
+task_title: "[INFRA] Monorepo + Docker Compose"
+github_issue_id: 1
+github_issue_url: "https://github.com/Alncris2/fluency-ai-backend/issues/1"
+sprint: "sprint_1_infra"
+epic: "epic-01-infra"
+priority: 1
+milestone: "Sprint 1 — Infraestrutura base"
+due_on: "2026-04-16"
+size: "M (~3 dias)"
+
+scope:
+  backend: true
+  frontend: true
+  infra: true
+
+issue_title: "[INFRA] Monorepo + Docker Compose"
+issue_body: |
+  ## Contexto
+  Configurar docker-compose.yml com serviços: laravel-api, angular-app, postgres, redis. Hot reload em ambos.
+
+  ## Critérios de aceite
+  - [ ] `docker compose up` sobe backend + frontend + PostgreSQL + Redis
+  - [ ] Laravel responde em :8000, Angular em :4200
+  - [ ] CORS configurado para comunicação entre os dois
+  - [ ] Variáveis de ambiente documentadas no .env.example
+  - [ ] README com instruções de setup local completas
+
+  ## Dependências
+  Nenhuma — card inicial do projeto.
+
+  ---
+  **Epic:** `epic-01-infra` | **Estimativa:** M (3 dias) | **Sprint:** 1
+
+supabase_description: |
+  Configurar docker-compose com Laravel, PostgreSQL, Redis e Angular.
+  Incluir Makefile com comandos úteis (make up, make test, make migrate).
+  Hot-reload em ambos os containers.
+
+context:
+  stack_backend: "Laravel 13 + laravel/ai"
+  stack_frontend: "Angular 19 + Rizz template"
+  infra: "docker-compose + PostgreSQL + Redis"
+  apa_relevance: "Infraestrutura base — não diretamente pedagógica, mas habilita todo o desenvolvimento"
