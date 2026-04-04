@@ -1,0 +1,7 @@
+id,name,icon,role,path,execution,skills
+orchestrator,Orchestrator,🎯,Coordena backlog e ciclo de execucao,./agents/orchestrator/orchestrator.agent.md,inline,"supabase-squad,github-projects"
+pm,PM,🧭,Converte issue em stories executaveis,./agents/pm/pm.agent.md,inline,"github-projects,apa-method"
+dev-backend,Dev Backend,🛠️,Implementa backend Laravel 13 com laravel/ai,./agents/dev-backend/dev-backend.agent.md,subagent,"laravel-ai-sdk,laravel-boost-mcp,supabase-squad"
+dev-frontend,Dev Frontend,🧩,Implementa frontend Angular 19 com Rizz,./agents/dev-frontend/dev-frontend.agent.md,subagent,"angular-rizz,supabase-squad"
+qa,QA,🧪,Executa testes e valida cobertura minima,./agents/qa/qa.agent.md,inline,laravel-boost-mcp
+docs,Docs,📝,Atualiza documentacao tecnica e ADRs,./agents/docs/docs.agent.md,inline,github-projects

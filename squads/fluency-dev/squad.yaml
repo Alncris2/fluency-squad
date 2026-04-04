@@ -1,0 +1,52 @@
+name: "Fluency Dev Squad"
+code: "fluency-dev"
+description: >
+  Squad de desenvolvimento autonomo para o Fluency AI, orquestrando backlog,
+  implementacao backend/frontend, QA e documentacao com checkpoints humanos.
+icon: "🤖"
+version: "1.0.0"
+created: "2026-04-04"
+mode: "development"
+autonomy: "interactive"
+
+company: "squads/fluency-dev/_memory/company.md"
+memory: "squads/fluency-dev/_memory/memories.md"
+
+skills:
+  - supabase-squad
+  - github-projects
+  - laravel-ai-sdk
+  - angular-rizz
+  - apa-method
+  - laravel-boost-mcp
+
+agents:
+  - id: orchestrator
+    name: "Orchestrator"
+    icon: "🎯"
+    custom: agents/orchestrator/orchestrator.agent.md
+  - id: pm
+    name: "PM"
+    icon: "🧭"
+    custom: agents/pm/pm.agent.md
+  - id: dev-backend
+    name: "Dev Backend"
+    icon: "🛠️"
+    custom: agents/dev-backend/dev-backend.agent.md
+  - id: dev-frontend
+    name: "Dev Frontend"
+    icon: "🧩"
+    custom: agents/dev-frontend/dev-frontend.agent.md
+  - id: qa
+    name: "QA"
+    icon: "🧪"
+    custom: agents/qa/qa.agent.md
+  - id: docs
+    name: "Docs"
+    icon: "📝"
+    custom: agents/docs/docs.agent.md
+
+pipeline:
+  entry: pipeline/pipeline.yaml
+
+output_dir: output/
