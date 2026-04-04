@@ -515,6 +515,151 @@ This archives the run state for the `runs` command while keeping the squad root 
    ○ Back to menu
    ```
 
+## Dev Integration Hooks
+
+For squads operating in software-development mode (squad `mode: development`, e.g. `fluency-dev`), execute these hooks in addition to the normal pipeline flow.
+
+These hooks integrate the pipeline with Supabase (task lifecycle), GitHub (issue tracking), and the local codebase.
+
+### pre-run hook
+
+Execute BEFORE step 01 starts:
+
+**1. Select next task from Supabase:**
+
+```sql
+SELECT id, title, description, github_issue_id, github_repo, priority, sprint
+FROM squad_tasks
+WHERE status = 'backlog'
+ORDER BY priority ASC
+LIMIT 1;
+```
+
+- If no task found → inform user: "Backlog vazio. Nenhuma task disponivel para executar." → STOP pipeline.
+- Store `task_id`, `task_title`, `github_issue_id`, `github_repo`, `sprint`, `priority` in working memory.
+
+**2. Lock the task (prevent concurrent runs):**
+
+```sql
+UPDATE squad_tasks SET status = 'dev_in_progress' WHERE id = '{task_id}';
+```
+
+**3. Fetch GitHub issue:**
+
+```
+get_issue(
+  owner: "{github_repo owner}",
+  repo:  "{github_repo name}",
+  issue_number: {github_issue_id}
+)
+```
+
+Extract: title, body, labels, milestone. If issue not found, continue with Supabase data only.
+
+**4. Inject context into company.md:**
+
+Update the `## Contexto da task atual` section in `squads/{name}/_memory/company.md`:
+
+```yaml
+task_id: "{task_id}"
+task_title: "{task_title}"
+github_issue_id: {github_issue_id}
+github_repo: "{github_repo}"
+sprint: {sprint}
+priority: {priority}
+issue_body: |
+  {issue body text}
+```
+
+**5. Announce to user:**
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 Task selecionada: #{github_issue_id} — {task_title}
+📌 Sprint {sprint} | Priority {priority}
+🔗 {github_repo}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+---
+
+### post-step hook
+
+Execute AFTER each completed step (agents and checkpoints):
+
+**Register decision in Supabase:**
+
+```sql
+INSERT INTO squad_decisions (task_id, agent, step, action, result, metadata)
+VALUES (
+  '{task_id}',
+  '{agent_id}',
+  '{step_id}',
+  '{one-sentence description of what was done}',
+  '{success | blocked | skipped}',
+  '{json with artifacts produced, commands run, files created}'
+);
+```
+
+Metadata examples:
+- After step-04: `{"files_created": [...], "commands_run": [...], "coverage": "84%"}`
+- After step-03 (checkpoint): `{"approved_by": "user", "notes": "stories approved without changes"}`
+- After step-06 (QA blocked): `{"blocked_reason": "coverage 72% < 80%", "failing_tests": [...]}`
+
+---
+
+### post-run hook
+
+Execute AFTER the pipeline reaches completed status (after step 08):
+
+**1. Mark task as done:**
+
+```sql
+UPDATE squad_tasks
+SET status = 'done', completed_at = NOW()
+WHERE id = '{task_id}';
+```
+
+**2. Commit and close GitHub issue:**
+
+```bash
+git add -A
+git commit -m "feat: {task_title} (closes #{github_issue_id})"
+```
+
+Commit format is mandatory. The `closes #N` keyword closes the GitHub issue automatically on merge to main.
+
+**3. Register learnings in squad_memory:**
+
+```sql
+INSERT INTO squad_memory (run_id, category, content, tags)
+VALUES (
+  '{run_id}',
+  'learning',
+  '{key learning from this run in 1-3 sentences}',
+  ARRAY['{tag1}', '{tag2}']
+);
+```
+
+Examples of what to record:
+- New Laravel pattern discovered via search-docs
+- Rizz component reused in an unexpected way
+- QA gate failure reason and fix applied
+- APA compliance issue found and resolved
+
+**4. Update runs.md:**
+
+Prepend one row to `squads/{name}/_memory/runs.md` with:
+- `Data`: today's date
+- `Run ID`: the run_id
+- `Tema`: task title (from task-brief.yaml)
+- `Output`: artifacts produced (e.g., "3 endpoints, 2 components")
+- `Resultado`: `Aprovado` / `Bloqueado` / `Abortado`
+
+**5. Continuous mode (if active):**
+
+If the squad is configured with `max_tasks_per_session > 1` and the session has not reached the limit (max 4 tasks/session), automatically trigger the pre-run hook again and start the next task from the backlog.
+
 ## Error Handling
 
 - If a subagent fails, retry once. If it fails again, inform the user and offer to skip the step or abort.
