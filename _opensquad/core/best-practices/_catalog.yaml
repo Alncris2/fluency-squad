@@ -44,6 +44,21 @@ catalog:
     whenToUse: "Creating agents that interpret metrics, extract insights, benchmark performance, or produce analytical reports."
     file: data-analysis.md
 
+  - id: laravel-code
+    name: "Laravel Code"
+    whenToUse: "Creating agents that implement backend features in Laravel with strong typing, quality gates, and framework conventions."
+    file: laravel-code.md
+
+  - id: angular-code
+    name: "Angular Code"
+    whenToUse: "Creating agents that implement frontend features in Angular with standalone components, lazy loading, and feature boundaries."
+    file: angular-code.md
+
+  - id: git-commits
+    name: "Git Commits"
+    whenToUse: "Creating agents that must commit code with consistent conventions, issue closing references, and branch hygiene."
+    file: git-commits.md
+
   # === Platform Best Practices ===
   - id: instagram-feed
     name: "Instagram Feed & Carousels"
