@@ -1,7 +1,7 @@
 task_id: "e04e9b79-96e5-4fc1-ae82-356e36b55822"
 task_title: "[AGENT] Tool: send_quiz"
 github_issue_id: 20
-github_repo: "Alncris2/fluency-ai-backend"
+github_repo: "Alncris2/fluency-ai"
 sprint: "sprint_2_ai_core"
 priority: 1
 milestone: "Sprint 2 — Agente IA + Memória"

@@ -1,7 +1,7 @@
 task_id: "128da3ee-241d-4328-bfdb-ba3552ac0d73"
 task_title: "[INFRA] Limpeza do template Rizz para base Fluency"
 github_issue_id: 61
-github_repo: "Alncris2/fluency-ai-backend"
+github_repo: "Alncris2/fluency-ai"
 sprint: "sprint_1_infra"
 priority: 2
 epic: "epic-01-infra"

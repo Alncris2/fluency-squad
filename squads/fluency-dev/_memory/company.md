@@ -29,8 +29,8 @@ Modelo de negocio: assinatura mensal com planos free/pro.
 
 | Repo | GitHub | Path local |
 |---|---|---|
-| Backend | `github.com/Alncris2/fluency-ai-backend` | `/home/friday/projects/fluency-ai/backend` |
-| Frontend | `github.com/Alncris2/fluency-ai-frontend` | `/home/friday/projects/fluency-ai/frontend` |
+| Backend | `github.com/Alncris2/fluency-ai` | `/home/friday/projects/fluency-ai/backend` |
+| Frontend | `github.com/Alncris2/fluency-ai` | `/home/friday/projects/fluency-ai/frontend` |
 | Project Board | `github.com/users/Alncris2/projects/4` | 60 issues, 6 sprints |
 
 ---
@@ -101,22 +101,42 @@ Ao iniciar um run, sempre pegar a task com menor `priority` e `status=backlog`.
 
 ## Contexto da task atual
 
-> Injetado pelo runner — run `2026-04-04-160011`
+| Campo | Valor |
+|---|---|
+| **issue_number** | `8` |
+| **issue_title** | `[INFRA] CI/CD base com GitHub Actions` |
+| **epic** | `epic-01-infra` |
+| **sprint** | `Sprint 1 — Infraestrutura base` |
+| **github_url** | `https://github.com/Alncris2/fluency-ai/issues/8` |
+| **status** | `Open` |
+| **labels** | epic-01-infra, priority:media, size:S, sprint-1, type:setup |
+
+---
+
+## Contexto da task atual
+
+> Injetado pelo runner — run `2026-04-06-200734`
 
 ```yaml
-task_id: "128da3ee-241d-4328-bfdb-ba3552ac0d73"
-task_title: "[INFRA] Limpeza do template Rizz para base Fluency"
-github_issue_id: 61
-github_issue_url: "https://github.com/Alncris2/fluency-ai-backend/issues/61"
-sprint: "sprint_1_infra"
-epic: "epic-01-infra"
-priority: 2
-scope: frontend (Angular + Rizz template cleanup)
+task_id: "a1f2c3d4-e5f6-47g8-h9i0-j1k2l3m4n5o6"
+task_title: "[AGENT] MemoryService: contexto e persistência"
+github_issue_id: 16
+github_issue_url: "https://github.com/Alncris2/fluency-ai/issues/16"
+sprint: "sprint-2"
+epic: "epic-03-agente-ia"
+priority: 1
+scope: backend only
+status: "dev_in_progress"
+assigned_to: "dev-backend"
 issue_body: |
-  Remover estruturas, dependências, componentes, rotas, estilos, páginas, configs
-  e arquivos do template Rizz que não fazem parte do escopo do Fluency AI.
-  Usar o template base apenas como referência de recuperação.
-  Sem regressão no build frontend ou backend.
-  Critérios: inventário mantido/removido, ajuste de rotas/imports/providers/layouts,
-  nenhuma regressão no build, pontos de dúvida documentados.
+  Serviço que monta o contexto de memória do aluno e gerencia histórico de sessões.
+  
+  buildContext() monta string com perfil + plano + memórias recentes
+  getSessionHistory() / saveSessionHistory() via Redis
+  persistConversation() salva sessão no PostgreSQL
+  summarizeAndSave() gera resumo da sessão com IA e salva como memória
+  getRelevantMemories() ordena por importância e recência (limit 15)
+  
+  Depende de: #015 (EnglishTeacherAgent core — DONE)
+  Estimativa: M (3 dias)
 ```

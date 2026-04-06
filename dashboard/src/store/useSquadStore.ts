@@ -28,9 +28,23 @@ export const useSquadStore = create<SquadStore>((set) => ({
   setConnected: (connected) => set({ isConnected: connected }),
 
   setSnapshot: (squads, activeStates) =>
-    set({
-      squads: new Map(squads.map((s) => [s.code, s])),
-      activeStates: new Map(Object.entries(activeStates)),
+    set((prev) => {
+      const nextSquads = new Map(squads.map((s) => [s.code, s]));
+      const nextActiveStates = new Map(Object.entries(activeStates));
+
+      const hasCurrentSelection =
+        prev.selectedSquad !== null && nextSquads.has(prev.selectedSquad);
+
+      const fallbackActive = Array.from(nextActiveStates.keys()).find((code) => nextSquads.has(code));
+      const fallbackAny = squads[0]?.code ?? null;
+
+      return {
+        squads: nextSquads,
+        activeStates: nextActiveStates,
+        selectedSquad: hasCurrentSelection
+          ? prev.selectedSquad
+          : (fallbackActive ?? fallbackAny),
+      };
     }),
 
   setSquadActive: (squad, state) =>

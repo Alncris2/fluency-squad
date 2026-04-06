@@ -1,0 +1,49 @@
+task_id: "610f99c2-2d54-4b4f-bab7-faf0c4f93e27"
+task_title: "[AGENT] MemoryService: contexto e persistência"
+github_issue_id: 16
+github_repo: "Alncris2/fluency-ai"
+sprint: "sprint_2_ai_core"
+priority: 1
+epic: "epic-03-agente-ia"
+milestone: "Sprint 2 — Agente IA + Memória"
+
+scope:
+  backend: true
+  frontend: false
+
+issue_body: |
+  ## Contexto
+  Serviço que monta o contexto de memória do aluno e gerencia histórico de sessões.
+
+  ## Critérios de aceite
+  - buildContext() monta string com perfil + plano + memórias recentes
+  - getSessionHistory() / saveSessionHistory() via Redis
+  - persistConversation() salva sessão no PostgreSQL
+  - summarizeAndSave() gera resumo da sessão com IA e salva como memória
+  - getRelevantMemories() ordena por importância e recência (limit 15)
+
+  ## Dependências
+  Depende de: #015 (EnglishTeacherAgent core — DONE em 971688f)
+
+  Epic: epic-03-agente-ia | Estimativa: M (3 dias) | Sprint: 2
+
+acceptance_criteria:
+  - "MemoryService criado via php artisan make:service (ou Service manual se não houver generator)"
+  - "buildContext(Student) retorna string formatada com perfil + plano + memórias relevantes"
+  - "getSessionHistory(studentId, sessionId) lê histórico do Redis"
+  - "saveSessionHistory(studentId, sessionId, messages) persiste no Redis com TTL"
+  - "persistConversation(Student, sessionId, messages) salva na tabela conversations/agent_conversations"
+  - "summarizeAndSave(Student, sessionId) chama EnglishTeacherAgent para gerar resumo e salva em memories"
+  - "getRelevantMemories(Student, limit=15) retorna memories por importância DESC, created_at DESC"
+  - "Testes feature cobrindo todos os métodos públicos"
+  - "Cobertura >= 80%"
+
+context:
+  stack_backend: "Laravel 13 + laravel/ai ^0.4.3"
+  existing_migrations:
+    - "create_memories_table (tabela memories já existe)"
+    - "create_conversations_table (tabela conversations já existe)"
+    - "create_agent_conversations_table (tabela agent_conversations já existe)"
+  existing_agent: "app/Ai/Agents/EnglishTeacherAgent.php (DONE)"
+  redis_key_pattern: "fluency:chat:{student_id}:{session_id}"
+  service_path: "app/Services/"

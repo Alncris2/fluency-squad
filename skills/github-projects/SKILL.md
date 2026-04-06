@@ -9,8 +9,7 @@ description: Operacao de issues, labels, milestones, commits e PRs no fluxo da s
 
 ## Repositorios do Fluency AI
 
-- **Backend**: `Alncris2/fluency-ai-backend`
-- **Frontend**: `Alncris2/fluency-ai-frontend`
+- **Monorepo**: `Alncris2/fluency-ai`
 - **Project Board**: `github.com/users/Alncris2/projects/4` (60 issues, 6 sprints)
 
 ---
@@ -53,7 +52,7 @@ fix: corrigir redirect apos login no frontend (closes #7)
 ```
 list_issues(
   owner: "Alncris2",
-  repo: "fluency-ai-backend",
+  repo: "fluency-ai",
   state: "open",
   labels: ["backlog"],
   sort: "created",
@@ -66,7 +65,7 @@ list_issues(
 ```
 get_issue(
   owner: "Alncris2",
-  repo: "fluency-ai-backend",
+  repo: "fluency-ai",
   issue_number: 5
 )
 ```
@@ -76,7 +75,7 @@ get_issue(
 ```
 update_issue(
   owner: "Alncris2",
-  repo: "fluency-ai-backend",
+  repo: "fluency-ai",
   issue_number: 5,
   labels: ["in-progress"]
 )
@@ -87,7 +86,7 @@ update_issue(
 ```
 create_pull_request(
   owner: "Alncris2",
-  repo: "fluency-ai-backend",
+  repo: "fluency-ai",
   title: "feat: autenticacao com Laravel Sanctum (closes #5)",
   body: "## O que foi feito\n...\n## Como testar\n...",
   head: "feat/autenticacao-sanctum",

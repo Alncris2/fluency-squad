@@ -1,7 +1,7 @@
 task_id: "05057889-1378-40ab-a210-e6838e6315ee"
 task_title: "[AGENT] EnglishTeacherAgent core"
 github_issue_id: 15
-github_issue_url: "https://github.com/Alncris2/fluency-ai-backend/issues/15"
+github_issue_url: "https://github.com/Alncris2/fluency-ai/issues/15"
 sprint: "sprint_2_ai_core"
 epic: "epic-03-agente-ia"
 priority: 1

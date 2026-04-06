@@ -1,0 +1,48 @@
+issue_number: 8
+issue_title: "[INFRA] CI/CD base com GitHub Actions"
+github_url: "https://github.com/Alncris2/fluency-ai/issues/8"
+epic: "epic-01-infra"
+sprint: "Sprint 1 — Infraestrutura base"
+status: "Open"
+labels:
+  - epic-01-infra
+  - priority:media
+  - size:S
+  - sprint-1
+  - type:setup
+
+body: |
+  ## Contexto
+  Configurar pipeline básico de CI com GitHub Actions para backend e frontend.
+
+  ## Critérios de aceite
+  - [ ] Workflow backend: PHPUnit roda no push para main e PRs
+  - [ ] Workflow frontend: ng test roda no push
+  - [ ] Lint (pint para Laravel, eslint para Angular)
+  - [ ] Badge de status no README
+  - [ ] Cache de dependências para velocidade
+
+  ---
+  Epic: `epic-01-infra` | Estimativa: S (1 dia) | Sprint: 1
+
+acceptance_criteria:
+  - "Workflow backend: PHPUnit roda no push para main e PRs"
+  - "Workflow frontend: ng test roda no push"
+  - "Lint (pint para Laravel, eslint para Angular)"
+  - "Badge de status no README"
+  - "Cache de dependências para velocidade"
+
+context:
+  stack_backend: "Laravel 13 + laravel/ai + Sanctum"
+  stack_frontend: "Angular 19 + Rizz"
+  repository: "Alncris2/fluency-ai"
+  created_at: "2026-04-03T17:59:44Z"
+  assignee: null
+  milestone: "Sprint 1 — Infraestrutura base"
+
+run_metadata:
+  executed_at: "2026-04-06T20:07:34Z"
+  method: "gh CLI v2.x (Backlog Reader Step 01 — Correção com repo-based search)"
+  backlog_reader_step: "01"
+  squad: "fluency-dev"
+  notes: "Issue #8 selecionada como primeira da Sprint 1 (epic-01-infra, label:sprint-1)"

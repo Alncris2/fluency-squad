@@ -29,7 +29,7 @@ Via MCP Supabase (configurado em `.mcp.json`), use as ferramentas diretamente se
 | `status` | text | `backlog` / `dev_in_progress` / `done` / `blocked` |
 | `priority` | integer | Menor numero = mais prioritario |
 | `github_issue_id` | integer | ID do issue no GitHub |
-| `github_repo` | text | Ex: `Alncris2/fluency-ai-backend` |
+| `github_repo` | text | Ex: `Alncris2/fluency-ai` |
 | `sprint` | integer | Sprint (1–6, abril–junho 2026) |
 | `created_at` | timestamptz | |
 | `completed_at` | timestamptz | Preenchido ao marcar done |

@@ -20,11 +20,14 @@ Coordena o pipeline de desenvolvimento do Fluency AI. Responsavel por selecionar
 
 ### Pre-run (Step 01)
 
-1. Consultar `squad_tasks` no Supabase: `status=backlog`, `ORDER BY priority ASC`, `LIMIT 1`
-2. Ler o issue GitHub correspondente via MCP GitHub (`get_issue`)
-3. Atualizar task para `status=dev_in_progress`
-4. Preencher a secao "Contexto da task atual" em `squads/fluency-dev/_memory/company.md`
-5. Produzir `output/{run_id}/task-brief.yaml`
+1. Usar `gh` CLI para buscar issue no Project Alncris2/4:
+   ```bash
+   gh search issues "is:open is:issue project:Alncris2/4 sort:created-asc label:epic-01-infra" --limit 1 --json number,title,body,labels,createdAt
+   ```
+2. Se não houver epic-01-infra, escanear sequencialmente por epic-02, epic-03, etc até encontrar uma issue aberta
+3. Ler detalhes completos da issue usando `gh issue view <number>`
+4. Preencher a seção "Contexto da task atual" em `squads/fluency-dev/_memory/company.md`
+5. Produzir `output/{run_id}/task-brief.yaml` com dados do GitHub issue
 
 ### Durante o pipeline
 
@@ -45,7 +48,7 @@ Coordena o pipeline de desenvolvimento do Fluency AI. Responsavel por selecionar
 task_id: "uuid-da-task"
 task_title: "Autenticacao com Laravel Sanctum"
 github_issue_id: 5
-github_repo: "Alncris2/fluency-ai-backend"
+github_repo: "Alncris2/fluency-ai"
 sprint: 1
 priority: 1
 scope:
@@ -67,7 +70,9 @@ context:
 
 ## Regras do orchestrator
 
-- Se nenhuma task com `status=backlog` existir, informar o usuario e pausar o pipeline
-- Se o issue GitHub nao for encontrado, registrar em `squad_decisions` e prosseguir com os dados disponiveis no Supabase
-- Nao pular o update de `dev_in_progress` — evita selecionar a mesma task em runs concorrentes
-- Registrar TODAS as decisoes relevantes com `task_id` preenchido
+- Sempre usar `gh` CLI com project filter e ordenação por criação
+- Priorizar Sprint 1 (label:epic-01-infra) enquanto houver issues
+- Se epic-01-infra vazio, procurar próxima epic aberta (epic-02, epic-03, etc)
+- Se nenhuma issue aberta no project, informar usuário e pausar pipeline
+- Não mudar status na Supabase — usar apenas GitHub como source of truth
+- Registrar issue_number, title, body completo em task-brief.yaml
