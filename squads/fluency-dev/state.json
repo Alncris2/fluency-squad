@@ -2,49 +2,71 @@
   "squad": "fluency-dev",
   "status": "running",
   "run_id": "2026-04-06-200734",
-  "step": { "current": 8, "total": 8, "label": "Docs Writer" },
+  "step": {
+    "current": 8,
+    "total": 8,
+    "label": "Docs Writer"
+  },
   "agents": [
     {
       "id": "orchestrator",
       "name": "Orchestrator",
       "icon": "🎯",
       "status": "idle",
-      "desk": { "col": 1, "row": 1 }
+      "desk": {
+        "col": 1,
+        "row": 1
+      }
     },
     {
       "id": "pm",
       "name": "PM",
       "icon": "🧭",
       "status": "idle",
-      "desk": { "col": 2, "row": 1 }
+      "desk": {
+        "col": 2,
+        "row": 1
+      }
     },
     {
       "id": "dev-backend",
       "name": "Dev Backend",
       "icon": "🛠️",
       "status": "idle",
-      "desk": { "col": 3, "row": 1 }
+      "desk": {
+        "col": 3,
+        "row": 1
+      }
     },
     {
       "id": "dev-frontend",
       "name": "Dev Frontend",
       "icon": "🧩",
       "status": "idle",
-      "desk": { "col": 1, "row": 2 }
+      "desk": {
+        "col": 1,
+        "row": 2
+      }
     },
     {
       "id": "qa",
       "name": "QA",
       "icon": "🧪",
       "status": "idle",
-      "desk": { "col": 2, "row": 2 }
+      "desk": {
+        "col": 2,
+        "row": 2
+      }
     },
     {
       "id": "docs",
       "name": "Docs",
       "icon": "📝",
       "status": "working",
-      "desk": { "col": 3, "row": 2 }
+      "desk": {
+        "col": 3,
+        "row": 2
+      }
     }
   ],
   "handoff": "docs:step-08",
