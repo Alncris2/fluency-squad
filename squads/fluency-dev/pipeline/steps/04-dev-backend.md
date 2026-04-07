@@ -42,9 +42,14 @@ Qualidade:
 8. vendor/bin/pint --dirty --format agent
 9. php artisan test (cobertura >= 80% na feature nova)
 
+Verificacao via Tinker:
+10. php artisan tinker — testar CRUD real de cada model/endpoint
+11. Se algo falhar no tinker, corrigir antes de reportar
+12. Se encontrar inconsistencia nas stories, registrar no backend-changes.md para o PM
+
 Relatorio:
-10. Produzir output/{run_id}/backend-changes.md
-11. Registrar decisao em squad_decisions
+13. Produzir output/{run_id}/backend-changes.md (inclui resultado do tinker)
+14. Registrar decisao em squad_decisions
 ```
 
 ---

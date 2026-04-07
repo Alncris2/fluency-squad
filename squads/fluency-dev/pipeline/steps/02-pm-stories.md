@@ -35,6 +35,9 @@ Converter `output/{run_id}/task-brief.yaml` em `output/{run_id}/stories.md` com 
 4. Escrever maximo 5 stories com criterios GIVEN/WHEN/THEN
 5. Preencher tabela de APA Compliance
 6. Produzir output/{run_id}/stories.md
+7. Para stories com frontend: descrever fluxo de UI detalhado
+   (navegacao, elementos, modais, formularios, feedback, CRUD completo)
+   Isso e CRITICO — os devs usarao essa descricao para implementar E validar no browser
 ```
 
 ---

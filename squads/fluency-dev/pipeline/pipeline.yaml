@@ -48,7 +48,9 @@ steps:
     type: agent
     agent: qa
     file: steps/06-qa-tests.md
-    depends_on: step-05
+    depends_on:
+      - step-04
+      - step-05
 
   - id: step-07
     name: "Checkpoint Code"
@@ -73,5 +75,6 @@ output:
     - output/stories.md
     - output/backend-changes.md
     - output/frontend-changes.md
+    - output/change-manifest.json
     - output/qa-report.md
     - output/docs-report.md

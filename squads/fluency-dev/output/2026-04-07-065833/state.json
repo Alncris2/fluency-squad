@@ -1,0 +1,22 @@
+{
+  "squad": "fluency-dev",
+  "status": "completed",
+  "step": { "current": 8, "total": 8, "label": "Docs Writer" },
+  "agents": [
+    { "id": "orchestrator", "name": "Orchestrator", "icon": "🎯", "status": "done", "desk": { "col": 1, "row": 1 } },
+    { "id": "pm", "name": "PM", "icon": "🧭", "status": "done", "desk": { "col": 2, "row": 1 } },
+    { "id": "dev-backend", "name": "Dev Backend", "icon": "🛠️", "status": "done", "desk": { "col": 3, "row": 1 } },
+    { "id": "dev-frontend", "name": "Dev Frontend", "icon": "🧩", "status": "done", "desk": { "col": 1, "row": 2 } },
+    { "id": "qa", "name": "QA", "icon": "🧪", "status": "done", "desk": { "col": 2, "row": 2 } },
+    { "id": "docs", "name": "Docs", "icon": "📝", "status": "done", "desk": { "col": 3, "row": 2 } }
+  ],
+  "handoff": {
+    "from": "docs",
+    "to": null,
+    "message": "Commit realizado: feat: [AUTH] Tela de login Angular (closes #9)",
+    "completedAt": "2026-04-07T07:45:00Z"
+  },
+  "startedAt": "2026-04-07T06:58:33Z",
+  "completedAt": "2026-04-07T07:45:00Z",
+  "updatedAt": "2026-04-07T07:45:00Z"
+}

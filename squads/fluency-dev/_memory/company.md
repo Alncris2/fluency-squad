@@ -101,42 +101,26 @@ Ao iniciar um run, sempre pegar a task com menor `priority` e `status=backlog`.
 
 ## Contexto da task atual
 
-| Campo | Valor |
-|---|---|
-| **issue_number** | `8` |
-| **issue_title** | `[INFRA] CI/CD base com GitHub Actions` |
-| **epic** | `epic-01-infra` |
-| **sprint** | `Sprint 1 — Infraestrutura base` |
-| **github_url** | `https://github.com/Alncris2/fluency-ai/issues/8` |
-| **status** | `Open` |
-| **labels** | epic-01-infra, priority:media, size:S, sprint-1, type:setup |
-
----
-
-## Contexto da task atual
-
-> Injetado pelo runner — run `2026-04-06-200734`
+> Injetado pelo runner — run `2026-04-07-075526`
 
 ```yaml
-task_id: "a1f2c3d4-e5f6-47g8-h9i0-j1k2l3m4n5o6"
-task_title: "[AGENT] MemoryService: contexto e persistência"
-github_issue_id: 16
-github_issue_url: "https://github.com/Alncris2/fluency-ai/issues/16"
-sprint: "sprint-2"
-epic: "epic-03-agente-ia"
-priority: 1
-scope: backend only
+task_id: "8a93391d-237d-4584-96cf-622c8f29b991"
+task_title: "[AUTH] Wizard de onboarding (4 passos)"
+github_issue_id: 11
+github_repo: "Alncris2/fluency-ai-backend"
+sprint: "sprint_1_infra"
+epic: "epic-02-auth"
+priority: 2
+scope: frontend + backend
 status: "dev_in_progress"
-assigned_to: "dev-backend"
 issue_body: |
-  Serviço que monta o contexto de memória do aluno e gerencia histórico de sessões.
+  Wizard de 4 passos coletando informações iniciais do aluno antes do diagnóstico.
   
-  buildContext() monta string com perfil + plano + memórias recentes
-  getSessionHistory() / saveSessionHistory() via Redis
-  persistConversation() salva sessão no PostgreSQL
-  summarizeAndSave() gera resumo da sessão com IA e salva como memória
-  getRelevantMemories() ordena por importância e recência (limit 15)
-  
-  Depende de: #015 (EnglishTeacherAgent core — DONE)
-  Estimativa: M (3 dias)
+  Passo 1: Nome preferido e objetivo principal (viagem, trabalho, hobby)
+  Passo 2: Experiência prévia com inglês (nunca estudei, básico, intermediário, avançado)
+  Passo 3: Interesses pessoais (séries, música, esportes, tecnologia, viagem)
+  Passo 4: Disponibilidade semanal (dias e horários preferidos)
+  Progresso visual entre passos
+  Dados salvos em student.preferences no backend
+  Redireciona para diagnóstico conversacional
 ```

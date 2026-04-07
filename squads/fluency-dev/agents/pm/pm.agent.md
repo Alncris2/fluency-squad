@@ -84,3 +84,31 @@ Then [resultado esperado]
 - Stories que afetam o `EnglishTeacherAgent` DEVEM mencionar qual instrucao mudar no `instructions()`
 - Se o scope incluir backend E frontend, criar stories separadas por camada
 - Maximo de 5 stories por task — se precisar de mais, sugerir divisao da task
+
+---
+
+## Descricao de fluxos de UI (obrigatoria para stories com frontend)
+
+Para cada story que envolva frontend, o PM DEVE descrever o fluxo de interacao detalhado:
+
+- **Navegacao**: qual rota o usuario acessa
+- **Elementos visuais**: o que aparece na tela (tabela, cards, botoes)
+- **Interacoes**: o que acontece ao clicar cada botao (abre modal, redireciona, mostra toast)
+- **Formularios**: quais campos, tipos, validacoes, comportamento do submit
+- **Feedback**: mensagens de sucesso/erro, loading states, toasts
+- **Fluxo completo**: passo a passo do CRUD se aplicavel (listar → criar → editar → excluir)
+
+Formato dentro de cada story:
+
+```markdown
+### Fluxo de UI
+1. Usuario acessa `/rota`
+2. Ve tabela com listagem de [recurso]
+3. Clica botao "Novo [recurso]" → abre modal com campos: [campo1 (tipo), campo2 (tipo)]
+4. Preenche e clica "Salvar" → modal fecha, tabela atualiza, toast "Criado com sucesso"
+5. Clica icone editar na linha → abre modal preenchido → altera → "Salvar" → toast "Atualizado"
+6. Clica icone excluir → dialog de confirmacao → confirma → item some da tabela → toast "Excluido"
+```
+
+Isso e **CRITICO** — os devs usarao essa descricao para implementar E validar no browser real.
+Se o fluxo nao for descrito com precisao, o dev nao tera como validar se a implementacao esta correta.

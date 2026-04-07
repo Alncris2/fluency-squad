@@ -1,0 +1,31 @@
+task_id: "741c9d69-4a86-4f6c-bcc4-e47d57eea727"
+task_title: "[AUTH] Tela de login Angular"
+github_issue_id: 9
+github_repo: "Alncris2/fluency-ai-backend"
+sprint: "sprint_1_infra"
+epic: "epic-02-auth"
+priority: 1
+scope:
+  backend: false
+  frontend: true
+issue_body: |
+  Implementar tela de login com email e senha, tratamento de erros e redirect.
+acceptance_criteria:
+  - "Formulário reativo com validação (email válido, senha min 8 chars)"
+  - "Mensagens de erro inline"
+  - "Loading state durante requisição"
+  - "Redirect para /dashboard após login"
+  - "Redirect para /dashboard se já autenticado"
+  - "Link para tela de registro"
+context:
+  stack_backend: "Laravel 13 + laravel/ai + Sanctum"
+  stack_frontend: "Angular 19 + Rizz"
+  apa_phase: "Adquirir"
+  labels:
+    - "epic-02-auth"
+    - "priority:alta"
+    - "size:S"
+    - "sprint-3"
+    - "type:feature"
+  milestone: "Sprint 3 — Auth + Onboarding + Voice"
+  estimativa: "S (1 dia)"

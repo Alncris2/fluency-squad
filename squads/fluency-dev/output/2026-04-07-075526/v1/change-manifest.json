@@ -1,0 +1,73 @@
+{
+  "run": {
+    "id": "2026-04-07-075526",
+    "squad": "fluency-dev",
+    "generated_at": "2026-04-07T08:18:00Z"
+  },
+  "baseline": {
+    "base_ref": "origin/main",
+    "head_ref": "HEAD (unstaged changes)"
+  },
+  "changes": {
+    "files": [
+      { "path": "backend/app/Models/Student.php", "status": "M", "layer": "backend" },
+      { "path": "backend/routes/api.php", "status": "M", "layer": "backend" },
+      { "path": "backend/app/Http/Controllers/Api/StudentController.php", "status": "A", "layer": "backend" },
+      { "path": "backend/app/Http/Requests/UpdatePreferencesRequest.php", "status": "A", "layer": "backend" },
+      { "path": "backend/app/Http/Resources/StudentResource.php", "status": "A", "layer": "backend" },
+      { "path": "backend/database/factories/StudentFactory.php", "status": "A", "layer": "backend" },
+      { "path": "backend/tests/Feature/Api/StudentPreferencesTest.php", "status": "A", "layer": "backend" },
+      { "path": "frontend/src/app/views/auth/auth.route.ts", "status": "M", "layer": "frontend" },
+      { "path": "frontend/src/app/views/auth/onboarding/onboarding.component.ts", "status": "A", "layer": "frontend" },
+      { "path": "frontend/src/app/views/auth/onboarding/onboarding.component.html", "status": "A", "layer": "frontend" },
+      { "path": "frontend/src/app/views/auth/onboarding/onboarding.service.ts", "status": "A", "layer": "frontend" },
+      { "path": "frontend/src/app/views/auth/onboarding/models/onboarding-data.ts", "status": "A", "layer": "frontend" },
+      { "path": "frontend/src/app/views/auth/onboarding/onboarding.component.spec.ts", "status": "A", "layer": "frontend" }
+    ],
+    "migrations": []
+  },
+  "surface": {
+    "api": [
+      {
+        "method": "PATCH",
+        "path": "/api/v1/students/{student}/preferences",
+        "auth": { "required": false, "scheme": "unknown" },
+        "handler_hint": "StudentController@updatePreferences",
+        "request_shape_hint": {
+          "content_types": ["application/json"],
+          "fields": ["preferred_name", "goal", "english_level", "interests", "availability.days", "availability.time_of_day"]
+        }
+      }
+    ],
+    "frontend": {
+      "routes": [
+        { "path": "/auth/onboarding", "component_hint": "OnboardingComponent", "guards_hint": [] }
+      ],
+      "components_changed": [
+        { "file": "src/app/views/auth/onboarding/onboarding.component.ts", "selector_hint": "app-onboarding" }
+      ],
+      "testids": []
+    }
+  },
+  "risk_hints": {
+    "auth_touched": false,
+    "validation_touched": true,
+    "db_schema_touched": false,
+    "streaming_touched": false,
+    "high_risk_paths": []
+  },
+  "evidence": {
+    "git_diff_paths": [
+      "backend/app/Models/Student.php",
+      "backend/routes/api.php",
+      "frontend/src/app/views/auth/auth.route.ts"
+    ],
+    "commands_run": [
+      "php artisan route:list | grep student",
+      "php artisan test --filter=StudentPreferences",
+      "npx tsc -p tsconfig.app.json --noEmit",
+      "curl PATCH /api/v1/students/{student}/preferences (verb + validation checks)",
+      "curl GET /auth/onboarding → HTTP 200"
+    ]
+  }
+}

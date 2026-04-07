@@ -1,0 +1,100 @@
+{
+  "run": {
+    "id": "2026-04-07-065833",
+    "squad": "fluency-dev",
+    "generated_at": "2026-04-07T07:28:00Z"
+  },
+  "baseline": {
+    "base_ref": "origin/main",
+    "head_ref": "HEAD (unstaged changes)"
+  },
+  "changes": {
+    "files": [
+      {
+        "path": "frontend/src/app/store/authentication/authentication.reducer.ts",
+        "status": "M",
+        "layer": "frontend"
+      },
+      {
+        "path": "frontend/src/app/store/authentication/authentication.selector.ts",
+        "status": "M",
+        "layer": "frontend"
+      },
+      {
+        "path": "frontend/src/app/views/auth/login/login.component.html",
+        "status": "M",
+        "layer": "frontend"
+      },
+      {
+        "path": "frontend/src/app/views/auth/login/login.component.ts",
+        "status": "M",
+        "layer": "frontend"
+      },
+      {
+        "path": "frontend/src/app/views/auth/login/login.component.spec.ts",
+        "status": "A",
+        "layer": "frontend"
+      }
+    ],
+    "migrations": []
+  },
+  "surface": {
+    "api": [
+      {
+        "method": "POST",
+        "path": "/api/login",
+        "auth": {
+          "required": false,
+          "scheme": "unknown"
+        },
+        "handler_hint": "AuthService.login() → backend /api/login (fake backend intercepta em dev)",
+        "request_shape_hint": {
+          "content_types": ["application/json"],
+          "fields": ["email", "password"]
+        }
+      }
+    ],
+    "frontend": {
+      "routes": [
+        {
+          "path": "/auth/log-in",
+          "component_hint": "LoginComponent",
+          "guards_hint": ["noAuthGuard (inline em app.routes.ts)"]
+        }
+      ],
+      "components_changed": [
+        {
+          "file": "src/app/views/auth/login/login.component.ts",
+          "selector_hint": "app-login"
+        },
+        {
+          "file": "src/app/store/authentication/authentication.reducer.ts",
+          "selector_hint": "N/A — store slice"
+        }
+      ],
+      "testids": []
+    }
+  },
+  "risk_hints": {
+    "auth_touched": true,
+    "validation_touched": true,
+    "db_schema_touched": false,
+    "streaming_touched": false,
+    "high_risk_paths": [
+      "frontend/src/app/store/authentication/authentication.reducer.ts (auth + validation)"
+    ]
+  },
+  "evidence": {
+    "git_diff_paths": [
+      "frontend/src/app/store/authentication/authentication.reducer.ts",
+      "frontend/src/app/store/authentication/authentication.selector.ts",
+      "frontend/src/app/views/auth/login/login.component.html",
+      "frontend/src/app/views/auth/login/login.component.ts"
+    ],
+    "commands_run": [
+      "git -C /home/friday/projects/fluency-ai/frontend status --short",
+      "git -C /home/friday/projects/fluency-ai/frontend diff HEAD -- src/app/store/authentication/... src/app/views/auth/login/...",
+      "curl -s -o /dev/null -w '%{http_code}' http://localhost:4200/auth/log-in"
+    ]
+  }
+}

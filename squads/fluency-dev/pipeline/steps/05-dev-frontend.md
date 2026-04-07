@@ -46,8 +46,16 @@ Validacao:
 12. ng build --configuration production
 13. ng test --watch=false (escopo da feature)
 
+Browser Verification (apos build passar):
+14. Iniciar ng serve se nao estiver rodando
+15. Usar Chrome MCP para navegar e testar cada fluxo descrito nas stories
+16. Clicar, preencher formularios, verificar modais, toasts, tabelas
+17. Se algo nao funciona: corrigir e re-testar ate funcionar
+18. Se inconsistencia no plano do PM: registrar no frontend-changes.md
+19. Capturar screenshots e GIF do fluxo principal
+
 Relatorio:
-14. Produzir output/{run_id}/frontend-changes.md
+20. Produzir output/{run_id}/frontend-changes.md (inclui resultado do browser)
 ```
 
 ---

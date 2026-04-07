@@ -19,6 +19,7 @@ skills:
   - angular-rizz
   - apa-method
   - laravel-boost-mcp
+  - chrome-browser-testing
 
 agents:
   - id: orchestrator

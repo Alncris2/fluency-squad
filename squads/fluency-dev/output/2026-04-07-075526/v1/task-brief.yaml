@@ -1,0 +1,34 @@
+task_id: "8a93391d-237d-4584-96cf-622c8f29b991"
+task_title: "[AUTH] Wizard de onboarding (4 passos)"
+github_issue_id: 11
+github_repo: "Alncris2/fluency-ai-backend"
+sprint: "sprint_1_infra"
+epic: "epic-02-auth"
+priority: 2
+scope:
+  backend: true
+  frontend: true
+issue_body: |
+  Wizard de 4 passos coletando informações iniciais do aluno antes do diagnóstico.
+acceptance_criteria:
+  - "Passo 1: Nome preferido e objetivo principal (viagem, trabalho, hobby)"
+  - "Passo 2: Experiência prévia com inglês (nunca estudei, básico, intermediário, avançado)"
+  - "Passo 3: Interesses pessoais (séries, música, esportes, tecnologia, viagem)"
+  - "Passo 4: Disponibilidade semanal (dias e horários preferidos)"
+  - "Progresso visual entre passos"
+  - "Dados salvos em student.preferences no backend"
+  - "Redireciona para diagnóstico conversacional após conclusão"
+context:
+  stack_backend: "Laravel 13 + laravel/ai + Sanctum"
+  stack_frontend: "Angular 19 + Rizz"
+  apa_phase: "Adquirir"
+  labels: ["epic-02-auth", "priority:alta", "size:M", "sprint-3", "type:feature"]
+  milestone: "Sprint 3 — Auth + Onboarding + Voice"
+  estimativa: "M (3 dias)"
+discovery:
+  backend:
+    - "Student model em app/Models/Student.php já tem campo preferences (array cast)"
+    - "Sem rota de preferences em routes/api.php — endpoint PATCH /api/v1/students/{student}/preferences a criar"
+  frontend:
+    - "src/app/views/auth/ existe com login/ e register/ — wizard entra em auth/onboarding/"
+    - "auth.route.ts a atualizar com nova rota /onboarding"
