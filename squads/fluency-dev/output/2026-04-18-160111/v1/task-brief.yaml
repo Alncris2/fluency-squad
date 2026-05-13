@@ -1,0 +1,51 @@
+# Task Brief — Run 2026-04-18-160111
+# Gerado por: Orchestrator
+# Fonte: args do usuário + handoff Claude Design
+
+task_id: "frontend-structure-planning-2026-04-18"
+task_title: "Planejamento estrutura frontend Angular 21 + Tailwind"
+source: "user-provided-args"
+scope: "frontend-only"
+type: "planning"
+sprint: "sprint_1_infra"
+priority: 1
+
+design_handoff:
+  source: "Claude Design (handoff bundle)"
+  screens:
+    - "Design System (tokens, componentes, tipografia)"
+    - "Auth Flow (login, registrar, esqueci senha, reset)"
+    - "Onboarding (4 steps: objetivo, nivel, interesses, horario)"
+    - "Diagnostico conversacional (intro Nina, conversa, resultado)"
+    - "Dashboard (home aluno, streak, CEFR, habilidades)"
+    - "Chat com Nina (conversa livre, role-play, aula, voz, debrief)"
+    - "Plano de Estudos"
+    - "Flashcards"
+    - "Progresso e Memorias"
+  identity:
+    mascot: "Nina (coruja geometrica)"
+    wordmark: "Fluency.ai"
+  design_style: "soft neo-brutalism (2px borders, offset shadows 4px, radii 12-16px)"
+
+tech_stack:
+  framework: "Angular 21.2"
+  css: "Tailwind CSS v4"
+  fonts: "DM Sans + JetBrains Mono"
+  icons: "Lucide Angular"
+  state: "NgRx Signals Store"
+  auth: "Laravel Sanctum SPA cookie-based"
+
+frontend_dir: "/home/friday/projects/fluency-ai/frontend"
+backend_api: "Laravel 13 backend"
+
+context:
+  old_stack_removed: true
+  reason: "Rizz template removido; novo projeto Angular 21 + Tailwind v4 do zero"
+  current_state: "Scaffold limpo — apenas app.ts, app.routes.ts, styles.css"
+
+acceptance_criteria:
+  - Estrutura de pastas e modulos aprovada
+  - Mapeamento telas prototipo → rotas Angular definido
+  - Plano design system Tailwind documentado
+  - Convencoes de nomenclatura estabelecidas
+  - Arquitetura NgRx por feature mapeada

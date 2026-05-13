@@ -1,0 +1,35 @@
+task_id: "e76c0b93-918f-4308-bd33-d59eaf305b7c"
+task_title: "[AUTH] Tela de registro Angular"
+github_issue_id: 10
+github_repo: "Alncris2/fluency-ai"
+sprint: "sprint_1_infra"
+epic: "epic-02-auth"
+priority: 1
+scope:
+  backend: true
+  frontend: true
+issue_body: |
+  Implementar tela de criação de conta com validação completa.
+
+  Critérios de aceite:
+  - Campos: nome, email, senha, confirmação de senha
+  - Validação reativa em tempo real
+  - Após registro, redireciona para /onboarding
+  - Tratamento de erro (email já existe, etc)
+
+  Epic: epic-02-auth | Estimativa: S (1 dia) | Sprint: 3
+acceptance_criteria:
+  - "Campos: nome, email, senha, confirmação de senha"
+  - "Validação reativa em tempo real"
+  - "Após registro, redireciona para /onboarding"
+  - "Tratamento de erro (email já existe, etc)"
+context:
+  stack_backend: "Laravel 13 + laravel/ai + Sanctum"
+  stack_frontend: "Angular 19 + Rizz"
+  milestone: "Sprint 3 — Auth + Onboarding + Voice"
+  labels:
+    - "epic-02-auth"
+    - "type:feature"
+    - "size:S"
+    - "priority:alta"
+    - "sprint-3"

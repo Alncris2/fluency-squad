@@ -1,0 +1,22 @@
+{
+  "run_id": "2026-04-07-193904",
+  "task": "#62 — [FIX] Corrigir testes pré-existentes falhando",
+  "scope": "backend",
+  "files_changed": [
+    {
+      "path": "backend/tests/Feature/Api/StudentPreferencesTest.php",
+      "action": "modified",
+      "description": "Adicionado authenticatedStudent() helper com Sanctum::actingAs() para corrigir 5 testes retornando 401"
+    },
+    {
+      "path": "backend/phpunit.xml",
+      "action": "modified",
+      "description": "Adicionado APP_KEY válido de 32 bytes para corrigir MissingAppKeyException no ExampleTest"
+    }
+  ],
+  "files_created": [],
+  "files_deleted": [],
+  "dependencies_added": [],
+  "migrations": [],
+  "breaking_changes": false
+}

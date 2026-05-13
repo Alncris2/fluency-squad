@@ -189,6 +189,7 @@ test('init with _ides codex creates AGENTS.md', async () => {
 
     const content = await readFile(join(tempDir, 'AGENTS.md'), 'utf-8');
     assert.ok(content.includes('Opensquad'));
+    assert.ok(content.includes('starts with `/opensquad`'));
   } finally {
     await rm(tempDir, { recursive: true, force: true });
   }
@@ -371,6 +372,7 @@ test('init with _ides codex creates .agents/skills/opensquad/SKILL.md', async ()
     assert.ok(content.includes('name: opensquad'));
     assert.ok(content.includes('description:'));
     assert.ok(content.includes('AGENTS.md'));
+    assert.ok(content.includes('Treat `/opensquad` as the explicit entrypoint'));
   } finally {
     await rm(tempDir, { recursive: true, force: true });
   }

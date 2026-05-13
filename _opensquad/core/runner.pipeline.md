@@ -531,7 +531,7 @@ Execute BEFORE step 01 starts:
 SELECT id, title, description, github_issue_id, github_repo, priority, sprint
 FROM squad_tasks
 WHERE status = 'backlog'
-ORDER BY priority ASC
+ORDER BY sprint ASC, priority ASC
 LIMIT 1;
 ```
 

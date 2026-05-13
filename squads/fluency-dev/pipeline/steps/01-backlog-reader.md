@@ -25,12 +25,13 @@ Selecionar a proxima task do backlog no Supabase, buscar o issue correspondente 
 ## Instrucoes para o Orchestrator
 
 ```
-1. Executar comando gh search com filtro Sprint 1 (epic-01-infra):
-   gh search issues "is:open is:issue project:Alncris2/4 sort:created-asc label:epic-01-infra" --limit 1 --json number,title,body,labels,createdAt
+1. Buscar task do sprint mais baixo com status=backlog, ordenando por sprint ASC e priority ASC:
+   - Via Supabase: SELECT ... FROM squad_tasks WHERE status='backlog' ORDER BY sprint ASC, priority ASC LIMIT 1
+   - Ou via gh CLI filtrando pelo milestone do sprint atual primeiro
 
-2. Se resultado vazio (epic-01-infra sem issues):
-   → Tentar epic-02-infra, epic-03-agente-ia, etc sequencialmente
-   → Se encontrar, usar esse epic
+2. Se sprint atual sem tasks backlog:
+   → Avançar para o próximo sprint (sprint 2, 3, etc)
+   → Se encontrar, usar essa task
 
 3. Se nenhuma issue encontrada em nenhum epic:
    → Informar usuario: "Backlog vazio. Nenhuma issue aberta no projeto."

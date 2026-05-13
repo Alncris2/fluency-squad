@@ -1,0 +1,35 @@
+# Task Brief — Run 2026-04-18-162930
+# Gerado por: Orchestrator
+
+task_id: "33002553-cee2-49df-8db6-c1f19f4c4ab9"
+task_title: "[INFRA] Auth Sanctum — endpoints"
+github_issue_id: 5
+github_repo: "Alncris2/fluency-ai-backend"
+sprint: "sprint_1_infra"
+epic: "epic-01-infra"
+priority: 2
+scope: "backend only"
+estimate: "S (1 dia)"
+
+endpoints_required:
+  - "POST /api/auth/register — nome, email, senha → retorna user + token"
+  - "POST /api/auth/login   — email, senha → retorna user + token"
+  - "POST /api/auth/logout  — invalida token atual"
+  - "GET  /api/auth/me      — retorna usuário autenticado"
+
+requirements:
+  - Middleware auth:sanctum protegendo rotas privadas
+  - Tokens com expiração configurável (via config/sanctum.php)
+  - Form Requests com validação completa
+  - API Resources para respostas padronizadas
+  - Testes PHPUnit completos (cobertura >= 80%)
+
+technical_context:
+  backend_path: "/home/friday/projects/fluency-ai/backend"
+  framework: "Laravel 13 + laravel/ai SDK"
+  auth: "Laravel Sanctum (SPA + token API)"
+  database: "PostgreSQL via Supabase (kyhkruedsilimzrlhkdc)"
+  architecture: "Core/{Entity}/Repositories + Services pattern"
+
+blocks: ["#6"]
+labels: ["epic-01-infra", "type:feature", "priority:alta", "sprint-1"]

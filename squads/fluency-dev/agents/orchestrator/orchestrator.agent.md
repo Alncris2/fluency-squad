@@ -71,8 +71,9 @@ context:
 ## Regras do orchestrator
 
 - Sempre usar `gh` CLI com project filter e ordenação por criação
-- Priorizar Sprint 1 (label:epic-01-infra) enquanto houver issues
-- Se epic-01-infra vazio, procurar próxima epic aberta (epic-02, epic-03, etc)
+- Sempre buscar tasks do sprint mais baixo primeiro (Sprint 1 antes de Sprint 2, etc)
+- Dentro de cada sprint, priorizar por menor `priority`
+- Se sprint atual vazio, avançar para o próximo sprint
 - Se nenhuma issue aberta no project, informar usuário e pausar pipeline
 - Não mudar status na Supabase — usar apenas GitHub como source of truth
 - Registrar issue_number, title, body completo em task-brief.yaml

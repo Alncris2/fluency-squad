@@ -37,6 +37,108 @@ Antes de qualquer implementacao:
 
 ---
 
+## Core Architecture (obrigatoria)
+
+Todo codigo backend segue a camada `app/Core/` introduzida no projeto. O dev DEVE conhecer
+e aplicar esse padrao em todas as implementacoes.
+
+### Estrutura de pastas por entidade
+
+```
+app/Core/{Entity}/
+├── Repositories/{Entity}Repository.php   ← extends AbstractRepository
+├── Services/{Entity}Service.php          ← extends AbstractService
+├── DTOs/{Entity}DTO.php                  ← extends AbstractDTO (validacao complexa)
+└── Validators/Data{Entity}Validator.php  ← opcional, prepara payload
+```
+
+Referencia: `app/Core/User/` e `app/Core/Architecture/` ja implementados.
+
+### Regras arquiteturais (sem excecao)
+
+1. **Models sao acessados SOMENTE pelos Repositories** — nunca `Model::create`, `Model::find`,
+   `Model::where` diretamente em Services ou Controllers
+2. **Regra de negocio SOMENTE nos Services** — Services estendem `AbstractService` e usam
+   os hooks `beforeSave`, `afterSave`, `beforeUpdate`, `afterUpdate` para logica adicional
+3. **Services injetam Repository no constructor** (PHP 8.4 property promotion):
+   ```php
+   class LessonService extends AbstractService
+   {
+       public function __construct(
+           private readonly LessonRepository $repository,
+       ) {}
+   }
+   ```
+4. **Repositories injetam o Model no constructor**:
+   ```php
+   class LessonRepository extends AbstractRepository
+   {
+       public function __construct(Lesson $model)
+       {
+           $this->model = $model;
+       }
+   }
+   ```
+5. **Controllers CRUD podem estender AbstractController** — use o namespace correto:
+   `use App\Http\Controllers\Common\AbstractController;`
+   (arquivo fisico: `app/Core/Architecture/Abstracts/AbstractController.php`)
+6. **Binding no AppServiceProvider** — registrar o par Repository/Service:
+   ```php
+   $this->app->bind(LessonRepository::class, fn () => new LessonRepository(new Lesson));
+   $this->app->bind(LessonService::class, fn (Application $app) =>
+       new LessonService($app->make(LessonRepository::class))
+   );
+   ```
+
+### Exemplo completo de nova entidade (Lesson)
+
+```php
+// app/Core/Lesson/Repositories/LessonRepository.php
+namespace App\Core\Lesson\Repositories;
+
+use App\Core\Architecture\Abstracts\AbstractRepository;
+use App\Models\Lesson;
+
+class LessonRepository extends AbstractRepository
+{
+    public function __construct(Lesson $model)
+    {
+        $this->model = $model;
+    }
+
+    public function findByStudent(int $studentId): \Illuminate\Database\Eloquent\Collection
+    {
+        return $this->model->where('student_id', $studentId)->get();
+    }
+}
+
+// app/Core/Lesson/Services/LessonService.php
+namespace App\Core\Lesson\Services;
+
+use App\Core\Architecture\Abstracts\AbstractService;
+use App\Core\Lesson\Repositories\LessonRepository;
+
+class LessonService extends AbstractService
+{
+    public function __construct(
+        private readonly LessonRepository $repository,
+    ) {}
+
+    public function beforeSave(array $params): array
+    {
+        // validar/transformar payload antes de persistir
+        return $params;
+    }
+
+    public function findByStudent(int $studentId): \Illuminate\Database\Eloquent\Collection
+    {
+        return $this->repository->findByStudent($studentId);
+    }
+}
+```
+
+---
+
 ## Testes obrigatorios por mudanca
 
 Para CADA classe/endpoint criado ou modificado, o Dev Backend DEVE:
@@ -72,9 +174,9 @@ search-docs("<topico da feature>")
 # 2. Inspecionar schema
 database-schema("<tabela impactada>")
 
-# 3. Entender estrutura atual
+# 3. Entender estrutura atual — incluindo Core
+ls app/Core/                  # entidades ja existentes (evitar duplicatas)
 ls app/Http/Controllers/
-ls app/Services/
 ls app/Ai/Agents/
 ```
 
@@ -171,3 +273,5 @@ Produzir `output/{run_id}/backend-changes.md`:
 - [ ] Testes passando (cobertura >= 80% na feature)
 - [ ] `output/{run_id}/backend-changes.md` produzido
 - [ ] Decisao registrada em `squad_decisions`
+- [ ] Repository criado em `app/Core/{Entity}/Repositories/` estendendo `AbstractRepository`
+- [ ] Service acessa dados exclusivamente via Repository (sem `Model::` direto)

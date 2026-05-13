@@ -30,26 +30,35 @@ Implementar as mudancas no backend Laravel 13 conforme as stories aprovadas no c
 Protocolo obrigatorio antes de implementar:
 1. search-docs("<topico da feature>") via Laravel Boost MCP
 2. database-schema("<tabelas impactadas>")
-3. Ler estrutura atual de app/ para evitar duplicatas
+3. Ler estrutura atual de app/ para evitar duplicatas:
+   ls app/Core/          ← mapear entidades ja existentes
+   ls app/Http/Controllers/
+   ls app/Ai/Agents/
 
-Implementacao:
-4. Usar php artisan make:* para TODOS os artefatos
-5. Implementar seguindo padroes PHP 8.4 (constructor promotion, type hints)
-6. Nunca usar Prism — sempre laravel/ai
-7. Controllers finos; logic em Services/Actions
+Implementacao — Core Architecture (obrigatoria):
+4. Toda entidade nova vive em app/Core/{Entity}/
+   - app/Core/{Entity}/Repositories/{Entity}Repository.php  extends AbstractRepository
+   - app/Core/{Entity}/Services/{Entity}Service.php         extends AbstractService
+   - app/Core/{Entity}/DTOs/{Entity}DTO.php                 extends AbstractDTO (se necessario)
+5. Models sao acessados SOMENTE pelos Repositories (nunca Model:: em Services/Controllers)
+6. Regras de negocio SOMENTE nos Services (hooks beforeSave, afterSave, beforeUpdate, etc.)
+7. Usar php artisan make:* para TODOS os artefatos; mover/ajustar namespace para app/Core/{Entity}/
+8. Implementar seguindo padroes PHP 8.4 (constructor promotion, type hints)
+9. Nunca usar Prism — sempre laravel/ai
+10. Controllers finos; delegam ao Service
 
 Qualidade:
-8. vendor/bin/pint --dirty --format agent
-9. php artisan test (cobertura >= 80% na feature nova)
+11. vendor/bin/pint --dirty --format agent
+12. php artisan test (cobertura >= 80% na feature nova)
 
 Verificacao via Tinker:
-10. php artisan tinker — testar CRUD real de cada model/endpoint
-11. Se algo falhar no tinker, corrigir antes de reportar
-12. Se encontrar inconsistencia nas stories, registrar no backend-changes.md para o PM
+13. php artisan tinker — testar CRUD real de cada model/endpoint via Service (nao model direto)
+14. Se algo falhar no tinker, corrigir antes de reportar
+15. Se encontrar inconsistencia nas stories, registrar no backend-changes.md para o PM
 
 Relatorio:
-13. Produzir output/{run_id}/backend-changes.md (inclui resultado do tinker)
-14. Registrar decisao em squad_decisions
+16. Produzir output/{run_id}/backend-changes.md (inclui resultado do tinker)
+17. Registrar decisao em squad_decisions
 ```
 
 ---

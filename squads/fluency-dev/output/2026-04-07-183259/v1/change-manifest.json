@@ -1,0 +1,58 @@
+{
+  "run_id": "2026-04-07-183259",
+  "task": "#10 — [AUTH] Tela de registro Angular",
+  "collected_at": "2026-04-07T22:13:30Z",
+  "surfaces": {
+    "backend": {
+      "endpoints": [
+        {
+          "method": "POST",
+          "route": "/api/register",
+          "controller": "App\\Http\\Controllers\\Api\\RegisterController@store",
+          "request": "App\\Http\\Requests\\RegisterRequest",
+          "auth": "none (public)",
+          "risk_hints": ["user_creation", "token_generation", "input_validation"]
+        }
+      ],
+      "models_modified": ["User (added HasApiTokens trait)"],
+      "migrations": ["create_personal_access_tokens_table"],
+      "dependencies_added": ["laravel/sanctum ^4.3"],
+      "files_created": [
+        "app/Http/Controllers/Api/RegisterController.php",
+        "app/Http/Requests/RegisterRequest.php",
+        "config/sanctum.php",
+        "database/migrations/2026_04_07_221236_create_personal_access_tokens_table.php",
+        "tests/Feature/Api/RegisterControllerTest.php"
+      ],
+      "files_modified": [
+        "app/Models/User.php",
+        "routes/api.php",
+        "composer.json"
+      ]
+    },
+    "frontend": {
+      "routes": [
+        {
+          "path": "/auth/register",
+          "component": "RegisterComponent",
+          "type": "modified (existing route)",
+          "risk_hints": ["form_validation", "http_integration", "token_storage", "redirect"]
+        }
+      ],
+      "files_created": [],
+      "files_modified": [
+        "src/app/views/auth/register/register.component.ts",
+        "src/app/views/auth/register/register.component.html",
+        "src/app/views/auth/register/register.component.spec.ts",
+        "src/app/core/service/auth.service.ts"
+      ],
+      "state_impact": ["localStorage.fluency_token", "cookie _FLUENCY_SESSION_"],
+      "store_impact": "none (no NgRx store changes)"
+    }
+  },
+  "stats": {
+    "files_changed": 19,
+    "insertions": 388,
+    "deletions": 183
+  }
+}

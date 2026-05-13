@@ -15,7 +15,7 @@ Modelo de negocio: assinatura mensal com planos free/pro.
 | Camada | Tecnologia | Observacao |
 |---|---|---|
 | Backend | Laravel 13 + laravel/ai `^0.4.3` | NUNCA Prism |
-| Frontend | Angular 19 + Rizz template | ng generate obrigatorio |
+| Frontend | Angular 21.2 + Tailwind CSS v4 | ng generate obrigatorio |
 | Banco | PostgreSQL via Supabase | projeto `kyhkruedsilimzrlhkdc` |
 | Cache | Redis | sessions, filas, rate limiting |
 | Auth | Laravel Sanctum | tokens API + session cookie |
@@ -74,7 +74,7 @@ Cores do Fluency:
 - **URL**: `https://kyhkruedsilimzrlhkdc.supabase.co`
 - **Tabelas**: `squad_tasks`, `squad_agents`, `squad_decisions`, `squad_memory`, `squad_checkpoints`
 
-Ao iniciar um run, sempre pegar a task com menor `priority` e `status=backlog`.
+Ao iniciar um run, sempre pegar a task do sprint mais baixo primeiro, e dentro do sprint, pela menor `priority`, com `status=backlog`.
 
 ---
 
@@ -82,7 +82,7 @@ Ao iniciar um run, sempre pegar a task com menor `priority` e `status=backlog`.
 
 - **Total**: 60 issues distribuidos em 6 sprints (abril–junho 2026)
 - **Sprint atual**: Sprint 1 (abril 2026, semana 1-2)
-- **Selecao de task**: menor `priority` com `status=backlog`
+- **Selecao de task**: menor `sprint` primeiro, depois menor `priority`, com `status=backlog`
 - **Maximo por sessao**: 4 tasks
 
 ---
@@ -95,32 +95,32 @@ Ao iniciar um run, sempre pegar a task com menor `priority` e `status=backlog`.
 4. **SEMPRE** testes passando antes de commitar (PHPUnit backend, Jest/build frontend)
 5. **SEMPRE** executar `search-docs` (Laravel Boost MCP) antes de implementar feature backend
 6. **Commits** no formato: `feat: descricao (closes #N)` ou `fix: descricao (closes #N)`
-7. **NUNCA** alterar layout store ou auth store do Rizz sem task explicita para isso
+7. **NUNCA** alterar layout store ou auth store sem task explicita para isso
 
 ---
 
 ## Contexto da task atual
 
-> Injetado pelo runner — run `2026-04-07-075526`
+> Injetado pelo runner — run `2026-04-18-162930`
 
 ```yaml
-task_id: "8a93391d-237d-4584-96cf-622c8f29b991"
-task_title: "[AUTH] Wizard de onboarding (4 passos)"
-github_issue_id: 11
+task_id: "33002553-cee2-49df-8db6-c1f19f4c4ab9"
+task_title: "[INFRA] Auth Sanctum — endpoints"
+github_issue_id: 5
+github_issue_url: "https://github.com/Alncris2/fluency-ai-backend/issues/5"
 github_repo: "Alncris2/fluency-ai-backend"
 sprint: "sprint_1_infra"
-epic: "epic-02-auth"
+epic: "epic-01-infra"
 priority: 2
-scope: frontend + backend
+scope: backend only
 status: "dev_in_progress"
 issue_body: |
-  Wizard de 4 passos coletando informações iniciais do aluno antes do diagnóstico.
-  
-  Passo 1: Nome preferido e objetivo principal (viagem, trabalho, hobby)
-  Passo 2: Experiência prévia com inglês (nunca estudei, básico, intermediário, avançado)
-  Passo 3: Interesses pessoais (séries, música, esportes, tecnologia, viagem)
-  Passo 4: Disponibilidade semanal (dias e horários preferidos)
-  Progresso visual entre passos
-  Dados salvos em student.preferences no backend
-  Redireciona para diagnóstico conversacional
+  Implementar autenticação completa via Laravel Sanctum com tokens de API.
+  - POST /api/auth/register (nome, email, senha)
+  - POST /api/auth/login (email, senha) → retorna token
+  - POST /api/auth/logout (invalida token)
+  - GET /api/auth/me (usuário autenticado)
+  - Middleware auth:sanctum protegendo rotas privadas
+  - Tokens com expiração configurável
+  Bloqueia: #6 | Epic: epic-01-infra | Estimativa: S (1 dia)
 ```

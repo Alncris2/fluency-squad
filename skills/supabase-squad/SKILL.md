@@ -91,7 +91,7 @@ Via MCP Supabase (configurado em `.mcp.json`), use as ferramentas diretamente se
 SELECT id, title, description, github_issue_id, github_repo, priority, sprint
 FROM squad_tasks
 WHERE status = 'backlog'
-ORDER BY priority ASC
+ORDER BY sprint ASC, priority ASC
 LIMIT 1;
 ```
 
@@ -99,7 +99,7 @@ Ou via REST:
 ```
 GET /rest/v1/squad_tasks
   ?status=eq.backlog
-  &order=priority.asc
+  &order=sprint.asc,priority.asc
   &limit=1
   &select=id,title,description,github_issue_id,github_repo,priority,sprint
 ```
@@ -149,7 +149,7 @@ VALUES (
 ## Fluxo minimo de um run
 
 ```
-pre-run  → SELECT squad_tasks (status=backlog, priority asc, limit 1)
+pre-run  → SELECT squad_tasks (status=backlog, sprint asc, priority asc, limit 1)
          → UPDATE status = dev_in_progress
 
 step-04  → INSERT squad_decisions (agent=dev-backend, step=step-04)
@@ -172,7 +172,7 @@ post-run → UPDATE squad_tasks status = done, completed_at = NOW()
 
 ## Checklist
 
-- [ ] Task selecionada por `priority ASC` e `status=backlog`
+- [ ] Task selecionada por `sprint ASC, priority ASC` e `status=backlog`
 - [ ] Status atualizado para `dev_in_progress` no inicio do run
 - [ ] Decisao registrada em `squad_decisions` apos cada step relevante
 - [ ] Task marcada `done` com `completed_at` no post-run

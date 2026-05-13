@@ -1,0 +1,50 @@
+# Task Brief — Run 2026-04-19-202001
+# Gerado por: Orchestrator
+
+task_id: "agent-tool-save-memory-17"
+task_title: "[AGENT] Tool: save_memory"
+github_issue_id: 17
+github_repo: "Alncris2/fluency-ai-backend"
+sprint: "sprint_2"
+epic: "epic-03-agente-ia"
+priority: 1
+scope: "backend only"
+estimate: "S (1 dia)"
+
+tool_spec:
+  name: "save_memory"
+  parameters:
+    - name: "type"
+      type: "enum"
+      values: ["mistake", "achievement", "vocabulary", "preference", "breakthrough"]
+    - name: "content"
+      type: "string"
+    - name: "importance"
+      type: "integer"
+      range: "1-5"
+  behavior:
+    - Salva em tabela `memories` com student_id
+    - Memórias com importance >= 4 sempre incluídas no contexto do agente
+    - Agente usa automaticamente ao detectar erros recorrentes ou conquistas
+
+requirements:
+  - Migration `create_memories_table` com student_id, type, content, importance, created_at
+  - `Memory` Eloquent model com relationship `belongsTo(Student)`
+  - `SaveMemoryTool` implementando interface `Tool` do `laravel/ai`
+  - Injetar tool no `EnglishTeacherAgent`
+  - Loader que filtra memories importance >= 4 para incluir no contexto
+  - Testes PHPUnit (>= 80% cobertura)
+
+technical_context:
+  backend_path: "/home/friday/projects/fluency-ai/backend"
+  framework: "Laravel 13 + laravel/ai SDK"
+  pattern: "Core/{Entity}/Repositories + Services"
+  agent_file: "app/Agents/EnglishTeacherAgent.php"
+  database: "PostgreSQL via Supabase"
+
+dependencies_closed:
+  - "#15 EnglishTeacherAgent core"
+  - "#5 Auth Sanctum endpoints"
+
+blocks: ["#18", "#19", "#21", "#22", "#23"]
+labels: ["epic-03-agente-ia", "type:feature", "priority:alta", "sprint-2"]
