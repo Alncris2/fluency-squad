@@ -1,0 +1,33 @@
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: P
+      - generic [ref=e9]:
+        - generic [ref=e10]: Phyora
+        - generic [ref=e11]: Teacher AI
+    - generic [ref=e12]:
+      - heading "Senha nova. Mesma você." [level=1] [ref=e13]:
+        - text: Senha nova.
+        - text: Mesma você.
+      - paragraph [ref=e14]: A Nina já segurou a vela. Tudo do seu histórico te espera assim que você entrar.
+  - generic [ref=e16]:
+    - heading "Crie uma senha nova" [level=2] [ref=e17]
+    - paragraph [ref=e18]: Mínimo 8 caracteres. Use algo que você lembre.
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]: Nova senha
+        - generic [ref=e22]:
+          - textbox "Nova senha" [ref=e23]:
+            - /placeholder: ••••••••
+          - button "Mostrar senha" [ref=e24] [cursor=pointer]:
+            - img [ref=e25]
+      - generic [ref=e28]:
+        - generic [ref=e29]: Confirmar nova senha
+        - generic [ref=e30]:
+          - textbox "Confirmar nova senha" [ref=e31]:
+            - /placeholder: ••••••••
+          - button "Mostrar senha" [ref=e32] [cursor=pointer]:
+            - img [ref=e33]
+      - button "Salvar e entrar" [ref=e36] [cursor=pointer]
+    - link "Voltar para o login" [ref=e38] [cursor=pointer]:
+      - /url: /auth/login

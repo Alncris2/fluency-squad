@@ -1,0 +1,221 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: P
+      - generic [ref=e5]: Phyora Protótipo · maio 26
+    - generic [ref=e6]:
+      - button "Tela anterior" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+      - button "Próxima tela" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - combobox "Pular para tela" [ref=e13] [cursor=pointer]:
+      - option "Login"
+      - option "Cadastro"
+      - option "Esqueci a senha"
+      - option "Email enviado"
+      - option "Redefinir senha"
+      - option "1 · Objetivo"
+      - option "2 · Nível percebido"
+      - option "3 · Interesses"
+      - option "4 · Rotina"
+      - option "5 · O Pacto"
+      - option "Intro · Nina"
+      - option "Conversa"
+      - option "Resultado CEFR"
+      - option "Boas-vindas"
+      - option "Início"
+      - option "Conversar com Nina"
+      - option "Histórico de conversas"
+      - option "Debrief da sessão"
+      - option "Plano de Estudos"
+      - option "Pré-vis. de aula"
+      - option "Aula imersiva"
+      - option "Missões & Diário"
+      - option "Escrever no diário"
+      - option "Flashcards"
+      - option "Biblioteca de vocab"
+      - option "Revisão concluída"
+      - option "Progresso & Memórias"
+      - option "Memórias da Nina"
+      - option "Conquistas"
+      - option "Inbox" [selected]
+      - option "Perfil & Configurações"
+      - option "Voz da Nina"
+      - option "Notificações"
+      - option "Central de ajuda"
+      - option "Convidar amigos"
+      - option "Detalhe da palavra"
+      - option "Upgrade · Paywall"
+      - option "Checkout · pagamento"
+      - option "Pagamento confirmado"
+      - option "Modo voz ao vivo"
+      - option "Estados vazios"
+      - option "Estados de erro"
+      - option "Identidade visual"
+    - generic [ref=e14]:
+      - generic [ref=e15]: Tema
+      - generic [ref=e16]:
+        - button "Claro" [ref=e17] [cursor=pointer]
+        - button "Escuro" [ref=e18] [cursor=pointer]
+      - generic [ref=e19]: Primária
+      - generic [ref=e20]:
+        - button "Roxo" [ref=e21] [cursor=pointer]
+        - button "Verde" [ref=e22] [cursor=pointer]
+        - button "Mono" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]: Densidade
+      - generic [ref=e25]:
+        - button "−" [ref=e26] [cursor=pointer]
+        - button "=" [ref=e27] [cursor=pointer]
+        - button "+" [ref=e28] [cursor=pointer]
+  - generic [ref=e29]:
+    - text: 1 2 3 4
+    - generic [ref=e353]:
+      - complementary [ref=e354]:
+        - generic [ref=e355]:
+          - generic [ref=e356]: P
+          - generic [ref=e357]:
+            - text: Phyora
+            - generic [ref=e358]: Teacher AI
+        - generic [ref=e359]: Aprender
+        - generic [ref=e360] [cursor=pointer]:
+          - img [ref=e361]
+          - text: Início
+        - generic [ref=e364] [cursor=pointer]:
+          - img [ref=e365]
+          - text: Conversar com Nina
+        - generic [ref=e367] [cursor=pointer]:
+          - img [ref=e368]
+          - text: Plano de estudos
+        - generic [ref=e370] [cursor=pointer]:
+          - img [ref=e371]
+          - text: Missões & Diário
+        - generic [ref=e373] [cursor=pointer]:
+          - img [ref=e374]
+          - text: Histórico
+        - generic [ref=e375] [cursor=pointer]:
+          - img [ref=e376]
+          - text: Flashcards
+          - generic [ref=e378]: "12"
+        - generic [ref=e379] [cursor=pointer]:
+          - img [ref=e380]
+          - text: Vocabulário
+          - generic [ref=e383]: "287"
+        - generic [ref=e384] [cursor=pointer]:
+          - img [ref=e385]
+          - text: Inbox
+          - generic [ref=e388]: "3"
+        - generic [ref=e389]: Você
+        - generic [ref=e390] [cursor=pointer]:
+          - img [ref=e391]
+          - text: Progresso
+        - generic [ref=e394] [cursor=pointer]:
+          - img [ref=e395]
+          - text: Memórias
+          - generic [ref=e397]: "42"
+        - generic [ref=e398] [cursor=pointer]:
+          - img [ref=e399]
+          - text: Conquistas
+        - generic [ref=e402] [cursor=pointer]:
+          - img [ref=e403]
+          - text: Perfil & Config
+        - generic [ref=e406]: Recursos
+        - generic [ref=e407] [cursor=pointer]:
+          - img [ref=e408]
+          - text: Identidade
+        - generic [ref=e411]:
+          - generic [ref=e412]: V
+          - generic [ref=e413]:
+            - generic [ref=e414]: Vinícius
+            - generic [ref=e415]: B1+ · STREAK 14
+      - main [ref=e416]:
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - generic [ref=e419]: Inbox · mensagens da Nina e da plataforma
+            - heading "Sua caixa de entrada" [level=1] [ref=e420]
+            - paragraph [ref=e421]: A Nina não te enche de notificação. Quando ela escreve aqui, é porque importa.
+          - generic [ref=e422]:
+            - button "Marcar tudo como lido" [ref=e423] [cursor=pointer]
+            - button "Responder na conversa" [ref=e424] [cursor=pointer]
+        - generic [ref=e425]:
+          - generic [ref=e426]:
+            - button "Tudo 12" [ref=e427] [cursor=pointer]
+            - button "Da Nina 8" [ref=e428] [cursor=pointer]
+            - button "Conquistas 3" [ref=e429] [cursor=pointer]
+            - button "Sistema 1" [ref=e430] [cursor=pointer]
+          - generic [ref=e431]: 3 não lidas
+        - generic [ref=e432]:
+          - generic [ref=e433] [cursor=pointer]:
+            - generic [ref=e434]: "N"
+            - generic [ref=e435]:
+              - generic [ref=e436]:
+                - generic [ref=e437]: Nina
+                - generic [ref=e438]: HÁ 12 MIN
+              - generic [ref=e439]:
+                - text: "\"Vini, lembrei de uma coisa. Você disse na sessão #28 que ia"
+                - emphasis [ref=e440]: "\"to overthink it less\""
+                - text: — quero saber se rolou. Quando puder, conta."
+          - generic [ref=e442] [cursor=pointer]:
+            - generic [ref=e443]: 🏆
+            - generic [ref=e444]:
+              - generic [ref=e445]:
+                - generic [ref=e446]:
+                  - text: Conquista desbloqueada ·
+                  - emphasis [ref=e447]: Two weeks strong
+                - generic [ref=e448]: HÁ 1 HORA
+              - generic [ref=e449]:
+                - text: Você completou
+                - strong [ref=e450]: 14 dias seguidos
+                - text: . Só 8% das pessoas chegam aqui. Ver na sua coleção.
+          - generic [ref=e452] [cursor=pointer]:
+            - generic [ref=e453]: "N"
+            - generic [ref=e454]:
+              - generic [ref=e455]:
+                - generic [ref=e456]: Nina
+                - generic [ref=e457]: ONTEM · 20:55
+              - generic [ref=e458]: Próxima sessão amanhã às 21:00 — quer que eu mude pra mais cedo? Vi você bocejando ontem. 😴
+          - generic [ref=e460] [cursor=pointer]:
+            - generic [ref=e461]: "N"
+            - generic [ref=e462]:
+              - generic [ref=e463]:
+                - generic [ref=e464]: Nina
+                - generic [ref=e465]: 09 MAI · 21:14
+              - generic [ref=e466]: Atualizei o radar de habilidades. Speaking subiu pra 70 (era 64). 🎉
+          - generic [ref=e467] [cursor=pointer]:
+            - generic [ref=e468]: 📦
+            - generic [ref=e469]:
+              - generic [ref=e470]:
+                - generic [ref=e471]: Phyora · plano
+                - generic [ref=e472]: 08 MAI
+              - generic [ref=e473]:
+                - text: Faltam
+                - strong [ref=e474]: 3 dias
+                - text: pra acabar o trial. Continue como Pro por R$ 39/mês, sem mudar nada. Ver planos →
+          - generic [ref=e475] [cursor=pointer]:
+            - generic [ref=e476]: 🎓
+            - generic [ref=e477]:
+              - generic [ref=e478]:
+                - generic [ref=e479]:
+                  - text: Conquista desbloqueada ·
+                  - emphasis [ref=e480]: 200-word club
+                - generic [ref=e481]: 06 MAI
+              - generic [ref=e482]:
+                - text: Você ativou
+                - strong [ref=e483]: 287 palavras
+                - text: no vocabulário. Ver todas →
+          - generic [ref=e484] [cursor=pointer]:
+            - generic [ref=e485]: P
+            - generic [ref=e486]:
+              - generic [ref=e487]:
+                - generic [ref=e488]: Phyora · sistema
+                - generic [ref=e489]: 04 MAI
+              - generic [ref=e490]: Adicionamos modo escuro. Você pode ativar em Perfil → Aparência.
+          - generic [ref=e491] [cursor=pointer]:
+            - generic [ref=e492]: "N"
+            - generic [ref=e493]:
+              - generic [ref=e494]:
+                - generic [ref=e495]: Nina
+                - generic [ref=e496]: 02 MAI · 21:50
+              - generic [ref=e497]: Anotei que você gosta de psicologia. Vou puxar uns assuntos por aí nas próximas semanas.
+    - text: ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+  - button "Falar com a Nina" [ref=e350] [cursor=pointer]:
+    - generic [ref=e351]: "N"

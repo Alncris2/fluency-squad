@@ -6,14 +6,12 @@
     },
     "supabase": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@supabase/mcp-server-supabase@latest",
-        "--supabase-url",
-        "${SUPABASE_URL}",
-        "--supabase-anon-key",
-        "${SUPABASE_ANON_KEY}"
-      ]
+      "args": ["-y", "@supabase/mcp-server-supabase@latest", "--project-ref", "${SUPABASE_PROJECT_REF}"],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "${SUPABASE_ACCESS_TOKEN}",
+        "SUPABASE_ANON_KEY": "${SUPABASE_ANON_KEY}",
+        "SUPABASE_PUBLIC_KEY": "${SUPABASE_PUBLIC_KEY}"
+      }
     },
     "github": {
       "command": "npx",
@@ -26,6 +24,11 @@
       "command": "${LARAVEL_BOOST_COMMAND}",
       "args": ["${LARAVEL_BOOST_ARGS}"],
       "cwd": "${BACKEND_PATH}"
+    },
+    "angular-cli": {
+      "command": "npx",
+      "args": ["npx", "@angular/cli", "mcp"],
+      "cwd": "${FRONTEND_PATH}"
     }
   }
 }

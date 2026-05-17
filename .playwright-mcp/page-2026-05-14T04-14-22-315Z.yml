@@ -1,0 +1,52 @@
+- generic [ref=e4]:
+  - complementary [ref=e5]:
+    - generic [ref=e6]:
+      - img [ref=e8]
+      - generic [ref=e14]: phyora.ai
+    - generic [ref=e15]:
+      - heading "Comece em 2 minutos." [level=1] [ref=e16]
+      - paragraph [ref=e17]: Sem cartão de crédito. Plano grátis com 3 sessões por semana.
+      - list [ref=e18]:
+        - listitem [ref=e19]:
+          - img [ref=e21]
+          - text: Professor IA que fala português quando precisa
+        - listitem [ref=e23]:
+          - img [ref=e25]
+          - text: Diagnóstico conversacional no primeiro dia
+        - listitem [ref=e27]:
+          - img [ref=e29]
+          - text: Cancele a qualquer momento
+    - generic [ref=e31]:
+      - generic [ref=e32]: "N"
+      - generic [ref=e33]:
+        - strong [ref=e34]: +12.400 alunos
+        - text: começaram essa semana. Média de 6 dias de streak.
+  - generic [ref=e37]:
+    - generic [ref=e38]:
+      - heading "Bem-vindo de volta" [level=2] [ref=e39]
+      - paragraph [ref=e40]: Entre na sua conta para continuar.
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]: Email
+        - textbox "Email" [ref=e44]:
+          - /placeholder: seu@email.com
+          - text: qa-playwright@phyora.test
+      - generic [ref=e45]:
+        - generic [ref=e46]: Senha
+        - generic [ref=e47]:
+          - textbox "Senha" [ref=e48]:
+            - /placeholder: Sua senha
+            - text: password
+          - button "Mostrar senha" [ref=e49] [cursor=pointer]:
+            - img [ref=e50]
+      - generic [ref=e53] [cursor=pointer]:
+        - checkbox "Manter conectado"
+        - generic [ref=e55]: Manter conectado
+      - alert [ref=e61]: Email ou senha incorretos.
+      - button "Entrar" [ref=e56] [cursor=pointer]
+      - link "Esqueci minha senha" [ref=e58] [cursor=pointer]:
+        - /url: /auth/forgot-password
+    - generic [ref=e59]:
+      - text: Não tem conta?
+      - link "Criar conta" [ref=e60] [cursor=pointer]:
+        - /url: /auth/register

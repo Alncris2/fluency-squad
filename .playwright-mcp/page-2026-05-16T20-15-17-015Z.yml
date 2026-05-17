@@ -1,0 +1,138 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - complementary [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: P
+        - generic [ref=e9]:
+          - text: Phyora
+          - generic [ref=e10]: Teacher AI
+      - generic [ref=e11]: Aprender
+      - link "Início" [ref=e12] [cursor=pointer]:
+        - /url: /home
+        - img [ref=e13]
+        - text: Início
+      - link "Conversar com Nina" [ref=e16] [cursor=pointer]:
+        - /url: /chat
+        - img [ref=e17]
+        - text: Conversar com Nina
+      - link "Plano de estudos" [ref=e19] [cursor=pointer]:
+        - /url: /plano
+        - img [ref=e20]
+        - text: Plano de estudos
+      - link "Missões & Diário" [ref=e22] [cursor=pointer]:
+        - /url: /missoes
+        - img [ref=e23]
+        - text: Missões & Diário
+      - link "Histórico" [ref=e25] [cursor=pointer]:
+        - /url: /conversas
+        - img [ref=e26]
+        - text: Histórico
+      - link "Flashcards 12 cards para revisar" [ref=e28] [cursor=pointer]:
+        - /url: /flashcards
+        - img [ref=e29]
+        - text: Flashcards
+        - generic "12 cards para revisar" [ref=e31]: "12"
+      - link "Vocabulário 287 palavras" [ref=e32] [cursor=pointer]:
+        - /url: /vocabulario
+        - img [ref=e33]
+        - text: Vocabulário
+        - generic "287 palavras" [ref=e36]: "287"
+      - link "Inbox 3 mensagens" [ref=e37] [cursor=pointer]:
+        - /url: /inbox
+        - img [ref=e38]
+        - text: Inbox
+        - generic "3 mensagens" [ref=e41]: "3"
+      - generic [ref=e42]: Você
+      - link "Progresso" [ref=e43] [cursor=pointer]:
+        - /url: /progresso
+        - img [ref=e44]
+        - text: Progresso
+      - link "Memórias 42 memórias" [ref=e45] [cursor=pointer]:
+        - /url: /memorias
+        - img [ref=e46]
+        - text: Memórias
+        - generic "42 memórias" [ref=e48]: "42"
+      - link "Conquistas" [ref=e49] [cursor=pointer]:
+        - /url: /conquistas
+        - img [ref=e50]
+        - text: Conquistas
+      - link "Perfil & Config" [ref=e53] [cursor=pointer]:
+        - /url: /perfil
+        - img [ref=e54]
+        - text: Perfil & Config
+      - generic [ref=e58]:
+        - generic [ref=e59]: T
+        - generic [ref=e60]:
+          - generic [ref=e61]: Test User
+          - generic [ref=e62]: B1 · STREAK 7
+    - main [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]: Aprender · histórico
+            - heading "Conversas com a Nina" [level=1] [ref=e68]
+            - paragraph [ref=e69]: 29 sessões · 4h 42min juntos · cada conversa tem um resumo e o que ficou pendente.
+          - link "Nova conversa" [ref=e71] [cursor=pointer]:
+            - /url: /chat
+            - img [ref=e72]
+            - text: Nova conversa
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - img [ref=e76]
+            - 'textbox "Buscar — ex: ''entrevista'', ''férias'', ''present perfect''…" [ref=e79]'
+          - generic [ref=e80]:
+            - button "Tudo" [ref=e81] [cursor=pointer]
+            - button "Esta sem." [ref=e82] [cursor=pointer]
+            - button "Este mês" [ref=e83] [cursor=pointer]
+            - button "Pendentes" [ref=e84] [cursor=pointer]
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: "29"
+            - generic [ref=e89]:
+              - generic [ref=e90]: Entrevista · perguntas difíceis11 MAI · 21:14
+              - generic [ref=e91]: Usou "present perfect" sem travar duas vezes.
+              - generic [ref=e92]:
+                - generic [ref=e93]: entrevista
+                - generic [ref=e94]: gramática
+            - link "›" [ref=e95] [cursor=pointer]:
+              - /url: /chat/sess-29
+          - generic [ref=e96]:
+            - generic [ref=e97]: "28"
+            - generic [ref=e98]:
+              - generic [ref=e99]: Entrevista · weaknesses & strengths10 MAI · 20:55
+              - generic [ref=e100]: Praticou "tell me about yourself" com naturalidade.
+              - generic [ref=e101]:
+                - generic [ref=e102]: entrevista
+                - generic [ref=e103]: vocabulário
+            - link "›" [ref=e104] [cursor=pointer]:
+              - /url: /chat/sess-28
+          - generic [ref=e105]:
+            - generic [ref=e106]: "27"
+            - generic [ref=e107]:
+              - generic [ref=e108]: "Vocab: phrasal verbs no trabalho09 MAI · 21:02"
+              - generic [ref=e109]: 8 phrasal verbs novos. Foco em "to wrap up" e "to follow up".
+              - generic [ref=e110]:
+                - generic [ref=e111]: vocab
+                - generic [ref=e112]: trabalho
+            - link "›" [ref=e113] [cursor=pointer]:
+              - /url: /chat/sess-27
+          - generic [ref=e114]:
+            - generic [ref=e115]: "26"
+            - generic [ref=e116]:
+              - generic [ref=e117]: Free chat · seu fim de semana08 MAI · 20:48
+              - generic [ref=e118]: Conversa fluida sobre o final de semana em SP.
+              - generic [ref=e120]: free chat
+            - link "›" [ref=e121] [cursor=pointer]:
+              - /url: /chat/sess-26
+          - generic [ref=e122]:
+            - generic [ref=e123]: "25"
+            - generic [ref=e124]:
+              - generic [ref=e125]: Storytelling · método STAR07 MAI · 21:10
+              - generic [ref=e126]: Estruturou a resposta STAR com clareza.
+              - generic [ref=e127]:
+                - generic [ref=e128]: entrevista
+                - generic [ref=e129]: storytelling
+            - link "›" [ref=e130] [cursor=pointer]:
+              - /url: /chat/sess-25
+          - button "Carregar mais ↓" [ref=e131] [cursor=pointer]
+  - status

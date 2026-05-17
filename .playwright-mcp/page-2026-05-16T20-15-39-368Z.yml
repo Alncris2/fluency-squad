@@ -1,0 +1,120 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - complementary [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: P
+        - generic [ref=e9]:
+          - text: Phyora
+          - generic [ref=e10]: Teacher AI
+      - generic [ref=e11]: Aprender
+      - link "Início" [ref=e12] [cursor=pointer]:
+        - /url: /home
+        - img [ref=e13]
+        - text: Início
+      - link "Conversar com Nina" [ref=e16] [cursor=pointer]:
+        - /url: /chat
+        - img [ref=e17]
+        - text: Conversar com Nina
+      - link "Plano de estudos" [ref=e19] [cursor=pointer]:
+        - /url: /plano
+        - img [ref=e20]
+        - text: Plano de estudos
+      - link "Missões & Diário" [ref=e22] [cursor=pointer]:
+        - /url: /missoes
+        - img [ref=e23]
+        - text: Missões & Diário
+      - link "Histórico" [ref=e25] [cursor=pointer]:
+        - /url: /conversas
+        - img [ref=e26]
+        - text: Histórico
+      - link "Flashcards 12 cards para revisar" [ref=e28] [cursor=pointer]:
+        - /url: /flashcards
+        - img [ref=e29]
+        - text: Flashcards
+        - generic "12 cards para revisar" [ref=e31]: "12"
+      - link "Vocabulário 287 palavras" [ref=e32] [cursor=pointer]:
+        - /url: /vocabulario
+        - img [ref=e33]
+        - text: Vocabulário
+        - generic "287 palavras" [ref=e36]: "287"
+      - link "Inbox 3 mensagens" [ref=e37] [cursor=pointer]:
+        - /url: /inbox
+        - img [ref=e38]
+        - text: Inbox
+        - generic "3 mensagens" [ref=e41]: "3"
+      - generic [ref=e42]: Você
+      - link "Progresso" [ref=e43] [cursor=pointer]:
+        - /url: /progresso
+        - img [ref=e44]
+        - text: Progresso
+      - link "Memórias 42 memórias" [ref=e45] [cursor=pointer]:
+        - /url: /memorias
+        - img [ref=e46]
+        - text: Memórias
+        - generic "42 memórias" [ref=e48]: "42"
+      - link "Conquistas" [ref=e49] [cursor=pointer]:
+        - /url: /conquistas
+        - img [ref=e50]
+        - text: Conquistas
+      - link "Perfil & Config" [ref=e53] [cursor=pointer]:
+        - /url: /perfil
+        - img [ref=e54]
+        - text: Perfil & Config
+      - generic [ref=e58]:
+        - generic [ref=e59]: T
+        - generic [ref=e60]:
+          - generic [ref=e61]: Test User
+          - generic [ref=e62]: B1 · STREAK 7
+    - main [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]: Configurações · voz da Nina
+            - heading "Voz & Sotaque" [level=1] [ref=e68]
+            - paragraph [ref=e69]: Escolha o sotaque e a velocidade de fala da Nina.
+          - generic [ref=e70]:
+            - link "Cancelar" [ref=e71] [cursor=pointer]:
+              - /url: /perfil
+            - button "Salvar" [ref=e72] [cursor=pointer]
+        - generic [ref=e73]:
+          - heading "Sotaque da Nina" [level=2] [ref=e74]
+          - generic [ref=e75]:
+            - generic [ref=e76] [cursor=pointer]:
+              - generic [ref=e77]: 🇺🇸
+              - generic [ref=e78]:
+                - paragraph [ref=e79]: Americano
+                - paragraph [ref=e80]: California English · neutro, claro
+            - generic [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]: 🇬🇧
+              - generic [ref=e85]:
+                - paragraph [ref=e86]: Britânico
+                - paragraph [ref=e87]: Southern RP · formal, preciso
+            - generic [ref=e89] [cursor=pointer]:
+              - generic [ref=e90]: 🇦🇺
+              - generic [ref=e91]:
+                - paragraph [ref=e92]: Australiano
+                - paragraph [ref=e93]: General Australian · descontraído
+            - generic [ref=e95] [cursor=pointer]:
+              - generic [ref=e96]: 🇮🇪
+              - generic [ref=e97]:
+                - paragraph [ref=e98]: Irlandês
+                - paragraph [ref=e99]: Dublin English · musical, fluente
+          - heading "Velocidade de fala" [level=2] [ref=e101]
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - generic [ref=e104]: Mais lenta
+              - generic [ref=e105]: 1×
+              - generic [ref=e106]: Mais rápida
+            - slider [ref=e107]: "1"
+            - generic [ref=e108]:
+              - generic [ref=e109]: 0.75×
+              - generic [ref=e110]: 1.0×
+              - generic [ref=e111]: 1.25×
+              - generic [ref=e112]: 1.5×
+          - generic [ref=e113]:
+            - generic [ref=e114]: "N"
+            - generic [ref=e115]:
+              - paragraph [ref=e116]: PRÉVIA DA VOZ
+              - paragraph [ref=e117]: “Hello! I'm Nina, your English teacher. Let's practice together today.”
+              - button "▶ Ouvir prévia" [ref=e118] [cursor=pointer]
+  - status

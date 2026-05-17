@@ -1,0 +1,69 @@
+- generic [ref=e4]:
+  - complementary [ref=e5]:
+    - generic [ref=e6]:
+      - img [ref=e8]
+      - generic [ref=e14]: phyora.ai
+    - generic [ref=e15]:
+      - heading "Comece em 2 minutos." [level=1] [ref=e16]
+      - paragraph [ref=e17]: Sem cartão de crédito. Plano grátis com 3 sessões por semana.
+      - list [ref=e18]:
+        - listitem [ref=e19]:
+          - img [ref=e21]
+          - text: Professor IA que fala português quando precisa
+        - listitem [ref=e23]:
+          - img [ref=e25]
+          - text: Diagnóstico conversacional no primeiro dia
+        - listitem [ref=e27]:
+          - img [ref=e29]
+          - text: Cancele a qualquer momento
+    - generic [ref=e31]:
+      - generic [ref=e32]: "N"
+      - generic [ref=e33]:
+        - strong [ref=e34]: +12.400 alunos
+        - text: começaram essa semana. Média de 6 dias de streak.
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: P
+        - generic [ref=e42]:
+          - generic [ref=e43]: Phyora
+          - generic [ref=e44]: Teacher AI
+      - generic [ref=e45]:
+        - heading "Uma professora de inglês de verdade — só sua." [level=1] [ref=e46]:
+          - text: Uma professora
+          - text: de inglês de verdade —
+          - text: só sua.
+        - paragraph [ref=e47]: Nina lembra do seu último papo, ajusta o ritmo e nunca repete a aula. Você fala, ela escuta, corrige e conversa.
+      - generic [ref=e48]:
+        - generic [ref=e49]: "N"
+        - generic [ref=e50]:
+          - strong [ref=e51]: Nina · ontem
+          - text: "\"Da última vez você travou em"
+          - emphasis [ref=e52]: "\"present perfect\""
+          - text: . Bora retomar com uma história curta sua?"
+    - generic [ref=e54]:
+      - heading "Bem-vindo de volta" [level=2] [ref=e55]
+      - paragraph [ref=e56]: Continue de onde parou com a Nina.
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]: Email
+          - textbox "Email" [ref=e60]:
+            - /placeholder: voce@email.com
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]: Senha
+            - link "Esqueci a senha" [ref=e64] [cursor=pointer]:
+              - /url: /auth/forgot-password
+          - generic [ref=e65]:
+            - textbox "Senha" [ref=e66]:
+              - /placeholder: ••••••••
+            - button "Mostrar senha" [ref=e67] [cursor=pointer]:
+              - img [ref=e68]
+        - generic [ref=e71] [cursor=pointer]:
+          - checkbox "Manter conectado neste dispositivo"
+          - generic [ref=e73]: Manter conectado neste dispositivo
+        - button "Entrar" [ref=e74] [cursor=pointer]
+      - generic [ref=e75]:
+        - text: Ainda não tem conta?
+        - link "Criar uma agora" [ref=e76] [cursor=pointer]:
+          - /url: /auth/register

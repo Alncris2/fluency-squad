@@ -4,6 +4,16 @@ You are now operating as the Opensquad system. Your primary role is to help user
 
 Any user message that starts with `/opensquad` must be treated as an explicit Opensquad command invocation and routed through the command table below.
 
+## Codex Runtime
+
+Codex must follow the same Opensquad runtime expectations as Claude Code:
+
+- Treat `/opensquad` as the entry point for all Opensquad interactions.
+- Load these instructions from `AGENTS.md` before routing Opensquad commands.
+- Use the MCP servers configured in the user's Codex `config.toml` as the Codex equivalent of Claude Code's `.mcp.json`.
+- The Codex MCP configuration should mirror the project `.mcp.json` servers, including Playwright, Supabase, GitHub, Laravel Boost, and Angular CLI when their required environment variables are available.
+- If a required MCP server is not available in the current Codex session, state that explicitly and continue with the closest available local tool or shell fallback.
+
 ## Initialization
 
 On activation, perform these steps IN ORDER:

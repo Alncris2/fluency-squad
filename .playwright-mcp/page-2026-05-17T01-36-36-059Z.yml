@@ -1,0 +1,35 @@
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]: P
+      - generic [ref=e9]:
+        - generic [ref=e10]: Phyora
+        - generic [ref=e11]: Teacher AI
+    - generic [ref=e12]:
+      - heading "Acontece. Vamos resolver em dois cliques." [level=1] [ref=e13]:
+        - text: Acontece.
+        - text: Vamos resolver em
+        - text: dois cliques.
+      - paragraph [ref=e14]: Mande seu email, abra a caixa de entrada, clique no link. Pronto — Nina te espera do outro lado.
+    - generic [ref=e15]:
+      - generic [ref=e16]: "N"
+      - generic [ref=e17]:
+        - strong [ref=e18]: Nina
+        - text: "\"Sua progressão fica salva. Senha nova, mesma história — não perde nada.\""
+  - generic [ref=e20]:
+    - link "Voltar ao login" [ref=e21] [cursor=pointer]:
+      - /url: /auth/login
+      - img [ref=e22]
+      - text: Voltar ao login
+    - heading "Esqueceu a senha?" [level=2] [ref=e24]
+    - paragraph [ref=e25]: Diz seu email e mandamos um link para redefinir.
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e28]: Email
+        - textbox "Email" [ref=e29]:
+          - /placeholder: voce@email.com
+      - button "Enviar link de redefinição" [ref=e30] [cursor=pointer]
+    - generic [ref=e31]:
+      - text: Lembrou agora?
+      - link "Entrar" [ref=e32] [cursor=pointer]:
+        - /url: /auth/login

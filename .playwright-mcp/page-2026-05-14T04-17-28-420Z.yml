@@ -1,0 +1,49 @@
+- generic [ref=e62]:
+  - complementary [ref=e63]:
+    - generic [ref=e64]:
+      - img [ref=e66]
+      - generic [ref=e72]: phyora.ai
+    - generic [ref=e73]:
+      - heading "Comece em 2 minutos." [level=1] [ref=e74]
+      - paragraph [ref=e75]: Sem cartão de crédito. Plano grátis com 3 sessões por semana.
+      - list [ref=e76]:
+        - listitem [ref=e77]:
+          - img [ref=e79]
+          - text: Professor IA que fala português quando precisa
+        - listitem [ref=e81]:
+          - img [ref=e83]
+          - text: Diagnóstico conversacional no primeiro dia
+        - listitem [ref=e85]:
+          - img [ref=e87]
+          - text: Cancele a qualquer momento
+    - generic [ref=e89]:
+      - generic [ref=e90]: "N"
+      - generic [ref=e91]:
+        - strong [ref=e92]: +12.400 alunos
+        - text: começaram essa semana. Média de 6 dias de streak.
+  - generic [ref=e95]:
+    - generic [ref=e96]:
+      - heading "Bem-vindo de volta" [level=2] [ref=e97]
+      - paragraph [ref=e98]: Entre na sua conta para continuar.
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e101]: Email
+        - textbox "Email" [ref=e102]:
+          - /placeholder: seu@email.com
+      - generic [ref=e103]:
+        - generic [ref=e104]: Senha
+        - generic [ref=e105]:
+          - textbox "Senha" [ref=e106]:
+            - /placeholder: Sua senha
+          - button "Mostrar senha" [ref=e107] [cursor=pointer]:
+            - img [ref=e108]
+      - generic [ref=e111] [cursor=pointer]:
+        - checkbox "Manter conectado"
+        - generic [ref=e113]: Manter conectado
+      - button "Entrar" [ref=e114] [cursor=pointer]
+      - link "Esqueci minha senha" [ref=e116] [cursor=pointer]:
+        - /url: /auth/forgot-password
+    - generic [ref=e117]:
+      - text: Não tem conta?
+      - link "Criar conta" [ref=e118] [cursor=pointer]:
+        - /url: /auth/register

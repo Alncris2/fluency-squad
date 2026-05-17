@@ -1,0 +1,215 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: P
+      - generic [ref=e5]: Phyora Protótipo · maio 26
+    - generic [ref=e6]:
+      - button "Tela anterior" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+      - button "Próxima tela" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - combobox "Pular para tela" [active] [ref=e13] [cursor=pointer]:
+      - option "Login"
+      - option "Cadastro"
+      - option "Esqueci a senha"
+      - option "Email enviado"
+      - option "Redefinir senha"
+      - option "1 · Objetivo"
+      - option "2 · Nível percebido"
+      - option "3 · Interesses"
+      - option "4 · Rotina"
+      - option "5 · O Pacto"
+      - option "Intro · Nina"
+      - option "Conversa"
+      - option "Resultado CEFR"
+      - option "Boas-vindas"
+      - option "Início"
+      - option "Conversar com Nina" [selected]
+      - option "Histórico de conversas"
+      - option "Debrief da sessão"
+      - option "Plano de Estudos"
+      - option "Pré-vis. de aula"
+      - option "Aula imersiva"
+      - option "Missões & Diário"
+      - option "Escrever no diário"
+      - option "Flashcards"
+      - option "Biblioteca de vocab"
+      - option "Revisão concluída"
+      - option "Progresso & Memórias"
+      - option "Memórias da Nina"
+      - option "Conquistas"
+      - option "Inbox"
+      - option "Perfil & Configurações"
+      - option "Voz da Nina"
+      - option "Notificações"
+      - option "Central de ajuda"
+      - option "Convidar amigos"
+      - option "Detalhe da palavra"
+      - option "Upgrade · Paywall"
+      - option "Checkout · pagamento"
+      - option "Pagamento confirmado"
+      - option "Modo voz ao vivo"
+      - option "Estados vazios"
+      - option "Estados de erro"
+      - option "Identidade visual"
+    - generic [ref=e14]:
+      - generic [ref=e15]: Tema
+      - generic [ref=e16]:
+        - button "Claro" [ref=e17] [cursor=pointer]
+        - button "Escuro" [ref=e18] [cursor=pointer]
+      - generic [ref=e19]: Primária
+      - generic [ref=e20]:
+        - button "Roxo" [ref=e21] [cursor=pointer]
+        - button "Verde" [ref=e22] [cursor=pointer]
+        - button "Mono" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]: Densidade
+      - generic [ref=e25]:
+        - button "−" [ref=e26] [cursor=pointer]
+        - button "=" [ref=e27] [cursor=pointer]
+        - button "+" [ref=e28] [cursor=pointer]
+  - generic [ref=e29]:
+    - generic [ref=e262]:
+      - complementary [ref=e263]:
+        - generic [ref=e264]:
+          - generic [ref=e265]: P
+          - generic [ref=e266]:
+            - text: Phyora
+            - generic [ref=e267]: Teacher AI
+        - generic [ref=e268]: Aprender
+        - generic [ref=e269] [cursor=pointer]:
+          - img [ref=e270]
+          - text: Início
+        - generic [ref=e273] [cursor=pointer]:
+          - img [ref=e274]
+          - text: Conversar com Nina
+        - generic [ref=e276] [cursor=pointer]:
+          - img [ref=e277]
+          - text: Plano de estudos
+        - generic [ref=e279] [cursor=pointer]:
+          - img [ref=e280]
+          - text: Missões & Diário
+        - generic [ref=e282] [cursor=pointer]:
+          - img [ref=e283]
+          - text: Histórico
+        - generic [ref=e284] [cursor=pointer]:
+          - img [ref=e285]
+          - text: Flashcards
+          - generic [ref=e287]: "12"
+        - generic [ref=e288] [cursor=pointer]:
+          - img [ref=e289]
+          - text: Vocabulário
+          - generic [ref=e292]: "287"
+        - generic [ref=e293] [cursor=pointer]:
+          - img [ref=e294]
+          - text: Inbox
+          - generic [ref=e297]: "3"
+        - generic [ref=e298]: Você
+        - generic [ref=e299] [cursor=pointer]:
+          - img [ref=e300]
+          - text: Progresso
+        - generic [ref=e303] [cursor=pointer]:
+          - img [ref=e304]
+          - text: Memórias
+          - generic [ref=e306]: "42"
+        - generic [ref=e307] [cursor=pointer]:
+          - img [ref=e308]
+          - text: Conquistas
+        - generic [ref=e311] [cursor=pointer]:
+          - img [ref=e312]
+          - text: Perfil & Config
+        - generic [ref=e315]: Recursos
+        - generic [ref=e316] [cursor=pointer]:
+          - img [ref=e317]
+          - text: Identidade
+        - generic [ref=e320]:
+          - generic [ref=e321]: V
+          - generic [ref=e322]:
+            - generic [ref=e323]: Vinícius
+            - generic [ref=e324]: B1+ · STREAK 14
+      - main [ref=e325]:
+        - generic [ref=e326]:
+          - generic [ref=e327]:
+            - generic [ref=e328]:
+              - generic [ref=e329]: "N"
+              - generic [ref=e330]:
+                - generic [ref=e331]: Nina
+                - generic [ref=e332]: "SESSÃO #29 · ENTREVISTA · 14:22"
+              - generic [ref=e334]:
+                - button "Texto" [ref=e335] [cursor=pointer]
+                - button "Voz" [ref=e336] [cursor=pointer]
+            - generic [ref=e337]:
+              - generic [ref=e338]: PHASE · WARM UP
+              - generic [ref=e339]:
+                - generic [ref=e340]: "N"
+                - generic [ref=e342]:
+                  - text: "Olá, Vini! Vou continuar de onde paramos: você estava me contando da entrevista que tem no fim do mês."
+                  - emphasis [ref=e343]: How are you feeling about it today?
+              - generic [ref=e344]:
+                - generic [ref=e345]: V
+                - generic [ref=e346]: A little nervous, to be honest. I have been preparing but I still freeze up when they ask me about weak points.
+              - generic [ref=e347]:
+                - generic [ref=e348]: "N"
+                - generic [ref=e349]:
+                  - generic [ref=e350]:
+                    - text: Totalmente natural.
+                    - emphasis [ref=e351]: "\"I have been preparing\""
+                    - text: está perfeito — present perfect continuous, exatamente o que treinamos. Vamos simular essa pergunta agora?
+                  - generic [ref=e352]:
+                    - generic [ref=e353]: Bem usado
+                    - strong [ref=e354]: "\"I have been preparing\""
+                    - text: — ação que começou no passado e continua. Manteve a forma
+                    - emphasis [ref=e355]: have + been + -ing
+                    - text: . 🎯
+              - generic [ref=e356]:
+                - generic [ref=e357]: V
+                - generic [ref=e358]: Yes please. Be tough on me.
+              - generic [ref=e359]: PHASE · ROLE-PLAY
+              - generic [ref=e360]:
+                - generic [ref=e361]: "N"
+                - generic [ref=e363]:
+                  - text: 🎬
+                  - emphasis [ref=e364]: Interviewer mode
+                  - text: "\"Tell me about a weakness of yours, and what you've done about it. Take your time.\""
+              - generic [ref=e365]:
+                - generic [ref=e366]: V
+                - generic [ref=e367]: Hmm… I tend to overthink decisions. To work on it I have started
+              - generic [ref=e369]:
+                - generic [ref=e370]: "N"
+                - generic [ref=e371]:
+                  - generic [ref=e372]: …escutando…
+                  - generic [ref=e373]:
+                    - button "💡 Me dá uma dica" [ref=e374] [cursor=pointer]
+                    - button "🔁 Pode repetir?" [ref=e375] [cursor=pointer]
+                    - button "📝 Salvar no diário" [ref=e376] [cursor=pointer]
+            - generic [ref=e378]:
+              - textbox "Escreva, ou aperte o mic pra falar…" [ref=e379]
+              - button "Falar" [ref=e380] [cursor=pointer]:
+                - img [ref=e381]
+              - button "Enviar" [ref=e384] [cursor=pointer]:
+                - img [ref=e385]
+          - complementary [ref=e388]:
+            - generic [ref=e389]:
+              - generic [ref=e390]: Foco desta sessão
+              - heading "Entrevista · weaknesses" [level=3] [ref=e391]
+              - generic [ref=e394]: 62% da sessão · ~7 min para encerrar
+            - generic [ref=e395]:
+              - generic [ref=e396]: Pontos a praticar
+              - generic [ref=e397]:
+                - generic [ref=e398]:
+                  - generic [ref=e399]: Present perfect cont.
+                  - generic [ref=e400]: "+3"
+                - generic [ref=e401]:
+                  - generic [ref=e402]: Conectivos formais
+                  - generic [ref=e403]: ×
+                - generic [ref=e404]:
+                  - generic [ref=e405]: Soft skills vocab
+                  - generic [ref=e406]: novo
+            - generic [ref=e407]:
+              - generic [ref=e408]: Vocab desta sessão
+              - generic [ref=e409]:
+                - generic [ref=e410]: verb · phrasal
+                - generic [ref=e411]: to overthink
+                - generic [ref=e412]: pensar demais antes de agir
+                - generic [ref=e413]: "\"I tend to overthink decisions.\""
+            - button "Encerrar sessão" [ref=e414] [cursor=pointer]
+    - text: 1 2 3 4 ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓

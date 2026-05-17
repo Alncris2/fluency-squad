@@ -1,0 +1,261 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: P
+      - generic [ref=e5]: Phyora Protótipo · maio 26
+    - generic [ref=e6]:
+      - button "Tela anterior" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+      - button "Próxima tela" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - combobox "Pular para tela" [ref=e13] [cursor=pointer]:
+      - option "Login"
+      - option "Cadastro"
+      - option "Esqueci a senha"
+      - option "Email enviado"
+      - option "Redefinir senha"
+      - option "1 · Objetivo"
+      - option "2 · Nível percebido"
+      - option "3 · Interesses"
+      - option "4 · Rotina"
+      - option "5 · O Pacto"
+      - option "Intro · Nina"
+      - option "Conversa"
+      - option "Resultado CEFR"
+      - option "Boas-vindas"
+      - option "Início"
+      - option "Conversar com Nina"
+      - option "Histórico de conversas"
+      - option "Debrief da sessão"
+      - option "Plano de Estudos"
+      - option "Pré-vis. de aula"
+      - option "Aula imersiva"
+      - option "Missões & Diário"
+      - option "Escrever no diário"
+      - option "Flashcards"
+      - option "Biblioteca de vocab"
+      - option "Revisão concluída"
+      - option "Progresso & Memórias"
+      - option "Memórias da Nina" [selected]
+      - option "Conquistas"
+      - option "Inbox"
+      - option "Perfil & Configurações"
+      - option "Voz da Nina"
+      - option "Notificações"
+      - option "Central de ajuda"
+      - option "Convidar amigos"
+      - option "Detalhe da palavra"
+      - option "Upgrade · Paywall"
+      - option "Checkout · pagamento"
+      - option "Pagamento confirmado"
+      - option "Modo voz ao vivo"
+      - option "Estados vazios"
+      - option "Estados de erro"
+      - option "Identidade visual"
+    - generic [ref=e14]:
+      - generic [ref=e15]: Tema
+      - generic [ref=e16]:
+        - button "Claro" [ref=e17] [cursor=pointer]
+        - button "Escuro" [ref=e18] [cursor=pointer]
+      - generic [ref=e19]: Primária
+      - generic [ref=e20]:
+        - button "Roxo" [ref=e21] [cursor=pointer]
+        - button "Verde" [ref=e22] [cursor=pointer]
+        - button "Mono" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]: Densidade
+      - generic [ref=e25]:
+        - button "−" [ref=e26] [cursor=pointer]
+        - button "=" [ref=e27] [cursor=pointer]
+        - button "+" [ref=e28] [cursor=pointer]
+  - generic [ref=e29]:
+    - text: 1 2 3 4 ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+    - generic [ref=e499]:
+      - complementary [ref=e500]:
+        - generic [ref=e501]:
+          - generic [ref=e502]: P
+          - generic [ref=e503]:
+            - text: Phyora
+            - generic [ref=e504]: Teacher AI
+        - generic [ref=e505]: Aprender
+        - generic [ref=e506] [cursor=pointer]:
+          - img [ref=e507]
+          - text: Início
+        - generic [ref=e510] [cursor=pointer]:
+          - img [ref=e511]
+          - text: Conversar com Nina
+        - generic [ref=e513] [cursor=pointer]:
+          - img [ref=e514]
+          - text: Plano de estudos
+        - generic [ref=e516] [cursor=pointer]:
+          - img [ref=e517]
+          - text: Missões & Diário
+        - generic [ref=e519] [cursor=pointer]:
+          - img [ref=e520]
+          - text: Histórico
+        - generic [ref=e521] [cursor=pointer]:
+          - img [ref=e522]
+          - text: Flashcards
+          - generic [ref=e524]: "12"
+        - generic [ref=e525] [cursor=pointer]:
+          - img [ref=e526]
+          - text: Vocabulário
+          - generic [ref=e529]: "287"
+        - generic [ref=e530] [cursor=pointer]:
+          - img [ref=e531]
+          - text: Inbox
+          - generic [ref=e534]: "3"
+        - generic [ref=e535]: Você
+        - generic [ref=e536] [cursor=pointer]:
+          - img [ref=e537]
+          - text: Progresso
+        - generic [ref=e540] [cursor=pointer]:
+          - img [ref=e541]
+          - text: Memórias
+          - generic [ref=e543]: "42"
+        - generic [ref=e544] [cursor=pointer]:
+          - img [ref=e545]
+          - text: Conquistas
+        - generic [ref=e548] [cursor=pointer]:
+          - img [ref=e549]
+          - text: Perfil & Config
+        - generic [ref=e552]: Recursos
+        - generic [ref=e553] [cursor=pointer]:
+          - img [ref=e554]
+          - text: Identidade
+        - generic [ref=e557]:
+          - generic [ref=e558]: V
+          - generic [ref=e559]:
+            - generic [ref=e560]: Vinícius
+            - generic [ref=e561]: B1+ · STREAK 14
+      - main [ref=e562]:
+        - generic [ref=e563]:
+          - generic [ref=e564]:
+            - generic [ref=e565]: Você · o que a Nina sabe sobre você
+            - heading "Memórias da Nina" [level=1] [ref=e566]
+            - paragraph [ref=e567]: Tudo o que ela aprendeu nas suas 29 sessões. Edite, apague ou marque pra ela esquecer — você decide.
+          - generic [ref=e568]:
+            - button "Adicionar à mão" [ref=e569] [cursor=pointer]:
+              - img [ref=e570]
+              - text: Adicionar à mão
+            - button "Exportar tudo" [ref=e571] [cursor=pointer]
+        - generic [ref=e572]:
+          - generic [ref=e573]: "N"
+          - generic [ref=e574]:
+            - generic [ref=e575]: "\"Eu lembro porque te conhecer ajuda você a aprender mais rápido.\""
+            - generic [ref=e576]: 42 memórias ativas · última atualização há 14 min · armazenado só na sua conta.
+          - button "Ver como ela usa" [ref=e577] [cursor=pointer]
+        - generic [ref=e578]:
+          - generic [ref=e579]:
+            - img [ref=e580]
+            - 'textbox "Buscar memória — ex: ''entrevista'', ''gato'', ''present perfect''…" [ref=e583]'
+          - generic [ref=e584]:
+            - button "Tudo · 42" [ref=e585] [cursor=pointer]
+            - button "Sobre você · 18" [ref=e586] [cursor=pointer]
+            - button "Objetivos · 6" [ref=e587] [cursor=pointer]
+            - button "Dores · 9" [ref=e588] [cursor=pointer]
+            - button "Preferências · 9" [ref=e589] [cursor=pointer]
+          - generic [ref=e590]:
+            - button "Recente" [ref=e591] [cursor=pointer]
+            - button "Mais usada" [ref=e592] [cursor=pointer]
+        - generic [ref=e593]:
+          - generic [ref=e594]:
+            - generic [ref=e595]: Objetivo · ativo
+            - generic [ref=e596]: "\"Quer se preparar pra entrevista de UX no fim do mês — empresa de fintech, equipe gringa.\""
+            - generic [ref=e597]:
+              - generic [ref=e598]: 06 MAI · USADA 14×
+              - generic [ref=e599]:
+                - button "Editar" [ref=e600] [cursor=pointer]:
+                  - img [ref=e601]
+                - button "Esquecer" [ref=e604] [cursor=pointer]:
+                  - img [ref=e605]
+          - generic [ref=e608]:
+            - generic [ref=e609]: Sobre você
+            - generic [ref=e610]: "\"Mora em São Paulo, trabalha com produto/design. Gosta de tech e psicologia.\""
+            - generic [ref=e611]:
+              - generic [ref=e612]: 04 MAI · USADA 22×
+              - generic [ref=e613]:
+                - button [ref=e614] [cursor=pointer]:
+                  - img [ref=e615]
+                - button [ref=e618] [cursor=pointer]:
+                  - img [ref=e619]
+          - generic [ref=e622]:
+            - generic [ref=e623]: Dor / dificuldade
+            - generic [ref=e624]:
+              - text: "\"Trava em"
+              - emphasis [ref=e625]: have done
+              - text: vs
+              - emphasis [ref=e626]: did
+              - text: . Confunde quando o tempo é claramente delimitado."
+            - generic [ref=e627]:
+              - generic [ref=e628]: 02 MAI · USADA 8×
+              - generic [ref=e629]:
+                - button [ref=e630] [cursor=pointer]:
+                  - img [ref=e631]
+                - button [ref=e634] [cursor=pointer]:
+                  - img [ref=e635]
+          - generic [ref=e638]:
+            - generic [ref=e639]: Prefere
+            - generic [ref=e640]: "\"Aulas curtas — 15 a 20 min. Cansa rápido depois das 22h.\""
+            - generic [ref=e641]:
+              - generic [ref=e642]: 30 ABR · USADA 11×
+              - generic [ref=e643]:
+                - button [ref=e644] [cursor=pointer]:
+                  - img [ref=e645]
+                - button [ref=e648] [cursor=pointer]:
+                  - img [ref=e649]
+          - generic [ref=e652]:
+            - generic [ref=e653]: Sobre você
+            - generic [ref=e654]: "\"Tem uma gata chamada Mafalda. Conta histórias sobre ela quando tá relaxado.\""
+            - generic [ref=e655]:
+              - generic [ref=e656]: 28 ABR · USADA 4×
+              - generic [ref=e657]:
+                - button [ref=e658] [cursor=pointer]:
+                  - img [ref=e659]
+                - button [ref=e662] [cursor=pointer]:
+                  - img [ref=e663]
+          - generic [ref=e666]:
+            - generic [ref=e667]: Prefere
+            - generic [ref=e668]: "\"Correção discreta, não imediata. Não gosta de ser interrompido no meio da frase.\""
+            - generic [ref=e669]:
+              - generic [ref=e670]: 25 ABR · USADA 29×
+              - generic [ref=e671]:
+                - button [ref=e672] [cursor=pointer]:
+                  - img [ref=e673]
+                - button [ref=e676] [cursor=pointer]:
+                  - img [ref=e677]
+          - generic [ref=e680]:
+            - generic [ref=e681]: Dor / dificuldade
+            - generic [ref=e682]: "\"Trava em entrevistas quando perguntam sobre pontos fracos — sente-se 'vulnerável'.\""
+            - generic [ref=e683]:
+              - generic [ref=e684]: 22 ABR · USADA 6×
+              - generic [ref=e685]:
+                - button [ref=e686] [cursor=pointer]:
+                  - img [ref=e687]
+                - button [ref=e690] [cursor=pointer]:
+                  - img [ref=e691]
+          - generic [ref=e694]:
+            - generic [ref=e695]: Objetivo · arquivado
+            - generic [ref=e696]:
+              - text: "\"Quer ler o livro"
+              - emphasis [ref=e697]: "'Atomic Habits'"
+              - text: no original até o fim do ano."
+            - generic [ref=e698]:
+              - generic [ref=e699]: 12 ABR · ARQUIVADO 02 MAI
+              - generic [ref=e700]:
+                - button "Reativar" [ref=e701] [cursor=pointer]:
+                  - img [ref=e702]
+                - button [ref=e705] [cursor=pointer]:
+                  - img [ref=e706]
+          - generic [ref=e709]:
+            - generic [ref=e710]: Sobre você
+            - generic [ref=e711]: "\"Estudou inglês no colégio, parou na faculdade. Ficou ~8 anos sem prática consistente.\""
+            - generic [ref=e712]:
+              - generic [ref=e713]: 10 ABR · USADA 3×
+              - generic [ref=e714]:
+                - button [ref=e715] [cursor=pointer]:
+                  - img [ref=e716]
+                - button [ref=e719] [cursor=pointer]:
+                  - img [ref=e720]
+    - text: ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+  - button "Falar com a Nina" [ref=e350] [cursor=pointer]:
+    - generic [ref=e351]: "N"

@@ -1,0 +1,172 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - complementary [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: P
+        - generic [ref=e9]:
+          - text: Phyora
+          - generic [ref=e10]: Teacher AI
+      - generic [ref=e11]: Aprender
+      - link "Início" [ref=e12] [cursor=pointer]:
+        - /url: /home
+        - img [ref=e13]
+        - text: Início
+      - link "Conversar com Nina" [ref=e16] [cursor=pointer]:
+        - /url: /chat
+        - img [ref=e17]
+        - text: Conversar com Nina
+      - link "Plano de estudos" [ref=e19] [cursor=pointer]:
+        - /url: /plano
+        - img [ref=e20]
+        - text: Plano de estudos
+      - link "Missões & Diário" [ref=e22] [cursor=pointer]:
+        - /url: /missoes
+        - img [ref=e23]
+        - text: Missões & Diário
+      - link "Flashcards 7 cards para revisar" [ref=e25] [cursor=pointer]:
+        - /url: /flashcards
+        - img [ref=e26]
+        - text: Flashcards
+        - generic "7 cards para revisar" [ref=e28]: "7"
+      - generic [ref=e29]: Você
+      - link "Progresso & Memórias" [ref=e30] [cursor=pointer]:
+        - /url: /progresso
+        - img [ref=e31]
+        - text: Progresso & Memórias
+      - link "Perfil & Config" [ref=e32] [cursor=pointer]:
+        - /url: /perfil
+        - img [ref=e33]
+        - text: Perfil & Config
+      - generic [ref=e37]:
+        - generic [ref=e38]: V
+        - generic [ref=e39]:
+          - generic [ref=e40]: Vinícius
+          - generic [ref=e41]: B1 · STREAK 7
+    - main [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - generic [ref=e46]: Início · seg, 11 mai
+            - heading "Boa noite, Vinícius." [level=1] [ref=e47]
+            - paragraph [ref=e48]:
+              - text: Você está numa sequência de
+              - strong [ref=e49]: 14 dias
+              - text: . Bora não quebrar?
+          - generic [ref=e50]:
+            - link "Ajuda" [ref=e51] [cursor=pointer]:
+              - /url: /ajuda
+              - img [ref=e52]
+              - text: Ajuda
+            - link "Continuar com a Nina" [ref=e54] [cursor=pointer]:
+              - /url: /chat
+        - generic [ref=e55]:
+          - generic [ref=e56]: Continuar de onde paramos
+          - heading "\"Você travou no present perfect. Quer retomar com uma história sua da última semana?\"" [level=2] [ref=e57]:
+            - text: "\"Você travou no"
+            - emphasis [ref=e58]: present perfect
+            - text: . Quer retomar com uma história sua da última semana?"
+          - generic [ref=e59]:
+            - generic [ref=e60]: "N"
+            - generic [ref=e61]: "Nina · há 16 horas · sessão #28"
+          - generic [ref=e62]:
+            - link "Conversar agora" [ref=e63] [cursor=pointer]:
+              - /url: /chat
+              - img [ref=e64]
+              - text: Conversar agora
+            - button "Trocar de assunto" [ref=e66] [cursor=pointer]
+            - button "Outra hora" [ref=e67] [cursor=pointer]
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - generic [ref=e71]:
+                - generic [ref=e72]: Streak
+                - generic [ref=e73]: 14 🔥
+                - generic [ref=e74]: +1 hoje
+              - generic [ref=e75]:
+                - generic [ref=e76]: Vocab ativo
+                - generic [ref=e77]: "287"
+                - generic [ref=e78]: +18 esta sem.
+              - generic [ref=e79]:
+                - generic [ref=e80]: Nível CEFR
+                - generic [ref=e81]: B1+
+                - generic [ref=e82]: → B2 em 6 sem.
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - heading "Sua presença" [level=3] [ref=e85]
+                - generic [ref=e86]:
+                  - button "2 sem." [ref=e87] [cursor=pointer]
+                  - button "Mês" [ref=e88] [cursor=pointer]
+                  - button "Ano" [ref=e89] [cursor=pointer]
+              - generic "Mapa de presença" [ref=e90]:
+                - generic "Dia 1" [ref=e91]
+                - generic "Dia 2" [ref=e92]
+                - generic "Dia 3" [ref=e93]
+                - generic "Dia 4" [ref=e94]
+                - generic "Dia 5" [ref=e95]
+                - generic "Dia 6" [ref=e96]
+                - generic "Dia 7" [ref=e97]
+                - generic "Dia 8" [ref=e98]
+                - generic "Dia 9" [ref=e99]
+                - generic "Dia 10" [ref=e100]
+                - generic "Dia 11" [ref=e101]
+                - generic "Dia 12" [ref=e102]
+                - generic "Dia 13" [ref=e103]
+                - generic "Dia 14" [ref=e104]
+              - generic [ref=e105]:
+                - generic [ref=e106]: Menos
+                - generic [ref=e118]: Mais
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - heading "Foco da semana" [level=3] [ref=e121]
+                - link "Ver o plano →" [ref=e122] [cursor=pointer]:
+                  - /url: /plano
+              - generic [ref=e123]:
+                - generic [ref=e124]:
+                  - generic [ref=e125]:
+                    - text: SEG
+                    - generic [ref=e126]: "11"
+                  - generic [ref=e127]:
+                    - generic [ref=e128]: Entrevista de emprego · parte 1
+                    - generic [ref=e129]: Story-telling no passado · present perfect · 20 min
+                  - generic [ref=e130]: HOJE
+                - generic [ref=e131]:
+                  - generic [ref=e132]:
+                    - text: TER
+                    - generic [ref=e133]: "12"
+                  - generic [ref=e134]:
+                    - generic [ref=e135]: "Vocab: emoções no trabalho"
+                    - generic [ref=e136]: Flashcards revisitados · 10 min
+                  - button "Ver" [ref=e137] [cursor=pointer]
+                - generic [ref=e138]:
+                  - generic [ref=e139]:
+                    - text: QUA
+                    - generic [ref=e140]: "13"
+                  - generic [ref=e141]:
+                    - generic [ref=e142]: Entrevista · parte 2 (perguntas difíceis)
+                    - generic [ref=e143]: Role-play com a Nina · 25 min
+                  - button "Ver" [ref=e144] [cursor=pointer]
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - generic [ref=e147]: Revisão hoje
+              - generic [ref=e148]: 12 flashcards
+              - paragraph [ref=e149]:
+                - text: "Misture de boa: leva uns"
+                - strong [ref=e150]: 4 minutos
+                - text: .
+              - link "Revisar agora" [ref=e151] [cursor=pointer]:
+                - /url: /flashcards
+            - generic [ref=e152]:
+              - heading "Memórias da Nina" [level=3] [ref=e153]
+              - generic [ref=e154]:
+                - generic [ref=e155]:
+                  - generic [ref=e156]: 06 MAI
+                  - generic [ref=e157]: "\"Quer se preparar pra entrevista no fim do mês.\""
+                - generic [ref=e158]:
+                  - generic [ref=e159]: 04 MAI
+                  - generic [ref=e160]: "\"Mora em SP, gosta de tech e psicologia.\""
+                - generic [ref=e161]:
+                  - generic [ref=e162]: 02 MAI
+                  - generic [ref=e163]: "\"Trava em have done vs did.\""
+              - link "Ver todas →" [ref=e164] [cursor=pointer]:
+                - /url: /memorias
+  - status

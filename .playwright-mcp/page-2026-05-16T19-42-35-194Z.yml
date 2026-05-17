@@ -1,0 +1,241 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: P
+      - generic [ref=e5]: Phyora Protótipo · maio 26
+    - generic [ref=e6]:
+      - button "Tela anterior" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+      - button "Próxima tela" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - combobox "Pular para tela" [active] [ref=e13] [cursor=pointer]:
+      - option "Login"
+      - option "Cadastro"
+      - option "Esqueci a senha"
+      - option "Email enviado"
+      - option "Redefinir senha"
+      - option "1 · Objetivo"
+      - option "2 · Nível percebido"
+      - option "3 · Interesses"
+      - option "4 · Rotina"
+      - option "5 · O Pacto"
+      - option "Intro · Nina"
+      - option "Conversa"
+      - option "Resultado CEFR"
+      - option "Boas-vindas"
+      - option "Início" [selected]
+      - option "Conversar com Nina"
+      - option "Histórico de conversas"
+      - option "Debrief da sessão"
+      - option "Plano de Estudos"
+      - option "Pré-vis. de aula"
+      - option "Aula imersiva"
+      - option "Missões & Diário"
+      - option "Escrever no diário"
+      - option "Flashcards"
+      - option "Biblioteca de vocab"
+      - option "Revisão concluída"
+      - option "Progresso & Memórias"
+      - option "Memórias da Nina"
+      - option "Conquistas"
+      - option "Inbox"
+      - option "Perfil & Configurações"
+      - option "Voz da Nina"
+      - option "Notificações"
+      - option "Central de ajuda"
+      - option "Convidar amigos"
+      - option "Detalhe da palavra"
+      - option "Upgrade · Paywall"
+      - option "Checkout · pagamento"
+      - option "Pagamento confirmado"
+      - option "Modo voz ao vivo"
+      - option "Estados vazios"
+      - option "Estados de erro"
+      - option "Identidade visual"
+    - generic [ref=e14]:
+      - generic [ref=e15]: Tema
+      - generic [ref=e16]:
+        - button "Claro" [ref=e17] [cursor=pointer]
+        - button "Escuro" [ref=e18] [cursor=pointer]
+      - generic [ref=e19]: Primária
+      - generic [ref=e20]:
+        - button "Roxo" [ref=e21] [cursor=pointer]
+        - button "Verde" [ref=e22] [cursor=pointer]
+        - button "Mono" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]: Densidade
+      - generic [ref=e25]:
+        - button "−" [ref=e26] [cursor=pointer]
+        - button "=" [ref=e27] [cursor=pointer]
+        - button "+" [ref=e28] [cursor=pointer]
+  - generic [ref=e29]:
+    - generic [ref=e72]:
+      - complementary [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]: P
+          - generic [ref=e76]:
+            - text: Phyora
+            - generic [ref=e77]: Teacher AI
+        - generic [ref=e78]: Aprender
+        - generic [ref=e79] [cursor=pointer]:
+          - img [ref=e80]
+          - text: Início
+        - generic [ref=e83] [cursor=pointer]:
+          - img [ref=e84]
+          - text: Conversar com Nina
+        - generic [ref=e86] [cursor=pointer]:
+          - img [ref=e87]
+          - text: Plano de estudos
+        - generic [ref=e89] [cursor=pointer]:
+          - img [ref=e90]
+          - text: Missões & Diário
+        - generic [ref=e92] [cursor=pointer]:
+          - img [ref=e93]
+          - text: Histórico
+        - generic [ref=e94] [cursor=pointer]:
+          - img [ref=e95]
+          - text: Flashcards
+          - generic [ref=e97]: "12"
+        - generic [ref=e98] [cursor=pointer]:
+          - img [ref=e99]
+          - text: Vocabulário
+          - generic [ref=e102]: "287"
+        - generic [ref=e103] [cursor=pointer]:
+          - img [ref=e104]
+          - text: Inbox
+          - generic [ref=e107]: "3"
+        - generic [ref=e108]: Você
+        - generic [ref=e109] [cursor=pointer]:
+          - img [ref=e110]
+          - text: Progresso
+        - generic [ref=e113] [cursor=pointer]:
+          - img [ref=e114]
+          - text: Memórias
+          - generic [ref=e116]: "42"
+        - generic [ref=e117] [cursor=pointer]:
+          - img [ref=e118]
+          - text: Conquistas
+        - generic [ref=e121] [cursor=pointer]:
+          - img [ref=e122]
+          - text: Perfil & Config
+        - generic [ref=e125]: Recursos
+        - generic [ref=e126] [cursor=pointer]:
+          - img [ref=e127]
+          - text: Identidade
+        - generic [ref=e130]:
+          - generic [ref=e131]: V
+          - generic [ref=e132]:
+            - generic [ref=e133]: Vinícius
+            - generic [ref=e134]: B1+ · STREAK 14
+      - main [ref=e135]:
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - generic [ref=e138]: Início · seg, 11 mai
+            - heading "Boa noite, Vinícius." [level=1] [ref=e139]
+            - paragraph [ref=e140]:
+              - text: Você está numa sequência de
+              - strong [ref=e141]: 14 dias
+              - text: . Bora não quebrar?
+          - generic [ref=e142]:
+            - button "Ajuda" [ref=e143] [cursor=pointer]:
+              - img [ref=e144]
+              - text: Ajuda
+            - button "Continuar com a Nina" [ref=e146] [cursor=pointer]
+        - generic [ref=e147]:
+          - generic [ref=e148]: Continuar de onde paramos
+          - heading "\"Você travou no present perfect. Quer retomar com uma história sua da última semana?\"" [level=2] [ref=e149]:
+            - text: "\"Você travou no"
+            - emphasis [ref=e150]: present perfect
+            - text: . Quer retomar com uma história sua da última semana?"
+          - generic [ref=e151]:
+            - generic [ref=e152]: "N"
+            - generic [ref=e153]: "Nina · há 16 horas · sessão #28"
+          - generic [ref=e154]:
+            - button "Conversar agora" [ref=e155] [cursor=pointer]:
+              - img [ref=e156]
+              - text: Conversar agora
+            - button "Trocar de assunto" [ref=e158] [cursor=pointer]
+            - button "Outra hora" [ref=e159] [cursor=pointer]
+        - generic [ref=e160]:
+          - generic [ref=e161]:
+            - generic [ref=e162]:
+              - generic [ref=e163]:
+                - generic [ref=e164]: Streak
+                - generic [ref=e165]: 14 🔥
+                - generic [ref=e166]: +1 hoje
+              - generic [ref=e167]:
+                - generic [ref=e168]: Vocab ativo
+                - generic [ref=e169]: "287"
+                - generic [ref=e170]: +18 esta sem.
+              - generic [ref=e171]:
+                - generic [ref=e172]: Nível CEFR
+                - generic [ref=e173]: B1+
+                - generic [ref=e174]: → B2 em 6 sem.
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - heading "Sua presença" [level=3] [ref=e177]
+                - generic [ref=e178]:
+                  - button "2 sem." [ref=e179] [cursor=pointer]
+                  - button "Mês" [ref=e180] [cursor=pointer]
+                  - button "Ano" [ref=e181] [cursor=pointer]
+              - generic [ref=e197]:
+                - generic [ref=e198]: Menos
+                - generic [ref=e210]: Mais
+            - generic [ref=e211]:
+              - generic [ref=e212]:
+                - heading "Foco da semana" [level=3] [ref=e213]
+                - button "Ver o plano →" [ref=e214] [cursor=pointer]
+              - generic [ref=e215]:
+                - generic [ref=e216]:
+                  - generic [ref=e217]:
+                    - text: SEG
+                    - generic [ref=e218]: "11"
+                  - generic [ref=e219]:
+                    - generic [ref=e220]: Entrevista de emprego · parte 1
+                    - generic [ref=e221]: Story-telling no passado · present perfect · 20 min
+                  - generic [ref=e222]: HOJE
+                - generic [ref=e223]:
+                  - generic [ref=e224]:
+                    - text: TER
+                    - generic [ref=e225]: "12"
+                  - generic [ref=e226]:
+                    - generic [ref=e227]: "Vocab: emoções no trabalho"
+                    - generic [ref=e228]: Flashcards revisitados · 10 min
+                  - button "Ver" [ref=e229] [cursor=pointer]
+                - generic [ref=e230]:
+                  - generic [ref=e231]:
+                    - text: QUA
+                    - generic [ref=e232]: "13"
+                  - generic [ref=e233]:
+                    - generic [ref=e234]: Entrevista · parte 2 (perguntas difíceis)
+                    - generic [ref=e235]: Role-play com a Nina · 25 min
+                  - button "Ver" [ref=e236] [cursor=pointer]
+          - generic [ref=e237]:
+            - generic [ref=e238]:
+              - generic [ref=e239]: Revisão hoje
+              - generic [ref=e240]: 12 flashcards
+              - paragraph [ref=e241]:
+                - text: "Misture de boa: leva uns"
+                - strong [ref=e242]: 4 minutos
+                - text: .
+              - button "Revisar agora" [ref=e243] [cursor=pointer]
+            - generic [ref=e244]:
+              - heading "Memórias da Nina" [level=3] [ref=e245]
+              - generic [ref=e246]:
+                - generic [ref=e247]:
+                  - generic [ref=e248]: 06 MAI
+                  - generic [ref=e249]: "\"Quer se preparar pra entrevista no fim do mês.\""
+                - generic [ref=e250]:
+                  - generic [ref=e251]: 04 MAI
+                  - generic [ref=e252]: "\"Mora em SP, gosta de tech e psicologia.\""
+                - generic [ref=e253]:
+                  - generic [ref=e254]: 02 MAI
+                  - generic [ref=e255]:
+                    - text: "\"Trava em"
+                    - emphasis [ref=e256]: have done
+                    - text: vs
+                    - emphasis [ref=e257]: did
+                    - text: ."
+              - button "Ver todas →" [ref=e258] [cursor=pointer]
+    - text: 1 2 3 4 ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+  - button "Falar com a Nina" [ref=e259] [cursor=pointer]:
+    - generic [ref=e260]: "N"

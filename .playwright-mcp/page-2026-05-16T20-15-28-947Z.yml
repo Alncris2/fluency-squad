@@ -1,0 +1,153 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - complementary [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: P
+        - generic [ref=e9]:
+          - text: Phyora
+          - generic [ref=e10]: Teacher AI
+      - generic [ref=e11]: Aprender
+      - link "Início" [ref=e12] [cursor=pointer]:
+        - /url: /home
+        - img [ref=e13]
+        - text: Início
+      - link "Conversar com Nina" [ref=e16] [cursor=pointer]:
+        - /url: /chat
+        - img [ref=e17]
+        - text: Conversar com Nina
+      - link "Plano de estudos" [ref=e19] [cursor=pointer]:
+        - /url: /plano
+        - img [ref=e20]
+        - text: Plano de estudos
+      - link "Missões & Diário" [ref=e22] [cursor=pointer]:
+        - /url: /missoes
+        - img [ref=e23]
+        - text: Missões & Diário
+      - link "Histórico" [ref=e25] [cursor=pointer]:
+        - /url: /conversas
+        - img [ref=e26]
+        - text: Histórico
+      - link "Flashcards 12 cards para revisar" [ref=e28] [cursor=pointer]:
+        - /url: /flashcards
+        - img [ref=e29]
+        - text: Flashcards
+        - generic "12 cards para revisar" [ref=e31]: "12"
+      - link "Vocabulário 287 palavras" [ref=e32] [cursor=pointer]:
+        - /url: /vocabulario
+        - img [ref=e33]
+        - text: Vocabulário
+        - generic "287 palavras" [ref=e36]: "287"
+      - link "Inbox 3 mensagens" [ref=e37] [cursor=pointer]:
+        - /url: /inbox
+        - img [ref=e38]
+        - text: Inbox
+        - generic "3 mensagens" [ref=e41]: "3"
+      - generic [ref=e42]: Você
+      - link "Progresso" [ref=e43] [cursor=pointer]:
+        - /url: /progresso
+        - img [ref=e44]
+        - text: Progresso
+      - link "Memórias 42 memórias" [ref=e45] [cursor=pointer]:
+        - /url: /memorias
+        - img [ref=e46]
+        - text: Memórias
+        - generic "42 memórias" [ref=e48]: "42"
+      - link "Conquistas" [ref=e49] [cursor=pointer]:
+        - /url: /conquistas
+        - img [ref=e50]
+        - text: Conquistas
+      - link "Perfil & Config" [ref=e53] [cursor=pointer]:
+        - /url: /perfil
+        - img [ref=e54]
+        - text: Perfil & Config
+      - generic [ref=e58]:
+        - generic [ref=e59]: T
+        - generic [ref=e60]:
+          - generic [ref=e61]: Test User
+          - generic [ref=e62]: B1 · STREAK 7
+    - main [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]: Conquistas · marcos do seu caminho
+            - heading "Vitrine de conquistas" [level=1] [ref=e68]
+            - paragraph [ref=e69]: Não tem ranking nem ponto. São marcos que dizem algo sobre o seu jeito de aprender.
+          - button "Compartilhar coleção" [ref=e71] [cursor=pointer]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: 14 / 42
+            - generic [ref=e75]: desbloqueadas
+          - generic [ref=e76]:
+            - generic [ref=e77]: "3"
+            - generic [ref=e78]: raras
+          - generic [ref=e79]:
+            - generic [ref=e80]: "1"
+            - generic [ref=e81]: lendária
+          - generic [ref=e82]:
+            - generic [ref=e83]: "28"
+            - generic [ref=e84]: a caminho
+        - heading "Desbloqueadas recentemente" [level=2] [ref=e85]
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: 🐉
+            - generic [ref=e89]: Two weeks strong
+            - generic [ref=e90]: 14 dias seguidos no pacto.
+            - generic [ref=e91]: LENDÁRIO · HOJE
+          - generic [ref=e92]:
+            - generic [ref=e93]: 🎤
+            - generic [ref=e94]: Spoke for 20 min
+            - generic [ref=e95]: Manteve a fala em inglês uma sessão inteira.
+            - generic [ref=e96]: RARO · 09 MAI
+          - generic [ref=e97]:
+            - generic [ref=e98]: 📚
+            - generic [ref=e99]: 200-word club
+            - generic [ref=e100]: 200 palavras ativas no vocab.
+            - generic [ref=e101]: 06 MAI
+          - generic [ref=e102]:
+            - generic [ref=e103]: ☕
+            - generic [ref=e104]: Pediu na rua
+            - generic [ref=e105]: Cumpriu uma missão fora do app.
+            - generic [ref=e106]: 10 MAI
+          - generic [ref=e107]:
+            - generic [ref=e108]: 🎯
+            - generic [ref=e109]: B1 sealed
+            - generic [ref=e110]: CEFR B1 confirmado pela Nina.
+            - generic [ref=e111]: 02 MAI
+          - generic [ref=e112]:
+            - generic [ref=e113]: ✍️
+            - generic [ref=e114]: First journal
+            - generic [ref=e115]: Primeira entrada no diário.
+            - generic [ref=e116]: RARO · 29 ABR
+        - heading "A caminho" [level=2] [ref=e117]
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 🌑
+            - generic [ref=e121]: 30-day moon
+            - generic [ref=e122]: Sequência de 30 dias.
+            - generic [ref=e123]: 14 / 30
+          - generic [ref=e124]:
+            - generic [ref=e125]: 🦅
+            - generic [ref=e126]: Nailed the interview
+            - generic [ref=e127]: Concluir simulação final sem dica.
+            - generic [ref=e128]: SEX 15 MAI
+          - generic [ref=e129]:
+            - generic [ref=e130]: 📜
+            - generic [ref=e131]: Wrote 1k words
+            - generic [ref=e132]: Total acumulado no diário.
+            - generic [ref=e133]: 632 / 1000
+          - generic [ref=e134]:
+            - generic [ref=e135]: 🎬
+            - generic [ref=e136]: Subtitle free
+            - generic [ref=e137]: Assistir 1 filme sem legenda.
+            - generic [ref=e138]: MISSÃO ATIVA
+          - generic [ref=e139]:
+            - generic [ref=e140]: ⚡
+            - generic [ref=e141]: B2 unlocked
+            - generic [ref=e142]: Próximo degrau no CEFR.
+            - generic [ref=e143]: ~ 6 SEMANAS
+          - generic [ref=e144]:
+            - generic [ref=e145]: 🤝
+            - generic [ref=e146]: Indicou um amigo
+            - generic [ref=e147]: 1 pessoa do seu círculo.
+            - generic [ref=e148]: CONVIDAR
+  - status

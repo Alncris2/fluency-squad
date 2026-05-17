@@ -1,0 +1,56 @@
+- generic [ref=e61]:
+  - generic [ref=e62]:
+    - banner [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - img [ref=e67]
+          - generic [ref=e73]: phyora.ai
+        - navigation [ref=e74]:
+          - button "Sair da conta" [ref=e75] [cursor=pointer]:
+            - img [ref=e76]
+            - text: Sair
+    - main [ref=e79]:
+      - generic [ref=e187]:
+        - navigation "Progresso do onboarding" [ref=e189]:
+          - list [ref=e190]:
+            - listitem "Passo 1 de 5" [ref=e191]
+            - listitem "Passo 2 de 5" [ref=e192]
+            - listitem "Passo 3 de 5" [ref=e193]
+            - listitem "Passo 4 de 5" [ref=e194]
+            - listitem "Passo 5 de 5" [ref=e195]
+          - generic [ref=e196]: Passo 4 de 5
+        - generic [ref=e197]:
+          - heading "Quando você prefere estudar?" [level=1] [ref=e198]
+          - paragraph [ref=e199]: Escolha os dias e o período ideal para criar sua rotina.
+        - generic [ref=e200]:
+          - heading "Dias da semana" [level=2] [ref=e201]
+          - group "Dias da semana" [ref=e202]:
+            - button "Seg" [active] [pressed] [ref=e203] [cursor=pointer]
+            - button "Ter" [ref=e204] [cursor=pointer]
+            - button "Qua" [ref=e205] [cursor=pointer]
+            - button "Qui" [ref=e206] [cursor=pointer]
+            - button "Sex" [ref=e207] [cursor=pointer]
+            - button "Sáb" [ref=e208] [cursor=pointer]
+            - button "Dom" [ref=e209] [cursor=pointer]
+          - paragraph [ref=e210]: 1 dia selecionado
+        - generic [ref=e211]:
+          - heading "Período preferido" [level=2] [ref=e212]
+          - radiogroup "Período preferido de estudo" [ref=e213]:
+            - button "Manhã Das 6h às 12h — ótimo para começar o dia com foco" [ref=e214] [cursor=pointer]:
+              - generic [ref=e215]: 🌅
+              - generic [ref=e216]: Manhã
+              - generic [ref=e217]: Das 6h às 12h — ótimo para começar o dia com foco
+            - button "Tarde Das 12h às 18h — aproveite os intervalos do dia" [ref=e218] [cursor=pointer]:
+              - generic [ref=e219]: ☀️
+              - generic [ref=e220]: Tarde
+              - generic [ref=e221]: Das 12h às 18h — aproveite os intervalos do dia
+            - button "Noite Das 18h em diante — relaxe aprendendo" [ref=e222] [cursor=pointer]:
+              - generic [ref=e223]: 🌙
+              - generic [ref=e224]: Noite
+              - generic [ref=e225]: Das 18h em diante — relaxe aprendendo
+        - complementary "Dica da Nina" [ref=e226]:
+          - img [ref=e228]
+          - note [ref=e240]:
+            - paragraph [ref=e241]: Consistência é mais importante que quantidade! Estudar 15 minutos por dia já faz diferença. Escolha os dias que realmente funcionam pra você. 🦉
+        - button "Avançar" [disabled] [ref=e243] [cursor=pointer]
+  - status

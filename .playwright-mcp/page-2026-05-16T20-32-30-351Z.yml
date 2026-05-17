@@ -1,0 +1,122 @@
+- generic [ref=e77]:
+  - generic [ref=e78]:
+    - complementary [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e82]: P
+        - generic [ref=e83]:
+          - text: Phyora
+          - generic [ref=e84]: Teacher AI
+      - generic [ref=e85]: Aprender
+      - link "Início" [ref=e86] [cursor=pointer]:
+        - /url: /home
+        - img [ref=e87]
+        - text: Início
+      - link "Conversar com Nina" [ref=e90] [cursor=pointer]:
+        - /url: /chat
+        - img [ref=e91]
+        - text: Conversar com Nina
+      - link "Plano de estudos" [ref=e93] [cursor=pointer]:
+        - /url: /plano
+        - img [ref=e94]
+        - text: Plano de estudos
+      - link "Missões & Diário" [ref=e96] [cursor=pointer]:
+        - /url: /missoes
+        - img [ref=e97]
+        - text: Missões & Diário
+      - link "Histórico" [ref=e99] [cursor=pointer]:
+        - /url: /conversas
+        - img [ref=e100]
+        - text: Histórico
+      - link "Flashcards 12 cards para revisar" [ref=e102] [cursor=pointer]:
+        - /url: /flashcards
+        - img [ref=e103]
+        - text: Flashcards
+        - generic "12 cards para revisar" [ref=e105]: "12"
+      - link "Vocabulário 287 palavras" [ref=e106] [cursor=pointer]:
+        - /url: /vocabulario
+        - img [ref=e107]
+        - text: Vocabulário
+        - generic "287 palavras" [ref=e110]: "287"
+      - link "Inbox 3 mensagens" [ref=e111] [cursor=pointer]:
+        - /url: /inbox
+        - img [ref=e112]
+        - text: Inbox
+        - generic "3 mensagens" [ref=e115]: "3"
+      - generic [ref=e116]: Você
+      - link "Progresso" [ref=e117] [cursor=pointer]:
+        - /url: /progresso
+        - img [ref=e118]
+        - text: Progresso
+      - link "Memórias 42 memórias" [ref=e119] [cursor=pointer]:
+        - /url: /memorias
+        - img [ref=e120]
+        - text: Memórias
+        - generic "42 memórias" [ref=e122]: "42"
+      - link "Conquistas" [ref=e123] [cursor=pointer]:
+        - /url: /conquistas
+        - img [ref=e124]
+        - text: Conquistas
+      - link "Perfil & Config" [ref=e127] [cursor=pointer]:
+        - /url: /perfil
+        - img [ref=e128]
+        - text: Perfil & Config
+      - generic [ref=e132] [cursor=pointer]:
+        - generic [ref=e133]: T
+        - generic [ref=e134]:
+          - generic [ref=e135]: Test User
+          - generic [ref=e136]: B1 · STREAK 7
+    - main [ref=e137]:
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - button "Voltar" [ref=e141]:
+            - img [ref=e142]
+          - generic [ref=e144]: Passo 1 de 5 · O Pacto
+        - navigation "Progresso do onboarding" [ref=e146]:
+          - list [ref=e147]:
+            - listitem "Passo 1 de 5" [ref=e148]
+            - listitem "Passo 2 de 5" [ref=e149]
+            - listitem "Passo 3 de 5" [ref=e150]
+            - listitem "Passo 4 de 5" [ref=e151]
+            - listitem "Passo 5 de 5" [ref=e152]
+          - generic [ref=e153]: Passo 1 de 5
+        - heading "O que te trouxe aqui?" [level=2] [ref=e154]:
+          - text: O que
+          - emphasis [ref=e155]: te trouxe
+          - text: aqui?
+        - paragraph [ref=e156]: Seja honesto. A Nina monta as aulas em torno disso.
+        - group "Objetivos de aprendizado" [ref=e157]:
+          - button "Trabalho Inglês para reuniões, emails e networking profissional" [ref=e158] [cursor=pointer]:
+            - generic [ref=e159]:
+              - generic [ref=e160]: 💼
+              - generic [ref=e161]:
+                - generic [ref=e162]: Trabalho
+                - generic [ref=e163]: Inglês para reuniões, emails e networking profissional
+          - button "Viagem Comunicar com confiança em qualquer destino" [ref=e164] [cursor=pointer]:
+            - generic [ref=e165]:
+              - generic [ref=e166]: ✈️
+              - generic [ref=e167]:
+                - generic [ref=e168]: Viagem
+                - generic [ref=e169]: Comunicar com confiança em qualquer destino
+          - button "Estudo Leitura acadêmica, redação e provas internacionais" [ref=e170] [cursor=pointer]:
+            - generic [ref=e171]:
+              - generic [ref=e172]: 📚
+              - generic [ref=e173]:
+                - generic [ref=e174]: Estudo
+                - generic [ref=e175]: Leitura acadêmica, redação e provas internacionais
+          - button "Imigração Preparação para visto, entrevistas e vida no exterior" [ref=e176] [cursor=pointer]:
+            - generic [ref=e177]:
+              - generic [ref=e178]: 🌍
+              - generic [ref=e179]:
+                - generic [ref=e180]: Imigração
+                - generic [ref=e181]: Preparação para visto, entrevistas e vida no exterior
+          - button "Outros motivos Curiosidade, cultura ou simplesmente por prazer" [ref=e182] [cursor=pointer]:
+            - generic [ref=e183]:
+              - generic [ref=e184]: ✨
+              - generic [ref=e185]:
+                - generic [ref=e186]: Outros motivos
+                - generic [ref=e187]: Curiosidade, cultura ou simplesmente por prazer
+        - paragraph [ref=e188]: 0 de 3 selecionados
+        - generic [ref=e189]:
+          - button "Voltar" [ref=e190] [cursor=pointer]
+          - button "Continuar" [disabled] [ref=e191] [cursor=pointer]
+  - status

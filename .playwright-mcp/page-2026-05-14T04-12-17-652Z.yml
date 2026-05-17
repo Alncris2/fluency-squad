@@ -1,0 +1,52 @@
+- generic [ref=e4]:
+  - complementary [ref=e31]:
+    - generic [ref=e32]:
+      - img [ref=e34]
+      - generic [ref=e40]: phyora.ai
+    - generic [ref=e41]:
+      - heading "Comece em 2 minutos." [level=1] [ref=e42]
+      - paragraph [ref=e43]: Sem cartão de crédito. Plano grátis com 3 sessões por semana.
+      - list [ref=e44]:
+        - listitem [ref=e45]:
+          - img [ref=e47]
+          - text: Professor IA que fala português quando precisa
+        - listitem [ref=e49]:
+          - img [ref=e51]
+          - text: Diagnóstico conversacional no primeiro dia
+        - listitem [ref=e53]:
+          - img [ref=e55]
+          - text: Cancele a qualquer momento
+    - generic [ref=e57]:
+      - generic [ref=e58]: "N"
+      - generic [ref=e59]:
+        - strong [ref=e60]: +12.400 alunos
+        - text: começaram essa semana. Média de 6 dias de streak.
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - heading "Bem-vindo de volta" [level=2] [ref=e9]
+      - paragraph [ref=e10]: Entre na sua conta para continuar.
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Email
+        - textbox "Email" [ref=e14]:
+          - /placeholder: seu@email.com
+          - text: alancristian2000@gmail.com
+      - generic [ref=e15]:
+        - generic [ref=e16]: Senha
+        - generic [ref=e17]:
+          - textbox "Senha" [ref=e18]:
+            - /placeholder: Sua senha
+            - text: "123456789"
+          - button "Mostrar senha" [ref=e19] [cursor=pointer]:
+            - img [ref=e20]
+      - generic [ref=e23] [cursor=pointer]:
+        - checkbox "Manter conectado"
+        - generic [ref=e25]: Manter conectado
+      - alert [ref=e61]: Email ou senha incorretos.
+      - button "Entrar" [ref=e26] [cursor=pointer]
+      - link "Esqueci minha senha" [ref=e28] [cursor=pointer]:
+        - /url: /auth/forgot-password
+    - generic [ref=e29]:
+      - text: Não tem conta?
+      - link "Criar conta" [ref=e30] [cursor=pointer]:
+        - /url: /auth/register

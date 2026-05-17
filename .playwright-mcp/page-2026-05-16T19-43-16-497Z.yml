@@ -1,0 +1,280 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: P
+      - generic [ref=e5]: Phyora Protótipo · maio 26
+    - generic [ref=e6]:
+      - button "Tela anterior" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+      - button "Próxima tela" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - combobox "Pular para tela" [active] [ref=e13] [cursor=pointer]:
+      - option "Login"
+      - option "Cadastro"
+      - option "Esqueci a senha"
+      - option "Email enviado"
+      - option "Redefinir senha"
+      - option "1 · Objetivo"
+      - option "2 · Nível percebido"
+      - option "3 · Interesses"
+      - option "4 · Rotina"
+      - option "5 · O Pacto"
+      - option "Intro · Nina"
+      - option "Conversa"
+      - option "Resultado CEFR"
+      - option "Boas-vindas"
+      - option "Início"
+      - option "Conversar com Nina"
+      - option "Histórico de conversas" [selected]
+      - option "Debrief da sessão"
+      - option "Plano de Estudos"
+      - option "Pré-vis. de aula"
+      - option "Aula imersiva"
+      - option "Missões & Diário"
+      - option "Escrever no diário"
+      - option "Flashcards"
+      - option "Biblioteca de vocab"
+      - option "Revisão concluída"
+      - option "Progresso & Memórias"
+      - option "Memórias da Nina"
+      - option "Conquistas"
+      - option "Inbox"
+      - option "Perfil & Configurações"
+      - option "Voz da Nina"
+      - option "Notificações"
+      - option "Central de ajuda"
+      - option "Convidar amigos"
+      - option "Detalhe da palavra"
+      - option "Upgrade · Paywall"
+      - option "Checkout · pagamento"
+      - option "Pagamento confirmado"
+      - option "Modo voz ao vivo"
+      - option "Estados vazios"
+      - option "Estados de erro"
+      - option "Identidade visual"
+    - generic [ref=e14]:
+      - generic [ref=e15]: Tema
+      - generic [ref=e16]:
+        - button "Claro" [ref=e17] [cursor=pointer]
+        - button "Escuro" [ref=e18] [cursor=pointer]
+      - generic [ref=e19]: Primária
+      - generic [ref=e20]:
+        - button "Roxo" [ref=e21] [cursor=pointer]
+        - button "Verde" [ref=e22] [cursor=pointer]
+        - button "Mono" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]: Densidade
+      - generic [ref=e25]:
+        - button "−" [ref=e26] [cursor=pointer]
+        - button "=" [ref=e27] [cursor=pointer]
+        - button "+" [ref=e28] [cursor=pointer]
+  - generic [ref=e29]:
+    - text: 1 2 3 4 ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+    - generic [ref=e416]:
+      - complementary [ref=e417]:
+        - generic [ref=e418]:
+          - generic [ref=e419]: P
+          - generic [ref=e420]:
+            - text: Phyora
+            - generic [ref=e421]: Teacher AI
+        - generic [ref=e422]: Aprender
+        - generic [ref=e423] [cursor=pointer]:
+          - img [ref=e424]
+          - text: Início
+        - generic [ref=e427] [cursor=pointer]:
+          - img [ref=e428]
+          - text: Conversar com Nina
+        - generic [ref=e430] [cursor=pointer]:
+          - img [ref=e431]
+          - text: Plano de estudos
+        - generic [ref=e433] [cursor=pointer]:
+          - img [ref=e434]
+          - text: Missões & Diário
+        - generic [ref=e436] [cursor=pointer]:
+          - img [ref=e437]
+          - text: Histórico
+        - generic [ref=e438] [cursor=pointer]:
+          - img [ref=e439]
+          - text: Flashcards
+          - generic [ref=e441]: "12"
+        - generic [ref=e442] [cursor=pointer]:
+          - img [ref=e443]
+          - text: Vocabulário
+          - generic [ref=e446]: "287"
+        - generic [ref=e447] [cursor=pointer]:
+          - img [ref=e448]
+          - text: Inbox
+          - generic [ref=e451]: "3"
+        - generic [ref=e452]: Você
+        - generic [ref=e453] [cursor=pointer]:
+          - img [ref=e454]
+          - text: Progresso
+        - generic [ref=e457] [cursor=pointer]:
+          - img [ref=e458]
+          - text: Memórias
+          - generic [ref=e460]: "42"
+        - generic [ref=e461] [cursor=pointer]:
+          - img [ref=e462]
+          - text: Conquistas
+        - generic [ref=e465] [cursor=pointer]:
+          - img [ref=e466]
+          - text: Perfil & Config
+        - generic [ref=e469]: Recursos
+        - generic [ref=e470] [cursor=pointer]:
+          - img [ref=e471]
+          - text: Identidade
+        - generic [ref=e474]:
+          - generic [ref=e475]: V
+          - generic [ref=e476]:
+            - generic [ref=e477]: Vinícius
+            - generic [ref=e478]: B1+ · STREAK 14
+      - main [ref=e479]:
+        - generic [ref=e480]:
+          - generic [ref=e481]:
+            - generic [ref=e482]: Aprender · histórico
+            - heading "Conversas com a Nina" [level=1] [ref=e483]
+            - paragraph [ref=e484]: 29 sessões · 4h 42min juntos · cada conversa tem um resumo e o que ficou pendente.
+          - button "Nova conversa" [ref=e486] [cursor=pointer]:
+            - img [ref=e487]
+            - text: Nova conversa
+        - generic [ref=e489]:
+          - generic [ref=e490]:
+            - img [ref=e491]
+            - 'textbox "Buscar — ex: ''entrevista'', ''férias'', ''present perfect''…" [ref=e494]'
+          - generic [ref=e495]:
+            - button "Tudo" [ref=e496] [cursor=pointer]
+            - button "Esta sem." [ref=e497] [cursor=pointer]
+            - button "Este mês" [ref=e498] [cursor=pointer]
+            - button "Pendentes" [ref=e499] [cursor=pointer]
+        - generic [ref=e500]:
+          - generic [ref=e501]:
+            - generic [ref=e502] [cursor=pointer]:
+              - generic [ref=e503]: "29"
+              - generic [ref=e504]:
+                - generic [ref=e505]:
+                  - generic [ref=e506]: Entrevista · weaknesses
+                  - generic [ref=e507]: HOJE · 14:22
+                - generic [ref=e508]: "\"I tend to overthink decisions. To work on it I have started…\""
+                - generic [ref=e509]:
+                  - generic [ref=e510]: PRESENT PERFECT
+                  - generic [ref=e511]: EM ANDAMENTO
+              - generic [ref=e512]: ›
+            - generic [ref=e513] [cursor=pointer]:
+              - generic [ref=e514]: "28"
+              - generic [ref=e515]:
+                - generic [ref=e516]:
+                  - generic [ref=e517]: Storytelling · um dia ruim no trampo
+                  - generic [ref=e518]: ONTEM · 21:08
+                - generic [ref=e519]: "\"Yesterday everything went wrong at work — even my coffee spilled on the laptop.\""
+                - generic [ref=e520]:
+                  - generic [ref=e521]: PASSADO SIMPLES
+                  - generic [ref=e522]: 22 MIN
+              - generic [ref=e523]: ›
+            - generic [ref=e524] [cursor=pointer]:
+              - generic [ref=e525]: "27"
+              - generic [ref=e526]:
+                - generic [ref=e527]:
+                  - generic [ref=e528]: Falando da Mafalda
+                  - generic [ref=e529]: 11 MAI · 22:15
+                - generic [ref=e530]: "\"My cat is a small dictator. She wakes me up at 5am every day.\""
+                - generic [ref=e531]:
+                  - generic [ref=e532]: PRESENT SIMPLE
+                  - generic [ref=e533]: FLUÍDO
+              - generic [ref=e534]: ›
+            - generic [ref=e535] [cursor=pointer]:
+              - generic [ref=e536]: "26"
+              - generic [ref=e537]:
+                - generic [ref=e538]:
+                  - generic [ref=e539]: Diagnóstico relâmpago
+                  - generic [ref=e540]: 10 MAI · 19:30
+                - generic [ref=e541]:
+                  - text: "\"Quick pulse-check — você travou em"
+                  - emphasis [ref=e542]: have been
+                  - text: de novo. Bora?"
+                - generic [ref=e543]:
+                  - generic [ref=e544]: REVISÃO
+                  - generic [ref=e545]: 8 MIN
+              - generic [ref=e546]: ›
+            - generic [ref=e547] [cursor=pointer]:
+              - generic [ref=e548]: "25"
+              - generic [ref=e549]:
+                - generic [ref=e550]:
+                  - generic [ref=e551]: Pedindo aumento (role-play)
+                  - generic [ref=e552]: 09 MAI · 20:42
+                - generic [ref=e553]: "\"I have been with the team for two years and I have delivered…\""
+                - generic [ref=e554]:
+                  - generic [ref=e555]: PRESENT PERFECT
+                  - generic [ref=e556]: ROLE-PLAY
+              - generic [ref=e557]: ›
+            - generic [ref=e558] [cursor=pointer]:
+              - generic [ref=e559]: "24"
+              - generic [ref=e560]:
+                - generic [ref=e561]:
+                  - generic [ref=e562]: Falando de fim de semana
+                  - generic [ref=e563]: 06 MAI · 21:05
+                - generic [ref=e564]: "\"I went hiking with two friends. It was harder than we expected.\""
+                - generic [ref=e566]: PAST SIMPLE
+              - generic [ref=e567]: ›
+            - generic [ref=e568] [cursor=pointer]:
+              - generic [ref=e569]: "23"
+              - generic [ref=e570]:
+                - generic [ref=e571]:
+                  - generic [ref=e572]: Vocab de emoções no trabalho
+                  - generic [ref=e573]: 05 MAI · 20:15
+                - generic [ref=e574]: "\"frustrated · drained · overwhelmed · grateful — bora usar 3 em frases tuas.\""
+                - generic [ref=e575]:
+                  - generic [ref=e576]: VOCAB
+                  - generic [ref=e577]: +8 PALAVRAS
+              - generic [ref=e578]: ›
+            - button "Carregar mais 22 ↓" [ref=e579] [cursor=pointer]
+          - generic [ref=e580]:
+            - generic [ref=e581]:
+              - generic [ref=e582]: "29"
+              - generic [ref=e583]:
+                - heading "Entrevista · weaknesses" [level=3] [ref=e584]
+                - generic [ref=e585]: HOJE 14:22 · 28 MIN · EM ANDAMENTO · ROLE-PLAY
+              - button "Favoritar" [ref=e587]:
+                - img [ref=e588]
+            - generic [ref=e590]:
+              - generic [ref=e591]:
+                - heading "O que vocês fizeram" [level=4] [ref=e592]
+                - generic [ref=e593]: Role-play de entrevista pra vaga de UX. Nina foi entrevistadora dura. Você praticou contar pontos fracos sem se queimar, usando present perfect continuous pra mostrar evolução.
+              - generic [ref=e594]:
+                - heading "Você acertou" [level=4] [ref=e595]
+                - generic [ref=e596]:
+                  - generic [ref=e597]: have been preparing
+                  - generic [ref=e598]: I tend to overthink
+                  - generic [ref=e599]: working on it
+                  - generic [ref=e600]: setting time-boxes
+              - generic [ref=e601]:
+                - heading "Ficou pendente" [level=4] [ref=e602]
+                - generic [ref=e603]:
+                  - text: • Você travou na pergunta "give me an example" — ficou repetindo "for example, for example".
+                  - text: "• Pronúncia: \"th\" virou \"f\" em 4/7 ocorrências."
+              - generic [ref=e604]:
+                - heading "Próximo combinado" [level=4] [ref=e605]
+                - generic [ref=e607]:
+                  - generic [ref=e608]: "N"
+                  - generic [ref=e609]:
+                    - generic [ref=e610]: Voltar pro role-play, parte 2 — perguntas comportamentais
+                    - generic [ref=e611]: "Combinado: amanhã, 20 min, com foco em pronúncia \"th\"."
+              - generic [ref=e612]:
+                - heading "Vocab que entrou na sua biblioteca" [level=4] [ref=e613]
+                - generic [ref=e614]:
+                  - generic [ref=e615]:
+                    - generic [ref=e616]: time-box
+                    - generic [ref=e617]: limitar o tempo
+                  - generic [ref=e618]:
+                    - generic [ref=e619]: to overthink
+                    - generic [ref=e620]: pensar demais
+                  - generic [ref=e621]:
+                    - generic [ref=e622]: weakness
+                    - generic [ref=e623]: /ˈwiːknəs/
+            - generic [ref=e624]:
+              - button "Retomar conversa" [ref=e625] [cursor=pointer]:
+                - img [ref=e626]
+                - text: Retomar conversa
+              - button "Ver debrief completo" [ref=e628] [cursor=pointer]
+              - button "Exportar transcrição" [ref=e629] [cursor=pointer]
+    - text: ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+  - button "Falar com a Nina" [ref=e259] [cursor=pointer]:
+    - generic [ref=e260]: "N"

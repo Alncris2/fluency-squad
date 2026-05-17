@@ -1,0 +1,216 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: P
+      - generic [ref=e5]: Phyora Protótipo · maio 26
+    - generic [ref=e6]:
+      - button "Tela anterior" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+      - button "Próxima tela" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - combobox "Pular para tela" [ref=e13] [cursor=pointer]:
+      - option "Login"
+      - option "Cadastro"
+      - option "Esqueci a senha"
+      - option "Email enviado"
+      - option "Redefinir senha"
+      - option "1 · Objetivo"
+      - option "2 · Nível percebido"
+      - option "3 · Interesses"
+      - option "4 · Rotina"
+      - option "5 · O Pacto"
+      - option "Intro · Nina"
+      - option "Conversa"
+      - option "Resultado CEFR"
+      - option "Boas-vindas"
+      - option "Início"
+      - option "Conversar com Nina"
+      - option "Histórico de conversas"
+      - option "Debrief da sessão"
+      - option "Plano de Estudos"
+      - option "Pré-vis. de aula"
+      - option "Aula imersiva"
+      - option "Missões & Diário"
+      - option "Escrever no diário"
+      - option "Flashcards"
+      - option "Biblioteca de vocab"
+      - option "Revisão concluída"
+      - option "Progresso & Memórias"
+      - option "Memórias da Nina"
+      - option "Conquistas" [selected]
+      - option "Inbox"
+      - option "Perfil & Configurações"
+      - option "Voz da Nina"
+      - option "Notificações"
+      - option "Central de ajuda"
+      - option "Convidar amigos"
+      - option "Detalhe da palavra"
+      - option "Upgrade · Paywall"
+      - option "Checkout · pagamento"
+      - option "Pagamento confirmado"
+      - option "Modo voz ao vivo"
+      - option "Estados vazios"
+      - option "Estados de erro"
+      - option "Identidade visual"
+    - generic [ref=e14]:
+      - generic [ref=e15]: Tema
+      - generic [ref=e16]:
+        - button "Claro" [ref=e17] [cursor=pointer]
+        - button "Escuro" [ref=e18] [cursor=pointer]
+      - generic [ref=e19]: Primária
+      - generic [ref=e20]:
+        - button "Roxo" [ref=e21] [cursor=pointer]
+        - button "Verde" [ref=e22] [cursor=pointer]
+        - button "Mono" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]: Densidade
+      - generic [ref=e25]:
+        - button "−" [ref=e26] [cursor=pointer]
+        - button "=" [ref=e27] [cursor=pointer]
+        - button "+" [ref=e28] [cursor=pointer]
+  - generic [ref=e29]:
+    - text: 1 2 3 4
+    - generic [ref=e724]:
+      - complementary [ref=e725]:
+        - generic [ref=e726]:
+          - generic [ref=e727]: P
+          - generic [ref=e728]:
+            - text: Phyora
+            - generic [ref=e729]: Teacher AI
+        - generic [ref=e730]: Aprender
+        - generic [ref=e731] [cursor=pointer]:
+          - img [ref=e732]
+          - text: Início
+        - generic [ref=e735] [cursor=pointer]:
+          - img [ref=e736]
+          - text: Conversar com Nina
+        - generic [ref=e738] [cursor=pointer]:
+          - img [ref=e739]
+          - text: Plano de estudos
+        - generic [ref=e741] [cursor=pointer]:
+          - img [ref=e742]
+          - text: Missões & Diário
+        - generic [ref=e744] [cursor=pointer]:
+          - img [ref=e745]
+          - text: Histórico
+        - generic [ref=e746] [cursor=pointer]:
+          - img [ref=e747]
+          - text: Flashcards
+          - generic [ref=e749]: "12"
+        - generic [ref=e750] [cursor=pointer]:
+          - img [ref=e751]
+          - text: Vocabulário
+          - generic [ref=e754]: "287"
+        - generic [ref=e755] [cursor=pointer]:
+          - img [ref=e756]
+          - text: Inbox
+          - generic [ref=e759]: "3"
+        - generic [ref=e760]: Você
+        - generic [ref=e761] [cursor=pointer]:
+          - img [ref=e762]
+          - text: Progresso
+        - generic [ref=e765] [cursor=pointer]:
+          - img [ref=e766]
+          - text: Memórias
+          - generic [ref=e768]: "42"
+        - generic [ref=e769] [cursor=pointer]:
+          - img [ref=e770]
+          - text: Conquistas
+        - generic [ref=e773] [cursor=pointer]:
+          - img [ref=e774]
+          - text: Perfil & Config
+        - generic [ref=e777]: Recursos
+        - generic [ref=e778] [cursor=pointer]:
+          - img [ref=e779]
+          - text: Identidade
+        - generic [ref=e782]:
+          - generic [ref=e783]: V
+          - generic [ref=e784]:
+            - generic [ref=e785]: Vinícius
+            - generic [ref=e786]: B1+ · STREAK 14
+      - main [ref=e787]:
+        - generic [ref=e788]:
+          - generic [ref=e789]:
+            - generic [ref=e790]: Conquistas · marcos do seu caminho
+            - heading "Vitrine de conquistas" [level=1] [ref=e791]
+            - paragraph [ref=e792]: Não tem ranking nem ponto. São marcos que dizem algo sobre o seu jeito de aprender.
+          - button "Compartilhar coleção" [ref=e794] [cursor=pointer]
+        - generic [ref=e795]:
+          - generic [ref=e796]:
+            - generic [ref=e797]: 14 / 42
+            - generic [ref=e798]: desbloqueadas
+          - generic [ref=e799]:
+            - generic [ref=e800]: "3"
+            - generic [ref=e801]: raras
+          - generic [ref=e802]:
+            - generic [ref=e803]: "1"
+            - generic [ref=e804]: lendária
+          - generic [ref=e805]:
+            - generic [ref=e806]: "28"
+            - generic [ref=e807]: a caminho
+        - heading "Desbloqueadas recentemente" [level=2] [ref=e808]
+        - generic [ref=e809]:
+          - generic [ref=e810]:
+            - generic [ref=e811]: 🐉
+            - generic [ref=e812]: Two weeks strong
+            - generic [ref=e813]: 14 dias seguidos no pacto.
+            - generic [ref=e814]: LENDÁRIO · HOJE
+          - generic [ref=e815]:
+            - generic [ref=e816]: 🎤
+            - generic [ref=e817]: Spoke for 20 min
+            - generic [ref=e818]: Manteve a fala em inglês uma sessão inteira.
+            - generic [ref=e819]: RARO · 09 MAI
+          - generic [ref=e820]:
+            - generic [ref=e821]: 📚
+            - generic [ref=e822]: 200-word club
+            - generic [ref=e823]: 200 palavras ativas no vocab.
+            - generic [ref=e824]: 06 MAI
+          - generic [ref=e825]:
+            - generic [ref=e826]: ☕
+            - generic [ref=e827]: Pediu na rua
+            - generic [ref=e828]: Cumpriu uma missão fora do app.
+            - generic [ref=e829]: 10 MAI
+          - generic [ref=e830]:
+            - generic [ref=e831]: 🎯
+            - generic [ref=e832]: B1 sealed
+            - generic [ref=e833]: CEFR B1 confirmado pela Nina.
+            - generic [ref=e834]: 02 MAI
+          - generic [ref=e835]:
+            - generic [ref=e836]: ✍️
+            - generic [ref=e837]: First journal
+            - generic [ref=e838]: Primeira entrada no diário.
+            - generic [ref=e839]: RARO · 29 ABR
+        - heading "A caminho" [level=2] [ref=e840]
+        - generic [ref=e841]:
+          - generic [ref=e842]:
+            - generic [ref=e843]: 🌑
+            - generic [ref=e844]: 30-day moon
+            - generic [ref=e845]: Sequência de 30 dias.
+            - generic [ref=e846]: 14 / 30
+          - generic [ref=e847]:
+            - generic [ref=e848]: 🦅
+            - generic [ref=e849]: Nailed the interview
+            - generic [ref=e850]: Concluir simulação final sem dica.
+            - generic [ref=e851]: SEX 15 MAI
+          - generic [ref=e852]:
+            - generic [ref=e853]: 📜
+            - generic [ref=e854]: Wrote 1k words
+            - generic [ref=e855]: Total acumulado no diário.
+            - generic [ref=e856]: 632 / 1000
+          - generic [ref=e857]:
+            - generic [ref=e858]: 🎬
+            - generic [ref=e859]: Subtitle free
+            - generic [ref=e860]: Assistir 1 filme sem legenda.
+            - generic [ref=e861]: MISSÃO ATIVA
+          - generic [ref=e862]:
+            - generic [ref=e863]: ⚡
+            - generic [ref=e864]: B2 unlocked
+            - generic [ref=e865]: Próximo degrau no CEFR.
+            - generic [ref=e866]: ~ 6 SEMANAS
+          - generic [ref=e867]:
+            - generic [ref=e868]: 🤝
+            - generic [ref=e869]: Indicou um amigo
+            - generic [ref=e870]: 1 pessoa do seu círculo.
+            - generic [ref=e871]: CONVIDAR
+    - text: ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+  - button "Falar com a Nina" [ref=e350] [cursor=pointer]:
+    - generic [ref=e351]: "N"

@@ -1,0 +1,53 @@
+- generic [ref=e61]:
+  - generic [ref=e62]:
+    - banner [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - img [ref=e67]
+          - generic [ref=e73]: phyora.ai
+        - navigation [ref=e74]:
+          - button "Sair da conta" [ref=e75] [cursor=pointer]:
+            - img [ref=e76]
+            - text: Sair
+    - main [ref=e79]:
+      - generic [ref=e81]:
+        - navigation "Progresso do onboarding" [ref=e83]:
+          - list [ref=e84]:
+            - listitem "Passo 1 de 5" [ref=e85]
+            - listitem "Passo 2 de 5" [ref=e86]
+            - listitem "Passo 3 de 5" [ref=e87]
+            - listitem "Passo 4 de 5" [ref=e88]
+            - listitem "Passo 5 de 5" [ref=e89]
+          - generic [ref=e90]: Passo 1 de 5
+        - generic [ref=e91]:
+          - heading "Qual é o seu objetivo com o inglês?" [level=1] [ref=e92]
+          - paragraph [ref=e93]: Selecione até 3 objetivos que mais combinam com você.
+        - group "Objetivos de aprendizado" [ref=e94]:
+          - listitem [ref=e95]:
+            - button "Trabalho Inglês para reuniões, emails e networking profissional" [active] [pressed] [ref=e96] [cursor=pointer]:
+              - generic [ref=e97]: 💼
+              - generic [ref=e98]: Trabalho
+              - generic [ref=e99]: Inglês para reuniões, emails e networking profissional
+          - listitem [ref=e100]:
+            - button "Viagem Comunicar com confiança em qualquer destino" [ref=e101] [cursor=pointer]:
+              - generic [ref=e102]: ✈️
+              - generic [ref=e103]: Viagem
+              - generic [ref=e104]: Comunicar com confiança em qualquer destino
+          - listitem [ref=e105]:
+            - button "Estudo Leitura acadêmica, redação e provas internacionais" [ref=e106] [cursor=pointer]:
+              - generic [ref=e107]: 📚
+              - generic [ref=e108]: Estudo
+              - generic [ref=e109]: Leitura acadêmica, redação e provas internacionais
+          - listitem [ref=e110]:
+            - button "Imigração Preparação para visto, entrevistas e vida no exterior" [ref=e111] [cursor=pointer]:
+              - generic [ref=e112]: 🌍
+              - generic [ref=e113]: Imigração
+              - generic [ref=e114]: Preparação para visto, entrevistas e vida no exterior
+          - listitem [ref=e115]:
+            - button "Outros motivos Curiosidade, cultura ou simplesmente por prazer" [ref=e116] [cursor=pointer]:
+              - generic [ref=e117]: ✨
+              - generic [ref=e118]: Outros motivos
+              - generic [ref=e119]: Curiosidade, cultura ou simplesmente por prazer
+        - paragraph [ref=e120]: 1 de 3 selecionados
+        - button "Continuar" [ref=e122] [cursor=pointer]
+  - status

@@ -1,0 +1,142 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - complementary [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: P
+        - generic [ref=e9]:
+          - text: Phyora
+          - generic [ref=e10]: Teacher AI
+      - generic [ref=e11]: Aprender
+      - link "Início" [ref=e12] [cursor=pointer]:
+        - /url: /home
+        - img [ref=e13]
+        - text: Início
+      - link "Conversar com Nina" [ref=e16] [cursor=pointer]:
+        - /url: /chat
+        - img [ref=e17]
+        - text: Conversar com Nina
+      - link "Plano de estudos" [ref=e19] [cursor=pointer]:
+        - /url: /plano
+        - img [ref=e20]
+        - text: Plano de estudos
+      - link "Missões & Diário" [ref=e22] [cursor=pointer]:
+        - /url: /missoes
+        - img [ref=e23]
+        - text: Missões & Diário
+      - link "Histórico" [ref=e25] [cursor=pointer]:
+        - /url: /conversas
+        - img [ref=e26]
+        - text: Histórico
+      - link "Flashcards 12 cards para revisar" [ref=e28] [cursor=pointer]:
+        - /url: /flashcards
+        - img [ref=e29]
+        - text: Flashcards
+        - generic "12 cards para revisar" [ref=e31]: "12"
+      - link "Vocabulário 287 palavras" [ref=e32] [cursor=pointer]:
+        - /url: /vocabulario
+        - img [ref=e33]
+        - text: Vocabulário
+        - generic "287 palavras" [ref=e36]: "287"
+      - link "Inbox 3 mensagens" [ref=e37] [cursor=pointer]:
+        - /url: /inbox
+        - img [ref=e38]
+        - text: Inbox
+        - generic "3 mensagens" [ref=e41]: "3"
+      - generic [ref=e42]: Você
+      - link "Progresso" [ref=e43] [cursor=pointer]:
+        - /url: /progresso
+        - img [ref=e44]
+        - text: Progresso
+      - link "Memórias 42 memórias" [ref=e45] [cursor=pointer]:
+        - /url: /memorias
+        - img [ref=e46]
+        - text: Memórias
+        - generic "42 memórias" [ref=e48]: "42"
+      - link "Conquistas" [ref=e49] [cursor=pointer]:
+        - /url: /conquistas
+        - img [ref=e50]
+        - text: Conquistas
+      - link "Perfil & Config" [ref=e53] [cursor=pointer]:
+        - /url: /perfil
+        - img [ref=e54]
+        - text: Perfil & Config
+      - generic [ref=e58]:
+        - generic [ref=e59]: T
+        - generic [ref=e60]:
+          - generic [ref=e61]: Test User
+          - generic [ref=e62]: B1 · STREAK 7
+    - main [ref=e63]:
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e68]: FALTAM 3 DIAS DE TRIAL
+          - heading "Continua com a Nina — do jeitinho que vocês já estão." [level=1] [ref=e69]:
+            - text: Continua com a Nina —
+            - text: do
+            - emphasis [ref=e70]: jeitinho
+            - text: que vocês já estão.
+          - paragraph [ref=e71]: 14 dias atrás você não conseguia falar 30 segundos sem travar. Agora rola simulação de entrevista. Não joga isso fora.
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: FREE
+            - generic [ref=e75]: R$ 0/sempre
+            - paragraph [ref=e76]: Pra quem quer cheirar o app antes.
+            - list [ref=e77]:
+              - listitem [ref=e78]: 3 sessões por semana, 10 min cada
+              - listitem [ref=e79]: Sem memória entre sessões
+              - listitem [ref=e80]: Sem voz, só texto
+              - listitem [ref=e81]: Sem flashcards
+            - link "Continuar no Free" [ref=e82] [cursor=pointer]:
+              - /url: /home
+          - generic [ref=e83]:
+            - generic [ref=e84]: RECOMENDADO
+            - generic [ref=e85]: PRO · MENSAL
+            - generic [ref=e86]: R$ 39/mês
+            - paragraph [ref=e87]: O que você vem usando. Tudo o que a Nina pode ser.
+            - list [ref=e88]:
+              - listitem [ref=e89]:
+                - text: Conversa
+                - strong [ref=e90]: ilimitada
+                - text: com a Nina
+              - listitem [ref=e91]: Memória persistente entre sessões
+              - listitem [ref=e92]: Voz nativa · 4 sotaques
+              - listitem [ref=e93]: Flashcards inteligentes + diário
+              - listitem [ref=e94]: Missões fora do app
+              - listitem [ref=e95]: Plano de estudos rebalanceado toda sem.
+            - link "Continuar como Pro" [ref=e96] [cursor=pointer]:
+              - /url: /checkout
+            - paragraph [ref=e97]: Sem pegadinha · cancele em 1 clique
+          - generic [ref=e98]:
+            - generic [ref=e99]: "-30%"
+            - generic [ref=e100]: PRO · ANUAL
+            - generic [ref=e101]: R$ 27/mês
+            - paragraph [ref=e102]: Tudo do Pro + R$ 144 economizado no ano.
+            - list [ref=e103]:
+              - listitem [ref=e104]: Tudo do Pro mensal
+              - listitem [ref=e105]:
+                - strong [ref=e106]: 2 meses grátis
+                - text: na prática
+              - listitem [ref=e107]: Trilhas premium liberadas
+              - listitem [ref=e108]: Suporte prioritário
+            - link "Pagar R$ 324/ano" [ref=e109] [cursor=pointer]:
+              - /url: /checkout
+        - generic [ref=e110]:
+          - generic [ref=e111]: "N"
+          - generic [ref=e112]:
+            - generic [ref=e113]: MENSAGEM DA NINA
+            - generic [ref=e114]: "\"Se você travar agora, perde o ritmo. Mesmo se sumir uma semana, eu lembro de tudo quando você voltar — mas tem que voltar.\""
+          - link "Continuar trial" [ref=e115] [cursor=pointer]:
+            - /url: /home
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - img [ref=e118]
+            - text: Sem fidelidade
+          - generic [ref=e120]:
+            - img [ref=e121]
+            - text: 7 dias de garantia
+          - generic [ref=e123]:
+            - img [ref=e124]
+            - text: Pix · cartão · boleto
+          - generic [ref=e126]:
+            - img [ref=e127]
+            - text: LGPD · seus dados são seus
+  - status

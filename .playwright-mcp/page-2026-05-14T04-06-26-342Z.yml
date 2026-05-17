@@ -1,0 +1,31 @@
+- generic [ref=e4]:
+  - complementary [ref=e5]:
+    - generic [ref=e6]:
+      - img [ref=e8]
+      - generic [ref=e14]: phyora.ai
+    - generic [ref=e15]:
+      - heading "Comece em 2 minutos." [level=1] [ref=e16]
+      - paragraph [ref=e17]: Sem cartão de crédito. Plano grátis com 3 sessões por semana.
+      - list [ref=e18]:
+        - listitem [ref=e19]:
+          - img [ref=e21]
+          - text: Professor IA que fala português quando precisa
+        - listitem [ref=e23]:
+          - img [ref=e25]
+          - text: Diagnóstico conversacional no primeiro dia
+        - listitem [ref=e27]:
+          - img [ref=e29]
+          - text: Cancele a qualquer momento
+    - generic [ref=e31]:
+      - generic [ref=e32]: "N"
+      - generic [ref=e33]:
+        - strong [ref=e34]: +12.400 alunos
+        - text: começaram essa semana. Média de 6 dias de streak.
+  - generic [ref=e37]:
+    - generic [ref=e38]:
+      - heading "Verifique sua caixa de entrada" [level=2] [ref=e39]
+      - paragraph [ref=e40]: Se houver uma conta associada ao e-mail informado, você receberá um link para redefinir sua senha em breve.
+    - link "Tentar outro e-mail" [ref=e43] [cursor=pointer]:
+      - /url: /auth/forgot-password
+    - link "Voltar para o login" [ref=e45] [cursor=pointer]:
+      - /url: /auth/login

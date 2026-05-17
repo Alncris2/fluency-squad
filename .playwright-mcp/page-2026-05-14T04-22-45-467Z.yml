@@ -1,0 +1,50 @@
+- generic [ref=e61]:
+  - generic [ref=e62]:
+    - banner [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - img [ref=e67]
+          - generic [ref=e73]: phyora.ai
+        - navigation [ref=e74]:
+          - button "Sair da conta" [ref=e75] [cursor=pointer]:
+            - img [ref=e76]
+            - text: Sair
+    - main [ref=e79]:
+      - generic [ref=e299]:
+        - generic [ref=e300]:
+          - generic [ref=e301]:
+            - paragraph [ref=e302]: Conversa com Nina
+            - heading "Diagnóstico em andamento" [level=1] [ref=e303]
+            - paragraph [ref=e304]: Responda em inglês com naturalidade. Nina ajusta o ritmo da conversa a partir das suas respostas.
+          - generic [ref=e305]:
+            - generic [ref=e306]: Sessão ativa
+            - generic [ref=e307]: Faltam 4 trocas para liberar o encerramento.
+        - generic [ref=e308]:
+          - generic [ref=e309]:
+            - generic [ref=e310]: Progresso da conversa
+            - generic [ref=e311]: Segmento 1 de 5
+          - generic "Progresso do diagnóstico" [ref=e312]
+        - generic [ref=e318]:
+          - generic [ref=e320]:
+            - generic [ref=e321]: "N"
+            - article [ref=e322]:
+              - paragraph [ref=e323]: Hello! It's so nice to meet you! I’d love to hear about your favorite movie. What is it and why do you like it?
+          - generic [ref=e324]:
+            - button "I need English for work." [ref=e325] [cursor=pointer]
+            - button "I want to travel with more confidence." [ref=e326] [cursor=pointer]
+            - button "I am here to improve my conversation." [ref=e327] [cursor=pointer]
+          - generic [ref=e328]:
+            - generic [ref=e329]:
+              - generic [ref=e330]: Sua resposta
+              - textbox "Sua resposta" [ref=e331]:
+                - /placeholder: Type your answer in English...
+            - generic [ref=e332]:
+              - button "Usar voz" [ref=e333] [cursor=pointer]
+              - button "Enviar resposta" [disabled] [ref=e334] [cursor=pointer]
+        - generic [ref=e335]:
+          - generic [ref=e336]:
+            - paragraph [ref=e337]: Encerramento
+            - heading "Fechar diagnóstico" [level=2] [ref=e338]
+            - paragraph [ref=e339]: Quando houver trocas suficientes, você pode encerrar a conversa para registrar o nível estimado.
+          - button "Ver resultado" [disabled] [ref=e340] [cursor=pointer]
+  - status

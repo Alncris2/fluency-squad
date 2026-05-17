@@ -1,0 +1,99 @@
+- generic [ref=e78]:
+  - generic [ref=e79]:
+    - complementary [ref=e81]:
+      - generic [ref=e82]:
+        - generic [ref=e83]: P
+        - generic [ref=e84]:
+          - text: Phyora
+          - generic [ref=e85]: Teacher AI
+      - generic [ref=e86]: Aprender
+      - link "Início" [ref=e87] [cursor=pointer]:
+        - /url: /home
+        - img [ref=e88]
+        - text: Início
+      - link "Conversar com Nina" [ref=e91] [cursor=pointer]:
+        - /url: /chat
+        - img [ref=e92]
+        - text: Conversar com Nina
+      - link "Plano de estudos" [ref=e94] [cursor=pointer]:
+        - /url: /plano
+        - img [ref=e95]
+        - text: Plano de estudos
+      - link "Missões & Diário" [ref=e97] [cursor=pointer]:
+        - /url: /missoes
+        - img [ref=e98]
+        - text: Missões & Diário
+      - link "Flashcards 7 cards para revisar" [ref=e100] [cursor=pointer]:
+        - /url: /flashcards
+        - img [ref=e101]
+        - text: Flashcards
+        - generic "7 cards para revisar" [ref=e103]: "7"
+      - generic [ref=e104]: Você
+      - link "Progresso & Memórias" [ref=e105] [cursor=pointer]:
+        - /url: /progresso
+        - img [ref=e106]
+        - text: Progresso & Memórias
+      - link "Perfil & Config" [ref=e107] [cursor=pointer]:
+        - /url: /perfil
+        - img [ref=e108]
+        - text: Perfil & Config
+      - generic [ref=e112]:
+        - generic [ref=e113]: T
+        - generic [ref=e114]:
+          - generic [ref=e115]: Test User
+          - generic [ref=e116]: B1 · STREAK 7
+    - main [ref=e117]:
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - button "Voltar" [ref=e121]:
+            - img [ref=e122]
+          - generic [ref=e124]: Passo 1 de 5 · O Pacto
+        - navigation "Progresso do onboarding" [ref=e126]:
+          - list [ref=e127]:
+            - listitem "Passo 1 de 5" [ref=e128]
+            - listitem "Passo 2 de 5" [ref=e129]
+            - listitem "Passo 3 de 5" [ref=e130]
+            - listitem "Passo 4 de 5" [ref=e131]
+            - listitem "Passo 5 de 5" [ref=e132]
+          - generic [ref=e133]: Passo 1 de 5
+        - heading "O que te trouxe aqui?" [level=2] [ref=e134]:
+          - text: O que
+          - emphasis [ref=e135]: te trouxe
+          - text: aqui?
+        - paragraph [ref=e136]: Seja honesto. A Nina monta as aulas em torno disso.
+        - group "Objetivos de aprendizado" [ref=e137]:
+          - button "Trabalho Inglês para reuniões, emails e networking profissional" [ref=e138] [cursor=pointer]:
+            - generic [ref=e139]:
+              - generic [ref=e140]: 💼
+              - generic [ref=e141]:
+                - generic [ref=e142]: Trabalho
+                - generic [ref=e143]: Inglês para reuniões, emails e networking profissional
+          - button "Viagem Comunicar com confiança em qualquer destino" [ref=e144] [cursor=pointer]:
+            - generic [ref=e145]:
+              - generic [ref=e146]: ✈️
+              - generic [ref=e147]:
+                - generic [ref=e148]: Viagem
+                - generic [ref=e149]: Comunicar com confiança em qualquer destino
+          - button "Estudo Leitura acadêmica, redação e provas internacionais" [ref=e150] [cursor=pointer]:
+            - generic [ref=e151]:
+              - generic [ref=e152]: 📚
+              - generic [ref=e153]:
+                - generic [ref=e154]: Estudo
+                - generic [ref=e155]: Leitura acadêmica, redação e provas internacionais
+          - button "Imigração Preparação para visto, entrevistas e vida no exterior" [ref=e156] [cursor=pointer]:
+            - generic [ref=e157]:
+              - generic [ref=e158]: 🌍
+              - generic [ref=e159]:
+                - generic [ref=e160]: Imigração
+                - generic [ref=e161]: Preparação para visto, entrevistas e vida no exterior
+          - button "Outros motivos Curiosidade, cultura ou simplesmente por prazer" [ref=e162] [cursor=pointer]:
+            - generic [ref=e163]:
+              - generic [ref=e164]: ✨
+              - generic [ref=e165]:
+                - generic [ref=e166]: Outros motivos
+                - generic [ref=e167]: Curiosidade, cultura ou simplesmente por prazer
+        - paragraph [ref=e168]: 0 de 3 selecionados
+        - generic [ref=e169]:
+          - button "Voltar" [ref=e170] [cursor=pointer]
+          - button "Continuar" [disabled] [ref=e171] [cursor=pointer]
+  - status

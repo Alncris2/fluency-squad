@@ -1,0 +1,27 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - img [ref=e9]
+          - generic [ref=e15]: phyora.ai
+        - navigation [ref=e16]:
+          - button "Sair da conta" [ref=e17] [cursor=pointer]:
+            - img [ref=e18]
+            - text: Sair
+    - main [ref=e21]:
+      - generic [ref=e23]:
+        - navigation "Progresso do onboarding" [ref=e25]:
+          - list [ref=e26]:
+            - listitem "Passo 1 de 5" [ref=e27]
+            - listitem "Passo 2 de 5" [ref=e28]
+            - listitem "Passo 3 de 5" [ref=e29]
+            - listitem "Passo 4 de 5" [ref=e30]
+            - listitem "Passo 5 de 5" [ref=e31]
+          - generic [ref=e32]: Passo 2 de 5
+        - generic [ref=e33]:
+          - heading "Qual é o seu nível de inglês?" [level=2] [ref=e34]
+          - paragraph [ref=e35]: Vamos personalizar sua jornada de aprendizado.
+        - img [ref=e37]
+        - button "Continuar" [disabled] [ref=e40] [cursor=pointer]
+  - status

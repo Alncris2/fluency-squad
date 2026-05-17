@@ -1,0 +1,142 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: P
+      - generic [ref=e5]: Phyora Protótipo · maio 26
+    - generic [ref=e6]:
+      - button "Tela anterior" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+      - button "Próxima tela" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - combobox "Pular para tela" [ref=e13] [cursor=pointer]:
+      - option "Login"
+      - option "Cadastro"
+      - option "Esqueci a senha"
+      - option "Email enviado"
+      - option "Redefinir senha"
+      - option "1 · Objetivo"
+      - option "2 · Nível percebido"
+      - option "3 · Interesses"
+      - option "4 · Rotina"
+      - option "5 · O Pacto"
+      - option "Intro · Nina"
+      - option "Conversa"
+      - option "Resultado CEFR"
+      - option "Boas-vindas"
+      - option "Início"
+      - option "Conversar com Nina"
+      - option "Histórico de conversas"
+      - option "Debrief da sessão"
+      - option "Plano de Estudos"
+      - option "Pré-vis. de aula"
+      - option "Aula imersiva"
+      - option "Missões & Diário"
+      - option "Escrever no diário"
+      - option "Flashcards"
+      - option "Biblioteca de vocab"
+      - option "Revisão concluída"
+      - option "Progresso & Memórias"
+      - option "Memórias da Nina"
+      - option "Conquistas"
+      - option "Inbox"
+      - option "Perfil & Configurações"
+      - option "Voz da Nina"
+      - option "Notificações"
+      - option "Central de ajuda"
+      - option "Convidar amigos"
+      - option "Detalhe da palavra"
+      - option "Upgrade · Paywall" [selected]
+      - option "Checkout · pagamento"
+      - option "Pagamento confirmado"
+      - option "Modo voz ao vivo"
+      - option "Estados vazios"
+      - option "Estados de erro"
+      - option "Identidade visual"
+    - generic [ref=e14]:
+      - generic [ref=e15]: Tema
+      - generic [ref=e16]:
+        - button "Claro" [ref=e17] [cursor=pointer]
+        - button "Escuro" [ref=e18] [cursor=pointer]
+      - generic [ref=e19]: Primária
+      - generic [ref=e20]:
+        - button "Roxo" [ref=e21] [cursor=pointer]
+        - button "Verde" [ref=e22] [cursor=pointer]
+        - button "Mono" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]: Densidade
+      - generic [ref=e25]:
+        - button "−" [ref=e26] [cursor=pointer]
+        - button "=" [ref=e27] [cursor=pointer]
+        - button "+" [ref=e28] [cursor=pointer]
+  - generic [ref=e29]:
+    - text: 1 2 3 4
+    - generic [ref=e873]:
+      - generic [ref=e874]:
+        - generic [ref=e876]: FALTAM 3 DIAS DE TRIAL
+        - heading "Continua com a Nina — do jeitinho que vocês já estão." [level=1] [ref=e877]:
+          - text: Continua com a Nina —
+          - text: do
+          - emphasis [ref=e878]: jeitinho
+          - text: que vocês já estão.
+        - paragraph [ref=e879]: 14 dias atrás você não conseguia falar 30 segundos sem travar. Agora rola simulação de entrevista. Não joga isso fora.
+      - generic [ref=e880]:
+        - generic [ref=e881]:
+          - generic [ref=e882]: FREE
+          - generic [ref=e883]: R$ 0/sempre
+          - paragraph [ref=e884]: Pra quem quer cheirar o app antes.
+          - list [ref=e885]:
+            - listitem [ref=e886]: ✓ 3 sessões por semana, 10 min cada
+            - listitem [ref=e887]: ✓ Sem memória entre sessões
+            - listitem [ref=e888]: ✓ Sem voz, só texto
+            - listitem [ref=e889]: ✓ Sem flashcards
+          - button "Continuar no Free" [ref=e890] [cursor=pointer]
+        - generic [ref=e891]:
+          - generic [ref=e892]: RECOMENDADO
+          - generic [ref=e893]: PRO · MENSAL
+          - generic [ref=e894]: R$ 39/mês
+          - paragraph [ref=e895]: O que você vem usando. Tudo o que a Nina pode ser.
+          - list [ref=e896]:
+            - listitem [ref=e897]:
+              - text: ✓ Conversa
+              - strong [ref=e898]: ilimitada
+              - text: com a Nina
+            - listitem [ref=e899]: ✓ Memória persistente entre sessões
+            - listitem [ref=e900]: ✓ Voz nativa · 4 sotaques
+            - listitem [ref=e901]: ✓ Flashcards inteligentes + diário
+            - listitem [ref=e902]: ✓ Missões fora do app
+            - listitem [ref=e903]: ✓ Plano de estudos rebalanceado toda sem.
+          - button "Continuar como Pro" [ref=e904] [cursor=pointer]
+          - paragraph [ref=e905]: Sem pegadinha · cancele em 1 clique
+        - generic [ref=e906]:
+          - generic [ref=e907]: "-30%"
+          - generic [ref=e908]: PRO · ANUAL
+          - generic [ref=e909]: R$ 27/mês
+          - paragraph [ref=e910]: Tudo do Pro + R$ 144 economizado no ano.
+          - list [ref=e911]:
+            - listitem [ref=e912]: ✓ Tudo do Pro mensal
+            - listitem [ref=e913]:
+              - text: ✓
+              - strong [ref=e914]: 2 meses grátis
+              - text: na prática
+            - listitem [ref=e915]: ✓ Trilhas premium liberadas
+            - listitem [ref=e916]: ✓ Suporte prioritário
+          - button "Pagar R$ 324/ano" [ref=e917] [cursor=pointer]
+      - generic [ref=e918]:
+        - generic [ref=e919]: "N"
+        - generic [ref=e920]:
+          - generic [ref=e921]: MENSAGEM DA NINA
+          - generic [ref=e922]: "\"Se você travar agora, perde o ritmo. Mesmo se sumir uma semana, eu lembro de tudo quando você voltar — mas tem que voltar.\""
+        - button "Continuar trial" [ref=e923] [cursor=pointer]
+      - generic [ref=e924]:
+        - generic [ref=e925]:
+          - img [ref=e926]
+          - text: Sem fidelidade
+        - generic [ref=e928]:
+          - img [ref=e929]
+          - text: 7 dias de garantia
+        - generic [ref=e931]:
+          - img [ref=e932]
+          - text: Pix · cartão · boleto
+        - generic [ref=e934]:
+          - img [ref=e935]
+          - text: LGPD · seus dados são seus
+    - text: ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓

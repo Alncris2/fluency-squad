@@ -1,0 +1,272 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: P
+      - generic [ref=e5]: Phyora Protótipo · maio 26
+    - generic [ref=e6]:
+      - button "Tela anterior" [ref=e7] [cursor=pointer]:
+        - img [ref=e8]
+      - button "Próxima tela" [ref=e10] [cursor=pointer]:
+        - img [ref=e11]
+    - combobox "Pular para tela" [ref=e13] [cursor=pointer]:
+      - option "Login"
+      - option "Cadastro"
+      - option "Esqueci a senha"
+      - option "Email enviado"
+      - option "Redefinir senha"
+      - option "1 · Objetivo"
+      - option "2 · Nível percebido"
+      - option "3 · Interesses"
+      - option "4 · Rotina"
+      - option "5 · O Pacto"
+      - option "Intro · Nina"
+      - option "Conversa"
+      - option "Resultado CEFR"
+      - option "Boas-vindas"
+      - option "Início"
+      - option "Conversar com Nina"
+      - option "Histórico de conversas"
+      - option "Debrief da sessão"
+      - option "Plano de Estudos"
+      - option "Pré-vis. de aula"
+      - option "Aula imersiva"
+      - option "Missões & Diário"
+      - option "Escrever no diário"
+      - option "Flashcards"
+      - option "Biblioteca de vocab"
+      - option "Revisão concluída"
+      - option "Progresso & Memórias"
+      - option "Memórias da Nina"
+      - option "Conquistas"
+      - option "Inbox"
+      - option "Perfil & Configurações"
+      - option "Voz da Nina" [selected]
+      - option "Notificações"
+      - option "Central de ajuda"
+      - option "Convidar amigos"
+      - option "Detalhe da palavra"
+      - option "Upgrade · Paywall"
+      - option "Checkout · pagamento"
+      - option "Pagamento confirmado"
+      - option "Modo voz ao vivo"
+      - option "Estados vazios"
+      - option "Estados de erro"
+      - option "Identidade visual"
+    - generic [ref=e14]:
+      - generic [ref=e15]: Tema
+      - generic [ref=e16]:
+        - button "Claro" [ref=e17] [cursor=pointer]
+        - button "Escuro" [ref=e18] [cursor=pointer]
+      - generic [ref=e19]: Primária
+      - generic [ref=e20]:
+        - button "Roxo" [ref=e21] [cursor=pointer]
+        - button "Verde" [ref=e22] [cursor=pointer]
+        - button "Mono" [ref=e23] [cursor=pointer]
+      - generic [ref=e24]: Densidade
+      - generic [ref=e25]:
+        - button "−" [ref=e26] [cursor=pointer]
+        - button "=" [ref=e27] [cursor=pointer]
+        - button "+" [ref=e28] [cursor=pointer]
+  - generic [ref=e29]:
+    - text: 1 2 3 4 ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+    - generic [ref=e938]:
+      - complementary [ref=e939]:
+        - generic [ref=e940]:
+          - generic [ref=e941]: P
+          - generic [ref=e942]:
+            - text: Phyora
+            - generic [ref=e943]: Teacher AI
+        - generic [ref=e944]: Aprender
+        - generic [ref=e945] [cursor=pointer]:
+          - img [ref=e946]
+          - text: Início
+        - generic [ref=e949] [cursor=pointer]:
+          - img [ref=e950]
+          - text: Conversar com Nina
+        - generic [ref=e952] [cursor=pointer]:
+          - img [ref=e953]
+          - text: Plano de estudos
+        - generic [ref=e955] [cursor=pointer]:
+          - img [ref=e956]
+          - text: Missões & Diário
+        - generic [ref=e958] [cursor=pointer]:
+          - img [ref=e959]
+          - text: Histórico
+        - generic [ref=e960] [cursor=pointer]:
+          - img [ref=e961]
+          - text: Flashcards
+          - generic [ref=e963]: "12"
+        - generic [ref=e964] [cursor=pointer]:
+          - img [ref=e965]
+          - text: Vocabulário
+          - generic [ref=e968]: "287"
+        - generic [ref=e969] [cursor=pointer]:
+          - img [ref=e970]
+          - text: Inbox
+          - generic [ref=e973]: "3"
+        - generic [ref=e974]: Você
+        - generic [ref=e975] [cursor=pointer]:
+          - img [ref=e976]
+          - text: Progresso
+        - generic [ref=e979] [cursor=pointer]:
+          - img [ref=e980]
+          - text: Memórias
+          - generic [ref=e982]: "42"
+        - generic [ref=e983] [cursor=pointer]:
+          - img [ref=e984]
+          - text: Conquistas
+        - generic [ref=e987] [cursor=pointer]:
+          - img [ref=e988]
+          - text: Perfil & Config
+        - generic [ref=e991]: Recursos
+        - generic [ref=e992] [cursor=pointer]:
+          - img [ref=e993]
+          - text: Identidade
+        - generic [ref=e996]:
+          - generic [ref=e997]: V
+          - generic [ref=e998]:
+            - generic [ref=e999]: Vinícius
+            - generic [ref=e1000]: B1+ · STREAK 14
+      - main [ref=e1001]:
+        - generic [ref=e1002]:
+          - generic [ref=e1003]:
+            - generic [ref=e1004]: Perfil · voz da Nina
+            - heading "A voz da Nina" [level=1] [ref=e1005]
+            - paragraph [ref=e1006]: Escolha o sotaque, ritmo e tom. Cada mudança aqui é aplicada na próxima vez que ela falar com você.
+          - generic [ref=e1007]:
+            - button "← Voltar" [ref=e1008] [cursor=pointer]
+            - button "Salvar mudanças" [ref=e1009] [cursor=pointer]
+        - generic [ref=e1010]:
+          - generic [ref=e1011]:
+            - generic [ref=e1012]:
+              - generic [ref=e1014]:
+                - heading "Sotaque & vozes" [level=3] [ref=e1015]
+                - paragraph [ref=e1016]: Toque ▶ pra ouvir a Nina dizer uma frase curta com cada voz.
+              - generic [ref=e1017]:
+                - generic [ref=e1018] [cursor=pointer]:
+                  - generic [ref=e1019]: 🇺🇸
+                  - generic [ref=e1020]:
+                    - generic [ref=e1021]: Nina · Americana clara
+                    - generic [ref=e1022]: Costa Oeste, neutra. Ideal pra entrevistas internacionais.
+                    - generic [ref=e1023]:
+                      - generic [ref=e1024]: PADRÃO
+                      - generic [ref=e1025]: RECOMENDADA
+                  - button "Ouvir prévia" [ref=e1026]:
+                    - img [ref=e1027]
+                  - generic [ref=e1029]: ✓
+                - generic [ref=e1030] [cursor=pointer]:
+                  - generic [ref=e1031]: 🇬🇧
+                  - generic [ref=e1032]:
+                    - generic [ref=e1033]: Nina · Britânica RP
+                    - generic [ref=e1034]: Londres, articulada. Ótimo pra leitura e academia.
+                    - generic [ref=e1036]: FORMAL
+                  - button "Ouvir prévia" [ref=e1037]:
+                    - img [ref=e1038]
+                - generic [ref=e1040] [cursor=pointer]:
+                  - generic [ref=e1041]: 🇦🇺
+                  - generic [ref=e1042]:
+                    - generic [ref=e1043]: Nina · Australiana
+                    - generic [ref=e1044]: Sydney, casual. Perfeita pra papo de bar e dia-a-dia.
+                    - generic [ref=e1046]: INFORMAL
+                  - button "Ouvir prévia" [ref=e1047]:
+                    - img [ref=e1048]
+                - generic [ref=e1050] [cursor=pointer]:
+                  - generic [ref=e1051]: 🇮🇪
+                  - generic [ref=e1052]:
+                    - generic [ref=e1053]: Nina · Irlandesa Dublin
+                    - generic [ref=e1054]: Calorosa, melódica. Ouvido se acostuma rápido.
+                    - generic [ref=e1056]: NOVA
+                  - button "Ouvir prévia" [ref=e1057]:
+                    - img [ref=e1058]
+                - generic [ref=e1060] [cursor=pointer]:
+                  - generic [ref=e1061]: 🌎
+                  - generic [ref=e1062]:
+                    - generic [ref=e1063]: Mix de sotaques
+                    - generic [ref=e1064]: A cada sessão um sotaque diferente. Treina ouvido pra variação.
+                    - generic [ref=e1066]: DESAFIO
+                  - button "Ouvir prévia" [ref=e1067]:
+                    - img [ref=e1068]
+            - generic [ref=e1070]:
+              - generic [ref=e1072]:
+                - heading "Como ela fala com você" [level=3] [ref=e1073]
+                - paragraph [ref=e1074]: Ritmo, altura e personalidade. Você pode pedir pra ela mudar no meio da conversa também.
+              - generic [ref=e1075]:
+                - generic [ref=e1076]:
+                  - generic [ref=e1077]: Velocidade da fala
+                  - generic [ref=e1078]: Normal · 0.95x da velocidade de um nativo. Ouve melhor que muito brasileiro.
+                - generic [ref=e1079]:
+                  - slider [ref=e1080]: "95"
+                  - generic [ref=e1081]: 0.95×
+              - generic [ref=e1082]:
+                - generic [ref=e1083]:
+                  - generic [ref=e1084]: Tom (pitch)
+                  - generic [ref=e1085]: Levemente mais grave que o padrão — mais "professora" e menos "robô".
+                - generic [ref=e1086]:
+                  - slider [ref=e1087]: "-6"
+                  - generic [ref=e1088]: −6
+              - generic [ref=e1089]:
+                - generic [ref=e1090]:
+                  - generic [ref=e1091]: Pausas entre frases
+                  - generic [ref=e1092]: Pausas maiores ajudam quando você tá começando a processar mais rápido.
+                - generic [ref=e1093]:
+                  - slider [ref=e1094]: "55"
+                  - generic [ref=e1095]: médio
+              - generic [ref=e1096]:
+                - generic [ref=e1097]:
+                  - generic [ref=e1098]: Personalidade
+                  - generic [ref=e1099]: Mais calorosa = mais empolgação, gírias leves, encorajamento. Mais profissional = direto ao ponto.
+                - generic [ref=e1100]:
+                  - slider [ref=e1101]: "72"
+                  - generic [ref=e1102]: calorosa
+            - generic [ref=e1103]:
+              - heading "Acessibilidade" [level=3] [ref=e1106]
+              - generic [ref=e1107]:
+                - generic [ref=e1108]:
+                  - generic [ref=e1109]: Legendas durante as falas
+                  - generic [ref=e1110]: Texto sincronizado embaixo de cada bolha da Nina.
+                - generic [ref=e1111] [cursor=pointer]:
+                  - checkbox [checked]
+              - generic [ref=e1113]:
+                - generic [ref=e1114]:
+                  - generic [ref=e1115]: Modo "fala devagar" automático
+                  - generic [ref=e1116]: Quando você pede 3× pra repetir, Nina reduz pra 0.8× sozinha.
+                - generic [ref=e1117] [cursor=pointer]:
+                  - checkbox [checked]
+              - generic [ref=e1119]:
+                - generic [ref=e1120]:
+                  - generic [ref=e1121]: Soltar vibração no celular ao falar
+                  - generic [ref=e1122]: Sutil — ajuda a sentir o ritmo da fala.
+                - generic [ref=e1123] [cursor=pointer]:
+                  - checkbox
+          - generic [ref=e1125]:
+            - generic [ref=e1126]:
+              - generic [ref=e1127]: ↳ Prévia · com seus ajustes
+              - paragraph [ref=e1128]: "\"Hey, Vini! Take your breath. I have all the time in the world — you can start whenever you're ready.\""
+              - button "Ouvir prévia (0:06)" [ref=e1129] [cursor=pointer]:
+                - img [ref=e1130]
+                - text: Ouvir prévia (0:06)
+            - generic [ref=e1148]:
+              - generic [ref=e1150]:
+                - heading "Combos rápidos" [level=3] [ref=e1151]
+                - paragraph [ref=e1152]: Presets pensados pra contextos comuns.
+              - generic [ref=e1153]:
+                - button "🎤 Entrevista · EUA Americana clara · 1.0× · profissional" [ref=e1154] [cursor=pointer]:
+                  - generic [ref=e1155]: 🎤 Entrevista · EUA
+                  - generic [ref=e1156]: Americana clara · 1.0× · profissional
+                - button "🛋️ Papo casual Australiana · 0.95× · calorosa, gírias" [ref=e1157] [cursor=pointer]:
+                  - generic [ref=e1158]: 🛋️ Papo casual
+                  - generic [ref=e1159]: Australiana · 0.95× · calorosa, gírias
+                - button "📚 Leitura guiada Britânica RP · 0.85× · articulada, pausas longas" [ref=e1160] [cursor=pointer]:
+                  - generic [ref=e1161]: 📚 Leitura guiada
+                  - generic [ref=e1162]: Britânica RP · 0.85× · articulada, pausas longas
+                - button "🌅 Iniciando o dia Irlandesa · 0.90× · animada, pausas curtas" [ref=e1163] [cursor=pointer]:
+                  - generic [ref=e1164]: 🌅 Iniciando o dia
+                  - generic [ref=e1165]: Irlandesa · 0.90× · animada, pausas curtas
+            - generic [ref=e1167]:
+              - generic [ref=e1168]: 💡
+              - generic [ref=e1169]:
+                - generic [ref=e1170]: Dica da Nina
+                - generic [ref=e1171]: "\"Pra entrevista, vai de americana clara — é o sotaque que você mais vai ouvir. Pra fim de semana, troca pra australiana e te dou risada de graça.\""
+    - text: ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓ ✓
+  - button "Falar com a Nina" [ref=e350] [cursor=pointer]:
+    - generic [ref=e351]: "N"

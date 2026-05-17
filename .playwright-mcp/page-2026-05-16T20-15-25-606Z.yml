@@ -1,0 +1,160 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - complementary [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: P
+        - generic [ref=e9]:
+          - text: Phyora
+          - generic [ref=e10]: Teacher AI
+      - generic [ref=e11]: Aprender
+      - link "Início" [ref=e12] [cursor=pointer]:
+        - /url: /home
+        - img [ref=e13]
+        - text: Início
+      - link "Conversar com Nina" [ref=e16] [cursor=pointer]:
+        - /url: /chat
+        - img [ref=e17]
+        - text: Conversar com Nina
+      - link "Plano de estudos" [ref=e19] [cursor=pointer]:
+        - /url: /plano
+        - img [ref=e20]
+        - text: Plano de estudos
+      - link "Missões & Diário" [ref=e22] [cursor=pointer]:
+        - /url: /missoes
+        - img [ref=e23]
+        - text: Missões & Diário
+      - link "Histórico" [ref=e25] [cursor=pointer]:
+        - /url: /conversas
+        - img [ref=e26]
+        - text: Histórico
+      - link "Flashcards 12 cards para revisar" [ref=e28] [cursor=pointer]:
+        - /url: /flashcards
+        - img [ref=e29]
+        - text: Flashcards
+        - generic "12 cards para revisar" [ref=e31]: "12"
+      - link "Vocabulário 287 palavras" [ref=e32] [cursor=pointer]:
+        - /url: /vocabulario
+        - img [ref=e33]
+        - text: Vocabulário
+        - generic "287 palavras" [ref=e36]: "287"
+      - link "Inbox 3 mensagens" [ref=e37] [cursor=pointer]:
+        - /url: /inbox
+        - img [ref=e38]
+        - text: Inbox
+        - generic "3 mensagens" [ref=e41]: "3"
+      - generic [ref=e42]: Você
+      - link "Progresso" [ref=e43] [cursor=pointer]:
+        - /url: /progresso
+        - img [ref=e44]
+        - text: Progresso
+      - link "Memórias 42 memórias" [ref=e45] [cursor=pointer]:
+        - /url: /memorias
+        - img [ref=e46]
+        - text: Memórias
+        - generic "42 memórias" [ref=e48]: "42"
+      - link "Conquistas" [ref=e49] [cursor=pointer]:
+        - /url: /conquistas
+        - img [ref=e50]
+        - text: Conquistas
+      - link "Perfil & Config" [ref=e53] [cursor=pointer]:
+        - /url: /perfil
+        - img [ref=e54]
+        - text: Perfil & Config
+      - generic [ref=e58]:
+        - generic [ref=e59]: T
+        - generic [ref=e60]:
+          - generic [ref=e61]: Test User
+          - generic [ref=e62]: B1 · STREAK 7
+    - main [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e67]: Você · o que a Nina sabe sobre você
+            - heading "Memórias da Nina" [level=1] [ref=e68]
+            - paragraph [ref=e69]: Tudo o que ela aprendeu nas suas sessões. Edite, apague ou marque pra ela esquecer — você decide.
+          - generic [ref=e70]:
+            - button "Adicionar à mão" [ref=e71] [cursor=pointer]:
+              - img [ref=e72]
+              - text: Adicionar à mão
+            - button "Exportar tudo" [ref=e73] [cursor=pointer]
+        - generic [ref=e74]:
+          - generic [ref=e75]: "N"
+          - generic [ref=e76]:
+            - generic [ref=e77]: "\"Eu lembro porque te conhecer ajuda você a aprender mais rápido.\""
+            - generic [ref=e78]: 42 memórias ativas · última atualização há 14 min · armazenado só na sua conta.
+          - button "Ver como ela usa" [ref=e79] [cursor=pointer]
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - img [ref=e82]
+            - 'textbox "Buscar memória — ex: ''entrevista'', ''gato'', ''present perfect''…" [ref=e85]'
+          - generic [ref=e86]:
+            - button "Tudo · 42" [ref=e87] [cursor=pointer]
+            - button "Sobre você · 18" [ref=e88] [cursor=pointer]
+            - button "Objetivos · 6" [ref=e89] [cursor=pointer]
+            - button "Dores · 9" [ref=e90] [cursor=pointer]
+            - button "Preferências · 9" [ref=e91] [cursor=pointer]
+          - generic [ref=e92]:
+            - button "Recente" [ref=e93] [cursor=pointer]
+            - button "Mais usada" [ref=e94] [cursor=pointer]
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - text: OBJETIVO
+            - generic [ref=e97]: Quer se preparar pra entrevista no fim do mês.
+            - generic [ref=e98]:
+              - text: 06 MAI
+              - generic [ref=e99]:
+                - button "Editar" [ref=e100]:
+                  - img [ref=e101]
+                - button "Esquecer" [ref=e104]:
+                  - img [ref=e105]
+          - generic [ref=e108]:
+            - text: CONTEXTO
+            - generic [ref=e109]: Mora em SP, gosta de tech, psicologia e séries.
+            - generic [ref=e110]:
+              - text: 04 MAI
+              - generic [ref=e111]:
+                - button "Editar" [ref=e112]:
+                  - img [ref=e113]
+                - button "Esquecer" [ref=e116]:
+                  - img [ref=e117]
+          - generic [ref=e120]:
+            - text: DIFICULDADE
+            - generic [ref=e121]: "Trava em have done vs did. Já melhorou na sessão #27."
+            - generic [ref=e122]:
+              - text: 02 MAI
+              - generic [ref=e123]:
+                - button "Editar" [ref=e124]:
+                  - img [ref=e125]
+                - button "Esquecer" [ref=e128]:
+                  - img [ref=e129]
+          - generic [ref=e132]:
+            - text: PREFERÊNCIA
+            - generic [ref=e133]: Prefere correção discreta. Não gosta de interrupção.
+            - generic [ref=e134]:
+              - text: 29 ABR
+              - generic [ref=e135]:
+                - button "Editar" [ref=e136]:
+                  - img [ref=e137]
+                - button "Esquecer" [ref=e140]:
+                  - img [ref=e141]
+          - generic [ref=e144]:
+            - text: CONTEXTO
+            - generic [ref=e145]: Trabalha com tecnologia, horário flexível.
+            - generic [ref=e146]:
+              - text: 25 ABR
+              - generic [ref=e147]:
+                - button "Editar" [ref=e148]:
+                  - img [ref=e149]
+                - button "Esquecer" [ref=e152]:
+                  - img [ref=e153]
+          - generic [ref=e156]:
+            - text: OBJETIVO
+            - generic [ref=e157]: Tem entrevista de emprego marcada para mai/jun.
+            - generic [ref=e158]:
+              - text: 22 ABR
+              - generic [ref=e159]:
+                - button "Editar" [ref=e160]:
+                  - img [ref=e161]
+                - button "Esquecer" [ref=e164]:
+                  - img [ref=e165]
+  - status
